@@ -1,0 +1,61 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: goldenrod;
+}
+
+div.j-tab {
+  display: table;
+  min-width: 888px;
+}
+
+div.j-row {
+  /*   display: table-row; */
+  display: block;
+  min-width: 555px;
+}
+
+div.j-cell {
+  display: table-cell;
+  min-width: 111px;
+  max-height: 3600px;
+  vertical-align: top;
+}
+
+.j-frame {
+  height: 1000px;
+  overflow: hidden;
+  margin: 10px;
+}
+
+#x-w-320 {
+  width: 320px;
+}
+
+#x-w-460 {
+  width: 459px;
+}
+
+#x-w-480 {
+  width: 480px;
+}
+
+#x-w-640 {
+  width: 640px;
+}
+
+#x-w-768 {
+  width: 767px;
+}
+
+#x-w-850 {
+  width: 850px;
+}
+
+#x-w-980 {
+  width: 979px;
+}
+
+#x-w-1200 {
+  width: 1200px;
+}
