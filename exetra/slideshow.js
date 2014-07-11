@@ -51,7 +51,7 @@
                         })
                     );
                 }*/
-                //$(this).addClass('sl' + ++i);
+                $(this).addClass('sl' + ++i);
                 if (opts.use_switch && cnt > 1)
                 {
                     the_switch.append('<li id="controls' + i + '">' + '<a href="#">' + $(this).attr('title') + '</a></li>');
