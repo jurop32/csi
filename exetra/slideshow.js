@@ -8,17 +8,22 @@
  */
 (function($)
 {
-    var the_switch = direction = timer = main = box = slides = null, cnt = act = 0, opts =
-    {
-        allowscroll: true, use_switch: true, continuous: true, easing: 'linear', delay: 800, transitionspeed: 800
+    var the_switch = direction = timer = main = box = slides = null;
+    var cnt = act = 0;
+    var opts = {
+        allowscroll: true,
+        use_switch: true,
+        continuous: true,
+        easing: 'linear',
+        delay: 800,
+        transitionspeed: 800
     };
     function slideshow(options)
     {
-        var args = arguments[0] ||
-        {
-        };
+        var args = arguments[0] || {};
         $.extend(opts, options);
-        main = $(this), box = main.children('ul');
+        main = $(this);
+        box = main.children('ul');
         slides = box.children('li');
         cnt = slides.length;
         if (cnt)
@@ -28,9 +33,9 @@
                 the_switch = $('<ol id="controls" class="list-item-4"></ol>');
                 the_switch.appendTo(main);
             }
-            slides.css(
-            {
-                'display': 'none', 'position': 'static'
+            slides.css({
+                'display': 'none',
+                'position': 'static'
             });
             slides.first().css('display', 'list-item');
             act = 1;
@@ -39,19 +44,24 @@
             {
                 /*if (i == 0)
                 {
-                    slides.parent().append(slides.first().clone().css(
-                    {
-                        'position': 'static', 'display': 'block'
-                    }));
+                    slides.parent().append(
+                        slides.first().clone().css({
+                            'position': 'static',
+                            'display': 'block'
+                        })
+                    );
                 }*/
-                $(this).addClass('sl' + ++i);
+                //$(this).addClass('sl' + ++i);
                 if (opts.use_switch && cnt > 1)
                 {
                     the_switch.append('<li id="controls' + i + '">' + '<a href="#">' + $(this).attr('title') + '</a></li>');
-                    $('#controls' + i + ' a').on('click', function()
-                    {
-                        scrollToSlide(i);
-                    });
+                    $('#controls' + i + ' a').on(
+                        'click',
+                        function()
+                        {
+                            scrollToSlide(i);
+                        }
+                    );
                 }
             });
             if (opts.use_switch && cnt > 1)
