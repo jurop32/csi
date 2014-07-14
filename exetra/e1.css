@@ -6,6 +6,10 @@ html {
 body * {
     max-height: 999999px;
 }
+input,
+select {
+    height: 30px !important;
+}
 #page #content .content-in.shadow {
     /*!box-shadow: 0px 0px 8px 2px #E8E8E8;*/
     /*!border: 1px solid #C0C0C0;*/
