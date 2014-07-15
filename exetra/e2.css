@@ -204,6 +204,7 @@
 #content .home-desc h1 {
     color: #686868;
     line-height: 34px;
+    text-rendering: auto;
 }
 #content .content-in .content.general_content > p {
     margin: 10px 0;
@@ -241,9 +242,16 @@
     height: auto;
     margin: 0;
 }
-#content .content-in .rightcol br,
 #content .content-in .content .rightcol > form > div:last-child {
     display: none;
+}
+.rightcol br {
+    display: none;
+}
+.rightcol div br,
+.rightcol .section .section-in br,
+.rightcol .my-account-lightbox-categories br {
+    display: inline;
 }
 #content .content-in .leftcol {
     width: 20% !important;
@@ -322,9 +330,7 @@
     left: 0;
     width: 76.3%;
 }
-#content .content-in .rightcol form#form_register .item select#company_type {
-/*         margin-left: -4px; */
-}
+
 #content .content-in .rightcol .item textarea {
     padding: 1%;
     line-height: 18px;
@@ -350,6 +356,10 @@
     width: auto !important;
     float: none;
 }
+#content .content-in .content .rightcol input,
+#content .content-in .content .rightcol select {
+    height: 30px;
+}
 #content .content-in .content .rightcol > #form_register {
     border-bottom: none;
     margin-top: 20px;
@@ -358,9 +368,8 @@
     padding-top: 5px;
     vertical-align: baseline;
 }
-#content .content-in .content .rightcol input,
-#content .content-in .content .rightcol select {
-    height: 30px;
+#content .content-in .rightcol form#form_register .item select#company_type {
+    margin-left: -4px;
 }
 #content .content-in .content .rightcol input#login_password {
     margin-left: -4px;

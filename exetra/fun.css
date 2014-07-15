@@ -129,8 +129,9 @@
 .lightbox .closebuttonholder {
     clear: both;
     margin-top: 20px;
+    margin-left: 0;
     padding-top: 20px;
-    border-top:1px solid #e0e0e0;
+    border-top: 1px solid #e0e0e0;
 }
 .lightbox .closebuttonholder > .closebutton {
     margin: 0 auto;

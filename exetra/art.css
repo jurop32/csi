@@ -41,14 +41,6 @@ div#dev-gt-1140{display:block}
         box-shadow: none;
         border: none;
     }
-    /*.content.c.general_content table > tbody > tr + tr > td {
-        padding-left: 20px;
-        padding-right: 20px;
-    }
-    .content.c.general_content table > tbody > tr + tr > td:first-child,
-    .content.c.general_content table > tbody > tr + tr > td:last-child {
-        display: none;
-    }*/
     .fluid #content .content-in .rightcol .head span {
         margin-left: 20px;
     }
@@ -95,27 +87,17 @@ div#dev-gt-1140{display:block}
     .fluid #content .content-in .rightcol .head {
         padding: 5px 0px 5px 4%;
     }
-    /*div#div_existing_categories > p > b {
-        display: inline-block;
-        width: 15%;
-        text-align: left;
-    }*/
-/*     div.my-account-lightbox-categories { */
-/*         text-align: center; */
-/*     } */
-/*     div.my-account-lightbox-categories > form > input#category_name { */
-/*         width: 85% !important; */
-/*     } */
+    #content .content-in .rightcol form#form_register .item select#company_type {
+        margin-left: auto;
+    }
+    #content .content-in .content .rightcol input#login_password {
+        margin-left: auto;
+    }
     .image-content .filter-box ul li {
         padding-bottom: 15px;
     }
     #page #content .content-in .header form {
         display: block;
-    }
-    #content .content-in .content .rightcol .section .section-in br,
-    #content .content-in .content .rightcol div br,
-    #content .content-in .content .rightcol > .my-account-lightbox-categories br {
-        display: inline;
     }
     #page #content .content-in .header * {
         font-size: 14px;
