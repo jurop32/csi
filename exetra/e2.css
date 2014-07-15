@@ -1,27 +1,11 @@
 #header a.logo {
     top: 45px;
 }
-#header .menu {
-    top: 49px;
-}
-#header .top-menu > li > a.smart-search {
-    border: 1px solid #B0B0B0;
-    height: 28px;
-    line-height: 28px;
-    border-radius: 4px;
-    display: block;
-    float: left;
-    color: #A0A0A0 !important;
-    text-decoration: none;
-    font-size: 13px;
-    width: auto;
-    text-align: center;
-    background: linear-gradient(#FFF, #F0F0F0) repeat scroll 0% 0% transparent;
-    padding: 2px 5px;
-    margin-top: -9px;
-}
 #header .top-menu li a {
     font-size: 13px;
+}
+#header .menu {
+    top: 49px;
 }
 #content .home-desc .search {
     border: solid #dbdbdb 1px;
@@ -40,12 +24,16 @@
     border: none;
     background: #ffffff url('img/search.png') no-repeat center center;
 }
+#content .home-desc .search button:hover {
+    background: #ffffff url('img/search.png') no-repeat center center;
+}
 #content .home-content {
     padding: 20px 0px;
 }
-#content .home-content > .in.c {
+#content .home-content .in {
    padding-left: 20px;
    padding-right: 20px;
+   background: none;
 }
 #content .content-in .header {
 	padding-right: 20px;
@@ -68,24 +56,23 @@
     height: 410px;
     padding: 0;
 }
-#footer .in.fluid {
-    margin: 0 auto;
-}
-#footer .in.in980,
-#footer .in.fluid {
-    width: auto;
-    width: 980px;
-    height: 410px;
-    min-width: 280px;
-    padding-left: 0;
-    padding-right: 0;
-}
 #footer-background {
     position: absolute;
     height: 40px;
     z-index: -1000;
     width: 100%;
     background: none repeat scroll 0% 0% rgb(193, 193, 193);
+}
+#footer .in.fluid {
+    margin: 0 auto;
+}
+#footer .in.in980,
+#footer .in.fluid {
+    width: 980px;
+    height: 410px;
+    min-width: 280px;
+    padding-left: 0;
+    padding-right: 0;
 }
 #footer .in .box.first,
 #footer .in .box.last,
@@ -101,14 +88,14 @@
 #footer .in .box.last {
     width: 23%;
 }
-#footer .in .box ul li:last-child {
-    border-bottom: none;
-}
 #footer .in .box ul {
     padding-bottom: 20px;
 }
 #footer .in .box ul li {
     border-bottom: solid #bbbbbb 1px;
+}
+#footer .in .box ul li:last-child {
+    border-bottom: none;
 }
 #footer .in .box ul li a {
     text-decoration: none;
@@ -131,25 +118,13 @@
 }
 #footer .in #logo_left,
 #footer .in.in980 #logo_left {
-    position: static;
-    float: none;
-    margin-right: auto;
-    margin-left: auto;
+	clear: left;
+    border-top: 1px solid #e0e0e0;
     padding-top: 35px;
     padding-bottom: 13px;
-    border-top: 1px solid #e0e0e0;
-    border-bottom: 2px dotted #e0e0e0;
-    background-image: none;
-    clear: left;
 }
-#footer .in #logo_left > img {
-    float: right;
-}
-#footer .in #logo_left a > img {
-    width: auto;
-    height: auto;
-    margin-right: 0 !important;
-}
+#footer .in #logo_left,
+#footer .in.in980 #logo_left,
 #footer .in #logo_right,
 #footer .in.in980 #logo_right {
     position: static;
@@ -158,6 +133,15 @@
     margin-left: auto;
     border-bottom: 2px dotted #e0e0e0;
     background-image: none;
+}
+#footer .in #logo_left > img {
+    float: right;
+    margin-top: 20px;
+}
+#footer .in #logo_left a > img {
+    width: auto;
+    height: auto;
+    margin-right: 0 !important;
 }
 #footer .in #logo_right div {
     margin-bottom: 5px !important;
@@ -180,7 +164,7 @@
     padding-left: 15px;
     font-size: 12px;
 }
-#content .home-content div.pick-more-keywords {
+#content .home-content ul.country > div.pick-more-keywords {
     display: block;
     background-color: #bbbbbb;
     position: static !important;
@@ -188,15 +172,13 @@
     padding: 0 10px;
     margin-left: -1px; /* jpf-2015 */
     margin-right: -127%;
-/*                 margin-left: -387.5%; */
     background: -webkit-linear-gradient(#FFFFFF, #F0F0F0);
     background: -o-linear-gradient(#FFFFFF, #F0F0F0);
     background: -moz-linear-gradient(#FFFFFF, #F0F0F0);
     background: linear-gradient(#FFFFFF, #F0F0F0);
     border: 1px solid #B0B0B0;
 }
-#content .home-content ul.country > div > a,
-#content .home-content div.pick-more-keywords > a {
+#content .home-content ul.country > div > a {
     line-height: 40px;
     text-align: left;
     display: block;
@@ -205,12 +187,10 @@
     background: url('img/more.png') no-repeat right center;
     text-decoration: none;
 }
-#content .home-content ul.country > div > a:hover,
-#content .home-content div.pick-more-keywords > a:hover {
+#content .home-content ul.country > div > a:hover {
     text-decoration: none;
 }
-#content .home-content ul.country > div > a > span,
-#content .home-content div.pick-more-keywords > a > span {
+#content .home-content ul.country > div > a > span {
     display: inline;
     font-style: italic;
 }
@@ -222,8 +202,6 @@
     color: #696969;
 }
 #content .home-desc h1 {
-/*     font-size: 21px; */
-    letter-spacing: 7px;
     color: #686868;
     line-height: 34px;
 }
@@ -235,12 +213,12 @@
     text-align: justify;
     margin-bottom: 20px;
 }
-#content .content-in .content {
-    /*!padding: 0px;*/
-}
 #content .content-in .rightcol {
     font-size: 13px;
-    margin-bottom: 20px;
+    padding-bottom: 0 !important;
+}
+#content .content-in .content > .rightcol {
+	width: 77%;
 }
 .fluid #content .content-in .rightcol {
     float: right;
@@ -251,28 +229,32 @@
 #content .content-in .rightcol .head {
     height: auto;
 }
-#content .content-in .rightcol .head/*:first-child*/ {
+#content .content-in .rightcol .head {
     padding-top: 5px;
     padding-bottom: 5px;
     background-color: #f5f5f5;
     margin-top: 20px;
-    margin-right: 20px;
     margin-left: 0;
     height: 40px;
 }
-#content .content-in .cart .rightcol .head/*:first-child*/ {
-    /*margin: 0 0 20px 0;*/
+#content .content-in .cart .rightcol .head {
     height: auto;
     margin: 0;
+}
+#content .content-in .rightcol br,
+#content .content-in .content .rightcol > form > div:last-child {
+    display: none;
 }
 #content .content-in .leftcol {
     width: 20% !important;
     min-width: 100px;
     display: block;
     margin-top: 20px;
-    margin-bottom: 20px;
-    margin-left: 20px;
     font-size: 14px;
+}
+#content .content-in .leftcol .head {
+    height: auto;
+    padding: 0;
 }
 #content .content-in .leftcol .head a {
     background-color: #c0c0c0;
@@ -289,20 +271,29 @@
 }
 #content .cart .leftcol .section .section {
     border: none;
+    margin-bottom: 0;
+}
+#content .cart .total-price-bottom {
+    clear: both;
+    padding-top: 0;
+}
+#content .cart .total-price-bottom .left a {
+    display: block;
+    float: none;
 }
 #content .content-in .leftcol .section .head {
     padding-top: 5px;
     padding-bottom: 4px;
-/*     background-color: #f5f5f5; */
     height: auto;
 }
 #content .content-in .content .rightcol > * {
-    padding: 5px 20px;/*?*/
+    /*padding: 5px 20px;*/
 }
 #content .content-in .content .cart .rightcol > * {
     padding: 0;
 }
-#content .content-in .rightcol .item {
+#content .content-in .rightcol .item,
+#content .content-in .rightcol .item.last {
     padding: 0 0 20px 0;
 }
 #content .content-in .rightcol #form_login .item:first-child {
@@ -343,9 +334,13 @@
 #content .content-in .rightcol button.newsoft {
     display: block;
     float: none !important;
-    margin: 0 auto 20px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
     height: 40px;
     width: 180px !important;
+}
+#content .content-in .rightcol button.new {
+    margin-bottom: 0;
 }
 #content .content-in .content.general_content > .rightcol {
     padding-left: 0px;
@@ -357,7 +352,7 @@
 }
 #content .content-in .content .rightcol > #form_register {
     border-bottom: none;
-    padding-top: 20px;
+    margin-top: 20px;
 }
 #content .content-in .rightcol form#form_register .item select {
     padding-top: 5px;
@@ -365,13 +360,15 @@
 }
 #content .content-in .content .rightcol input,
 #content .content-in .content .rightcol select {
-    height: 30px/* !important*/;
+    height: 30px;
 }
 #content .content-in .content .rightcol input#login_password {
     margin-left: -4px;
 }
 #content .content-in .rightcol .email-content {
     width: auto;
+    padding-bottom: 0;
+    margin-bottom: 20px;
 }
 #content .content-in .rightcol .item a {
     color: #5187B6;
@@ -399,7 +396,6 @@ form#form_login div.item a.forgotpassword,
     border: none;
 }
 .lightbox .header .arrow {
-/*     display: none; */
     float: right;
     position: static;
     margin: 10px 0 0 10px;
@@ -465,7 +461,6 @@ form#form_login div.item a.forgotpassword,
 .lightbox .preview .rightcol {
     padding: 20px 0 0;
     border-top: none;
-/*     border-top: 1px solid #e0e0e0; */
 }
 .lightbox .preview .rightcol p.c {
     display: block;
