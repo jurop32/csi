@@ -11,9 +11,12 @@ div#dev-gt-1140{display:block}
         width: auto;
         min-width: 280px;
     }
-    #content {
+    /*#content {
         padding-bottom: 20px;
-    }
+    }*/
+    /*#page #content {
+        padding-bottom: 20px;
+    }*/
     .lightbox .shadow,
     #content .shadow {
         -webkit-box-shadow: none;
@@ -69,16 +72,13 @@ div#dev-gt-1140{display:block}
         margin-bottom: 20px;
         padding: 5px 3% !important;
     }
-    #page #content {
-        padding-bottom: 20px;
-    }
-    #page.fluid #content .content-in .header > .item,
+    /*#page.fluid #content .content-in .header > .item,
     #page.fluid #content .content-in .header > form {
         float: right;
         margin: 0;
         padding: 15px 0 0 15px !important;
         width: 15%;
-    }
+    }*/
     .fluid #content .content-in .rightcol {
         float: right;
         width: 80%;
@@ -96,13 +96,13 @@ div#dev-gt-1140{display:block}
     .image-content .filter-box ul li {
         padding-bottom: 15px;
     }
-    #page #content .content-in .header form {
+    /*#page #content .content-in .header form {
         display: block;
-    }
-    #page #content .content-in .header * {
+    }*/
+    /*#page #content .content-in .header * {
         font-size: 14px;
         white-space: nowrap;
-    }
+    }*/
     .fluid #content .content-in .rightcol .head,
     .fluid #content .content-in .rightcol .head * {
         font-size: 14px;
@@ -208,10 +208,10 @@ div#dev-gt-1140{display:block}
     #content .content-in .rightcol .email-item ul li input {
         width: 30px !important;
     }
-    #content .content-in .header select.small {
+    /*#content .content-in .header select.small {
         width: auto;
         padding-right: 1px;
-    }
+    }*/
     #content .content-in .header .item input {
          width: 30px !important;
          height: 30px !important;
@@ -295,7 +295,6 @@ div#dev-gt-1140{display:block}
     }
     #content .cart .leftcol .item label,
     #content .cart .leftcol .item select,
-    #content .cart .leftcol .item textarea,
     .lightbox .pricing .rightcol .item select {
         width: 87%;
     }
@@ -305,7 +304,11 @@ div#dev-gt-1140{display:block}
         padding: 1%;
         line-height: 18px;
     }
-    #content .content-in .header select,
+    #content .cart .leftcol .item textarea {
+        /*width: 91%;
+        margin: 4%;*/
+    }
+    /*#content .content-in .header select,*/
     #content .content-in .rightcol form#form_register .item select,
     .lightbox .pricing .rightcol .item select {
         padding-top: 5px;
@@ -313,8 +316,8 @@ div#dev-gt-1140{display:block}
         vertical-align: baseline;
     }
     #resp-header .resp-search input,
-    .lightbox .preview .search ul li input,
-    #content .content-in .header .resp-search input
+    .lightbox .preview .search ul li input/*,
+    #content .content-in .header .resp-search input*/
     {
         margin-left: 3px;
         padding: 0px 0 0 3px;
@@ -418,9 +421,9 @@ div#dev-gt-1140{display:block}
         display: block;
         white-space: nowrap;
     }
-    #content.search .content-in .header h1 {
+    /*#content.search .content-in .header h1 {
         display: none;
-    }
+    }*/
     #content .content-in .my-account-lightbox-categories h4 {
         clear: both;
         text-align: center;
@@ -521,11 +524,11 @@ div#dev-gt-1140{display:block}
 /*         margin: 20px auto; */
 /*         padding: 20px !important; */
 /*     } */
-    #content .cart .leftcol .section input.licence {
+    /*#content .cart .leftcol .section input.licence {
         margin-left: 10%;
         margin-top: 0;
         margin-bottom: 0;
-    }
+    }*/
     #content .cart .leftcol .section label.licence {
         font-size: 14px;
     }
@@ -1017,10 +1020,10 @@ div#dev-gt-1140{display:block}
     #content .content-in .cart .rightcol {
         width: 320px !important;
     }
-    #content .cart .leftcol .item {
+    /*#content .cart .leftcol .item {
         padding-left: 0px;
         padding-right: 0px;
-    }
+    }*/
     #content .cart .leftcol .section,
     #content .cart .rightcol .section {
         margin-bottom: 20px;
@@ -1034,9 +1037,6 @@ div#dev-gt-1140{display:block}
         padding: 20px 0;
         line-height: normal;
     }
-    #content .cart .rightcol .section-in {
-        padding: 20px 0;
-    }
     #content .cart .leftcol .section .head {
         background-color: #c0c0c0;
         color: #ffffff;
@@ -1049,12 +1049,8 @@ div#dev-gt-1140{display:block}
     #content .cart .leftcol .section .item br {
         display: none;
     }
-    #content .cart .leftcol .item textarea {
-        width: 91%;
-        margin: 4%;
-    }
     #content .cart .leftcol .section label.licence {
-        padding-right: 4%;
+        /*padding-right: 4%;*/
     }
     #content .cart .payment {
         padding: 0 20px;
@@ -1076,13 +1072,13 @@ div#dev-gt-1140{display:block}
     #content .cart .payment .clear {
         display: none;
     }
-    #content .cart .payment #place_your_order {
+    /*#content .cart .payment #place_your_order {
         width: 200px;
         padding: 10px 0px;
         height: auto !important;
         line-height: 38px;
         font-size: 17px !important;
-    }
+    }*/
     #content .cart .total-price p {
         margin-top: 9px;
         padding-right: 0;
@@ -1125,7 +1121,7 @@ div#dev-gt-1140{display:block}
         float: left !important;
     }
     #content .cart .total-price-bottom .left a {
-        margin-left: 16.9%;
+        margin-left: 23.45%;
     }
     #content .cart .total-price-bottom .left a.button-blue {
         margin-bottom: 20px;
@@ -1189,9 +1185,6 @@ div#dev-gt-1140{display:block}
         display: block;
         border: 1px solid #E0E0E0
     }
-    .image-list li .image {
-        border-bottom: none;
-    }
     .image-list li .image img {
         vertical-align: middle;
         max-width: 100%;
@@ -1204,7 +1197,7 @@ div#dev-gt-1140{display:block}
     }
     .image-list li .pict {
         position: absolute;
-        margin-top: -235px;
+        margin-top: -230px;
         display: none;
         width: 170px;
         height: 170px;
@@ -1215,11 +1208,11 @@ div#dev-gt-1140{display:block}
     .image-list li.hover .pict {
         display: block;
     }
-/*     .image-list li > p { */
-/*         background-image: none; */
-/*         height: auto !important; */
-/*         max-height: 99999px !important; */
-/*     } */
+    /*.image-list li > p {
+        background-image: none;
+        height: auto !important;
+        max-height: 99999px !important;
+    }*/
     .image-list li .cs_addtocart {
         width: inherit;
         position: absolute;
@@ -1283,7 +1276,7 @@ div#dev-gt-1140{display:block}
         margin-left: 0;
         margin-right: 0;
     }
-    #content .content-in .leftcol .item,
+    /*#content .content-in .leftcol .item,*/
     #content .content-in .rightcol .item {
         padding-left: 0;
         padding-bottom: 20px;
@@ -2413,9 +2406,6 @@ div#dev-gt-1140{display:block}
     #content .home-desc h1 {
         letter-spacing: 3px;
     }
-    #page #content .content-in .header .responsivetitle {
-        padding-left: 8px !important;
-    }
 }
 @media all and (max-width: 500px) {
     div#dev *{display:none}div#dev-500{display:block}
@@ -2596,8 +2586,14 @@ div#dev-gt-1140{display:block}
 @media all and (max-width: 479px) {
     div#dev *{display:none}div#dev-479{display:block}
 
+    #page #content .content-in .header .responsivetitle {
+        padding-left: 8px !important;
+    }
     #page.fluid #content .content-in .header .item {
         padding-right: 8px !important;
+    }
+    .tostartpricing {
+        padding-left: 8px !important;
     }
     #page.fluid #content .content-in .header .item + .item {
         padding-right: 0 !important;
