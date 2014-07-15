@@ -409,8 +409,6 @@ form#form_login div.item a.forgotpassword,
     margin: 20px auto;
     padding: 20px !important;
 }
-.lightbox .preview .leftcol,
-.lightbox .preview .leftcol.fullwidth {}
 .lightbox .preview .leftcol .image {
     margin: 0 auto;
     width: 500px;

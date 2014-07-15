@@ -1,7 +1,3 @@
-.lightbox {
-    width: auto;
-    width: 760px;
-}
 .lightbox .header {
     height: auto;
     padding-bottom: 20px;
@@ -71,6 +67,9 @@
     padding-left: 20px !important;
     padding-right: 20px !important;
 }
+.lightbox .pricing .rightcol > .info {
+    margin-right: 20px;
+}
 .lightbox .pricing #resp-license-details span {
     padding-left: 0 !important;
     padding-right: 0 !important;
@@ -101,8 +100,11 @@
 }
 .lightbox .pricing .rightcol .item {
     height: auto;
-    padding-bottom: 25px;
+    padding-bottom: 20px;
     clear: both;
+}
+.lightbox .pricing .rightcol .item.noheight {
+    padding-bottom: 0;
 }
 .closebutton {
     display: block;
@@ -112,7 +114,7 @@
 }
 .closebuttonholder {
     text-align: left;
-    margin-left: 20px;
+    /*margin-left: 20px;*/
 }
 .closebuttonholder > .closebutton {
     margin-left: 0;
@@ -123,6 +125,15 @@
     display: none;
     position: static;
     margin-top: 10px;
+}
+.lightbox .closebuttonholder {
+    clear: both;
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top:1px solid #e0e0e0;
+}
+.lightbox .closebuttonholder > .closebutton {
+    margin: 0 auto;
 }
 .lightbox .header .desc {
     position: static;
@@ -137,10 +148,10 @@
     position: static;
     float: left;
 }
-.lightbox .header a.logo img {
+/*.lightbox .header a.logo img {
     width: 200px;
     height: auto;
-}
+}*/
 .lightbox .pricing .rightcol .item ul li label {
     margin-left: 15px !important;
     display: inline !important;

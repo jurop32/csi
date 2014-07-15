@@ -41,10 +41,6 @@ div#dev-gt-1140{display:block}
         box-shadow: none;
         border: none;
     }
-    .closebuttonholder.imagedetail {
-        width: auto;
-        width: 100%;
-    }
     /*.content.c.general_content table > tbody > tr + tr > td {
         padding-left: 20px;
         padding-right: 20px;
@@ -154,10 +150,25 @@ div#dev-gt-1140{display:block}
     }
     .lightbox {
         width: auto;
+        padding: 20px 0;
     }
     .lightbox .header {
         height: auto;
         padding-bottom: 20px;
+    }
+    .lightbox .header a.logo img {
+        width: 200px;
+        /*height: auto;*/
+    }
+    .lightbox .header .arrow {
+        display: none;
+        float: right;
+        position: static;
+        margin: 10px 0 0 10px;
+    }
+    .lightbox .header .arrow a {
+        height: 32px;
+        line-height: 32px;
     }
     .lightbox .preview .leftcol,
     .lightbox .preview .leftcol.fullwidth {
@@ -186,6 +197,9 @@ div#dev-gt-1140{display:block}
     }
     .lightbox .pricing .rightcol div > p {
         font-size: 14px;
+    }
+    #publish_start_date_forinline_display.hasDatepicker .ui-datepicker-inline {
+        margin: 15px auto 10px;
     }
     .lightbox .preview .rightcol p.c,
     .lightbox .preview .rightcol .button-info {
@@ -325,13 +339,6 @@ div#dev-gt-1140{display:block}
         height: 30px !important;
         float: left;
         font-size: 14px;
-    }
-    div#similar-images ul#similar-images li input {
-        width: 15px !important;
-        height: 15px !important;
-    }
-    div#similar-images ul#similar-images li label {
-        display: inline-block;
     }
     .image-content.search .filter-box form > div + div > input {
         width: 30px !important;
@@ -545,9 +552,6 @@ div#dev-gt-1140{display:block}
         margin: 15px 0 0 15px;
         padding: 0;
     }
-    .lightbox .pricing .rightcol .item {
-        height: auto;
-    }
     form#form_login div.item a {
         margin-left: auto;
         margin-right: auto;
@@ -743,16 +747,6 @@ div#dev-gt-1140{display:block}
     #footer .in.fluid {
         width: auto;
     }
-/*     .lightbox .header .arrow { */
-/*         display: none; */
-/*         float: right; */
-/*         position: static; */
-/*         margin: 10px 0 0 10px; */
-/*     } */
-    .lightbox .header .arrow a {
-        height: 32px;
-        line-height: 32px;
-    }
     .closebutton {
         display: block;
         padding-top: 4px;
@@ -763,26 +757,22 @@ div#dev-gt-1140{display:block}
         text-align: left;
         margin-left: 20px;
     }
+    .closebuttonholder.imagedetail {
+        width: auto;
+        width: 100%;
+    }
     .closebuttonholder > .closebutton {
         margin-left: 0;
         margin-top: -31px;
     }
-    .closebuttonholder.imagedetail {
-            width: 100%
-    }
-/*     .closebuttonholder.imagedetail > .closebutton { */
-/*         margin: 20px auto; */
-/*     } */
+
+    /*.closebuttonholder.imagedetail > .closebutton {
+        margin: 20px auto;
+    }*/
     .closebutton.inheader {
-/*         display: inline-block; */
+        /*display: inline-block;*/
         position: static;
         margin-top: 10px;
-    }
-    .lightbox .header .desc {
-        position: static;
-        clear: both;
-        width: 100%;
-        margin-top: 15px;
     }
     .closebutton.imagedetail.inheader {
         position: static;
@@ -802,17 +792,6 @@ div#dev-gt-1140{display:block}
     #prev_image_arrow {
         padding: 4px 12px 4px 30px;
         background-position: 10px 50%;
-    }
-    .lightbox {
-        padding: 20px 0;
-    }
-    .lightbox .header a.logo {
-        position: static;
-        float: left;
-    }
-    .lightbox .header a.logo img {
-        width: 200px;
-        height: auto;
     }
 /*     .lightbox .preview .search { */
 /*         padding-bottom: 0; */
@@ -1360,15 +1339,6 @@ div#dev-gt-1140{display:block}
         margin-left: auto;
         margin-right: auto;
     }
-    #content .content-in .rightcol button.new,
-    #content .content-in .rightcol .form_contact button.new,
-    #content .content-in .rightcol button.newsoft {
-        /*display: block;*/
-        /*float: none !important;*/
-        /*margin: 0 auto 20px !important;*/
-        /*height: 40px;*/
-        /*width: 180px !important;*/
-    }
     #content .home-desc h1 {
         font-size: 21px;
         letter-spacing: 7px;
@@ -1818,9 +1788,6 @@ div#dev-gt-1140{display:block}
     #content #resp-subpagebenefits .home-text .item .desc h2.opened {
         background-image: url('img/minus.png');
     }
-/*     .closebuttonholder.imagedetail { */
-/*         width: 100%; */
-/*     } */
     .lightbox {
         width: auto;
     }
@@ -1833,44 +1800,15 @@ div#dev-gt-1140{display:block}
     .lightbox .preview .leftcol.fullwidth + .rightcol {
         display: none;
     }
-/*     .lightbox .preview .leftcol .image { */
-/*         margin: 0 auto; */
-/*         width: 500px; */
-/*         height: 500px; */
-/*         line-height: 500px; */
-/*     } */
-/*     .lightbox .preview .rightcol { */
-/*         float: none; */
-/*         width: auto; */
-/*         padding: 20px 20px 0 20px; */
-/*         border-top: none; */
-/*     } */
-/*     .lightbox .preview .rightcol ul { */
-/*         height: auto; */
-/*         width: auto; */
-/*     } */
-/*     .lightbox .preview .rightcol ul li { */
-/*         width: auto; */
-/*     } */
-/*     .lightbox .preview .rightcol ul li a { */
-/*         width: auto; */
-/*         background-position: -180px 0 !important; */
-/*         padding-left: 50px; */
-/*         color: #a0a0a0; */
-/*         text-decoration: none; */
-/*         line-height: 40px; */
-/*     } */
-/*     .lightbox .preview .rightcol ul li a:hover { */
-/*         background-position: -180px -40px !important; */
-/*         color: #000000; */
-/*     } */
-/*     .lightbox .preview .rightcol ul li.second a { */
-/*         line-height: 30px; */
-/*     } */
-/*     .lightbox .preview .rightcol p.c, */
-/*     .lightbox .preview .rightcol .button-info { */
-/*         display: none; */
-/*     } */
+    /*.lightbox .preview .leftcol .image { -> e2 412*/
+    /*.lightbox .preview .rightcol { -> 189*/
+    /*.lightbox .preview .rightcol ul { -> e2 474*/
+    /*.lightbox .preview .rightcol ul li { -> e2 478*/
+    /*.lightbox .preview .rightcol ul li a { -> e2 481*/
+    /*.lightbox .preview .rightcol ul li a:hover { -> e2 489*/
+    /*.lightbox .preview .rightcol ul li.second a { -> e2 493*/
+    /*.lightbox .preview .rightcol p.c,
+    .lightbox .preview .rightcol .button-info { -> 204*/
     .lightbox .preview .leftcol .desc .head {
         text-align: center;
         font-size: 18px;
@@ -1973,9 +1911,6 @@ div#dev-gt-1140{display:block}
     #content .home-content ul.country div.pick-more-keywords {
         margin-left: -218.5%;
     }
-/*     .lightbox .preview .rightcol { */
-/*         border-top: 1px solid #e0e0e0; */
-/*     } */
     #content .cart .rightcol .section {
         margin-bottom: 0px;
     }
@@ -2004,6 +1939,9 @@ div#dev-gt-1140{display:block}
     }
     .closebuttonholder {
         text-align: center;
+    }
+    .lightbox .closebuttonholder {
+        margin-left: 0;
     }
     .closebuttonholder > .closebutton {
         display: inline-block;
@@ -2044,6 +1982,9 @@ div#dev-gt-1140{display:block}
     }
     .lightbox .pricing .rightcol a.button-blue.left {
         margin-bottom: 0;
+    }
+    .lightbox .pricing .rightcol > .info {
+        margin-left: 20px;
     }
     #content .cart .total-price-bottom .left a {
         margin-left: auto;
@@ -2208,7 +2149,7 @@ div#dev-gt-1140{display:block}
     #footer .in #logo_right {
         margin: 0 0 15px 0;
     }
-    ul#similar-images li {
+    #similar-images ul li {
         width: 33.333%;
     }
 }
@@ -2771,7 +2712,7 @@ div#dev-gt-1140{display:block}
     .filter-box form #q+div {
         width: auto !important;
     }
-    ul#similar-images li {
+    #similar-images ul li {
         width: 50%;
     }
     #footer {
@@ -3149,7 +3090,7 @@ div#dev-gt-1140{display:block}
     #publish_start_date_forinline_display.hasDatepicker {
         padding-bottom: 0;
     }
-    ul#similar-images li {
+    #similar-images ul li {
         width: 100%;
     }
 }
