@@ -489,10 +489,6 @@ form#form_login div.item a.forgotpassword,
     margin-left: 20px;
     margin-right: 20px;
 }
-.image-list li {
-    height: auto;
-    border: none;
-}
 .image-list li .image {
     border-bottom: none;
 }
@@ -610,8 +606,7 @@ div#div_existing_categories > p > b {
 }
 .image-list li > p {
     background-image: none;
-    height: auto !important;
-    max-height: 55px !important;
+    min-height: 55px !important;
 }
 .lightbox .preview .c .leftcol.text p > a {
     padding: 5px 0;
