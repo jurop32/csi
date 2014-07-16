@@ -486,11 +486,18 @@ form#form_login div.item a.forgotpassword,
 .image-list li {
     display: inline-block;
     float: none;
+    height: auto;
     margin-left: 20px;
     margin-right: 20px;
 }
-.image-list li .image {
-    border-bottom: none;
+.image-list li > p {
+    min-height: 57px !important;
+}
+.image-list li .cs_addtocart {
+    width: inherit;
+    position: absolute;
+    margin-top: 5px;
+    padding: 3px 0 !important;
 }
 .lightbox .header .arrow {
     float: right;
@@ -603,10 +610,6 @@ div#div_existing_categories > p > b {
 }
 .lightbox .preview .search {
     padding-bottom: 0;
-}
-.image-list li > p {
-    background-image: none;
-    min-height: 55px !important;
 }
 .lightbox .preview .c .leftcol.text p > a {
     padding: 5px 0;
