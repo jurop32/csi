@@ -66,14 +66,6 @@ div#dev-gt-1140{display:block}
         margin-bottom: 20px;
         padding: 5px 3% !important;
     }
-    .fluid #content .content-in .rightcol {
-        float: right;
-        width: 80%;
-        padding-left: 0;
-    }
-    .fluid #content .content-in .rightcol .head {
-        padding: 5px 0px 5px 4%;
-    }
     #content .content-in .rightcol form#form_register .item select#company_type {
         margin-left: auto;
     }

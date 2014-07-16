@@ -285,9 +285,12 @@
     width: 77%;
     padding-left: 0;
 }
-#content .content-in .rightcol .head {
-    height: auto;
+.fluid #content .content-in .rightcol .head {
+    padding: 5px 0px 5px 4%;
 }
+/*#content .content-in .rightcol .head {
+    height: auto;
+}*/
 #content .content-in .rightcol .head {
     padding-top: 5px;
     padding-bottom: 5px;
