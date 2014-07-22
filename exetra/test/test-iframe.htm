@@ -1,0 +1,88 @@
+<html>
+<head>
+<script type="text/javascript" src="../../3rd_party/jquery/js/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="jquery-iframe-auto-height.js"></script>
+<link rel="stylesheet" type="text/css" href="test.css" />
+<script>
+function show_page(page) {
+    $('iframe').attr('src', '../../' + page + '.htm');
+}
+</script>
+</head>
+<body>
+  <fieldset style="font-size:2em">
+    <legend>Podstranka</legend>
+    <a href="javascript: show_page('index')">index</a>
+    <a href="javascript: show_page('comp-image-licensing-window')">comp-image-licensing-window</a>
+    <a href="javascript: show_page('contact-us')">contact-us</a>
+    <a href="javascript: show_page('content')">content</a>
+    <a href="javascript: show_page('image-detail')">image-detail</a>
+    <a href="javascript: show_page('login-register')">login-register</a>
+    <a href="javascript: show_page('my-account-edit-profile')">my-account-edit-profile</a>
+    <a href="javascript: show_page('my-account-invoices')">my-account-invoices</a>
+    <a href="javascript: show_page('my-account-lightbox-categories')">my-account-lightbox-categories</a>
+    <a href="javascript: show_page('my-account-lightbox')">my-account-lightbox</a>
+    <a href="javascript: show_page('my-account-my-purchases')">my-account-my-purchases</a>
+    <a href="javascript: show_page('my-account')">my-account</a>
+    <a href="javascript: show_page('my-cart-license-expired')">my-cart-license-expired</a>
+    <a href="javascript: show_page('my-cart')">my-cart</a>
+    <a href="javascript: show_page('my-cart-step-2')">my-cart-step-2</a>
+    <a href="javascript: show_page('my-cart-step-3')">my-cart-step-3</a>
+    <a href="javascript: show_page('news')">news</a>
+    <a href="javascript: show_page('price-quote-license-unavailable')">price-quote-license-unavailable</a>
+    <a href="javascript: show_page('price-quote')">price-quote</a>
+    <a href="javascript: show_page('search-filter')">search-filter</a>
+    <a href="javascript: show_page('search')">search</a>
+  </fieldset>
+  <div class="j-tab">
+  <div class="j-row">
+   <div class="j-cell">
+    <iframe id="x-w-320" class="j-frame" src="../../index.htm" name="frame-1" scrolling="no"></iframe>
+   </div>
+   <div class="j-cell">
+    <iframe id="x-w-460" class="j-frame" src="../../index.htm" name="frame-3" scrolling="no"></iframe>
+   </div>
+   <div class="j-cell">
+    <iframe id="x-w-480" class="j-frame" src="../../index.htm" name="frame-4" scrolling="no"></iframe>
+   </div>
+   <div class="j-cell">
+    <iframe id="x-w-640" class="j-frame" src="../../index.htm" name="frame-5" scrolling="no"></iframe>
+   </div>
+   <div class="j-cell">
+    <iframe id="x-w-768" class="j-frame" src="../../index.htm" name="frame-6" scrolling="no"></iframe>
+   </div>
+   <div class="j-cell">
+    <iframe id="x-w-850" class="j-frame" src="../../index.htm" name="frame-7" scrolling="no"></iframe>
+   </div>
+   <div class="j-cell">
+    <iframe id="x-w-980" class="j-frame" src="../../index.htm" name="frame-8" scrolling="no"></iframe>
+   </div>
+   <div class="j-cell">
+    <iframe id="x-w-1200" class="j-frame" src="../../index.htm" name="frame-9" scrolling="no"></iframe>
+   </div>
+  </div>
+ </div>
+ <script type="text/javascript">
+    function refreshIframes()
+    {
+        jQuery('iframe.j-frame').iframeAutoHeight({
+        debug : false,
+        diagnostics : false
+        });
+    }
+    // match all iframes / use jQuery or alias $
+    // jQuery('iframe').iframeAutoHeight({debug: true});
+    $(document).ready(function()
+    {
+        refreshIframes();
+        //window.j_int = setInterval(refreshIframes, 300000);
+    });
+    // jQuery('#test-case').iframeAutoHeight({debug: true, diagnostics: true});
+
+    // only panoramic.html iframe with some extra height
+    // $('iframe.photo').iframeAutoHeight({heightOffset: 50});
+
+    // NOTES: you can wrap this in document ready if you like
+    // but IE8 didn't always like it
+    </script>
+</body>
