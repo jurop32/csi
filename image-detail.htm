@@ -287,6 +287,7 @@
     <script type="text/javascript">
     function next_prev_image_id()
     {
+        if (window.opener == null) return 1;
         var id_image = document.getElementById('id_image').value;
         var ids = window.opener.document.getElementById('search_results_ids').innerHTML;
         var ids_arr = ids.split('|');

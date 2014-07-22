@@ -243,8 +243,8 @@
     padding: 0 10px;
     margin-left: -1px; /* jpf-2015 */
     margin-right: -127%;
-    background: -webkit-linear-gradient(#FFFFFF, #F0F0F0);
-    background: -o-linear-gradient(#FFFFFF, #F0F0F0);
+    /*background: -webkit-linear-gradient(#FFFFFF, #F0F0F0);
+    background: -o-linear-gradient(#FFFFFF, #F0F0F0);*/
     background: -moz-linear-gradient(#FFFFFF, #F0F0F0);
     background: linear-gradient(#FFFFFF, #F0F0F0);
     border: 1px solid #B0B0B0;
@@ -287,6 +287,7 @@
 }
 #content .content-in .rightcol {
     font-size: 13px;
+    font-size: 14px;
     /*padding-bottom: 0 !important;*/
 }
 #content .content-in .content .rightcol {
@@ -348,7 +349,7 @@
 }
 #content .content-in .leftcol {
     width: 20% !important;
-    min-width: 100px;
+    /*min-width: 100px;*/
     display: block;
     /*margin-top: 20px;*/
     font-size: 14px;
@@ -448,6 +449,24 @@
     margin: 0 auto;
     padding: 0 0 20px 0;
 }
+#content .content-in .rightcol .head-3 {
+    padding: 5px 0;
+}
+#content .content-in .rightcol .head-3 a {
+    width: 15% !important;
+    padding: 0 0 0 2% !important;
+}
+#content .content-in .content .rightcol .invoices {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+#content .content-in .rightcol .invoices .item {
+    width: 96%;
+}
+#content .content-in .rightcol .invoices .item div {
+    width: 15% !important;
+    padding: 0 0 0 2% !important;
+}
 #content .content-in .rightcol input#login_password_md5 + input + .item {
 	width: auto;
 }
@@ -493,6 +512,7 @@
     display: block;
     float: none !important;
     margin-left: auto !important;
+    margin-right: auto;
     height: 40px;
     width: 180px !important;
 }
@@ -654,8 +674,8 @@ form#form_login div.item a.forgotpassword,
     padding: 0 10px !important;
     border-radius: 4px;
     text-decoration: none;
-    background: -webkit-linear-gradient(#FFFFFF, #F0F0F0);
-    background: -o-linear-gradient(#FFFFFF, #F0F0F0);
+    /*background: -webkit-linear-gradient(#FFFFFF, #F0F0F0);
+    background: -o-linear-gradient(#FFFFFF, #F0F0F0);*/
     background: -moz-linear-gradient(#FFFFFF, #F0F0F0);
     background: linear-gradient(#FFFFFF, #F0F0F0);
     border: solid #babcbe 1px;

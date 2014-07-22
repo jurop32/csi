@@ -14,16 +14,16 @@ div#dev-gt-1140{display:block}
     .lightbox .shadow,
     #content .shadow {
         -webkit-box-shadow: none;
-        -moz-box-shadow: none;
         box-shadow: none;
     }
     #content .home-text {
         padding: 0;
     }
     #content .home-text.shadow {
-        box-shadow: none;
-        border: none;
+        border-style: none;
         background: transparent;
+        -webkit-box-shadow: none;
+        box-shadow: none;
     }
     #content .home-text .item {
         border: 1px solid #696969;
@@ -69,9 +69,6 @@ div#dev-gt-1140{display:block}
     #content .content-in .rightcol form#form_register .item select#company_type {
         margin-left: auto;
     }
-    #content .content-in .content .rightcol > #form_register ~ #form_register {
-        /*margin-bottom: 20px;*/
-    }
     #content .content-in .content .rightcol {
         /*width: 77%;*/
         padding-bottom: 0 !important;
@@ -110,15 +107,15 @@ div#dev-gt-1140{display:block}
         font-size: 16px;
     }
     .lightbox {
-        width: auto;
-        padding: 20px 0;
+        /*width: auto;*/
+        /*padding: 20px 0;*/
     }
     .lightbox .header {
-        height: auto;
-        padding-bottom: 20px;
+        /*height: auto;*/
+        /*padding-bottom: 20px;*/
     }
     .lightbox .header a.logo img {
-        width: 200px;
+        /*width: 200px;*/
     }
     .lightbox .header .arrow {
         display: none;
@@ -625,9 +622,9 @@ div#dev-gt-1140{display:block}
     }
     #content .home-slider #controls li.current a {
         -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=99)";
-        filter: alpha(opacity = 99);
+        /*filter: alpha(opacity = 99);
         -moz-opacity: 0.99;
-        -khtml-opacity: 0.99;
+        -khtml-opacity: 0.99;*/
         opacity: 0.99;
     }
     #content .home-content ul:last-child {
@@ -730,8 +727,8 @@ div#dev-gt-1140{display:block}
         padding: 0 10px !important;
         border-radius: 4px;
         text-decoration: none;
-        background: -webkit-linear-gradient(#FFFFFF, #F0F0F0);
-        background: -o-linear-gradient(#FFFFFF, #F0F0F0);
+        /*background: -webkit-linear-gradient(#FFFFFF, #F0F0F0);
+        background: -o-linear-gradient(#FFFFFF, #F0F0F0);*/
         background: -moz-linear-gradient(#FFFFFF, #F0F0F0);
         background: linear-gradient(#FFFFFF, #F0F0F0);
         border: solid #babcbe 1px;
@@ -755,10 +752,12 @@ div#dev-gt-1140{display:block}
         margin-top: -4px;
         margin-left: 10px;
     }
-    #content .content-in {
+    #content .content-in,
+    #page #content .content-in {
         width: auto !important;
         border: none;
         border-radius: 0;
+        box-shadow: none;
     }
     #content .content-in .header {
         padding: 0;
@@ -863,6 +862,9 @@ div#dev-gt-1140{display:block}
     }
     #content .content-in .rightcol .invoices .item-detail {
         margin-left: 4%;
+        margin-left: 20px !important;
+        margin-right: 20px !important;
+        width: auto !important;
         background-image: none;
         background-color: #f8f8f8;
         min-height: 0;
@@ -1170,10 +1172,6 @@ div#dev-gt-1140{display:block}
     #content .content-in .rightcol .item span {
     	margin-right: auto;
     	width: 77%;
-    }
-    #content .content-in .rightcol button.new,
-    #content .content-in .rightcol button.newsoft {
-        margin-right: auto;
     }
     #content .content-in .rightcol .email-item p {
         font-size: 14px;
@@ -2793,7 +2791,7 @@ div#dev-gt-1140{display:block}
         font-size: 12px;
         letter-spacing: 0.222em;
         -webkit-text-rendering: auto !important;
-        -moz-text-rendering: auto !important;
+        /*-moz-text-rendering: auto !important;*/
         -o-text-rendering: auto !important;
         -ms-text-rendering: auto !important;
     }
