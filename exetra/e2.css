@@ -72,12 +72,16 @@
     float: left;
     font-size: 14px;
 }
-#page.fluid #content .content-in > .header + .content {
-    padding-top: 20px;
+#content .content-in .content {
+    /*padding-top: 20px;*/
 }
-#page #content .content-in .content,
-.fluid #content .content-in .content,
-#page.fluid #content .content-in > .header.c + .content {
+#content .content-in .content {
+    padding: 20px;
+}
+/*#content .content-in .content,*/
+/*.fluid #content .content-in .content,*/
+/*#page.fluid #content .content-in > .header.c + .content,*/
+#content .content-in > .header.c + .content {
     padding-top: 0;
 }
 #resp-subpagebenefits {
@@ -273,9 +277,6 @@
     line-height: 34px;
     -webkit-text-rendering: auto;
 }
-#content .content-in .content {
-    padding: 20px;
-}
 #content .content-in .content.general_content > p {
     margin: 10px 0;
     font-size: 13px;
@@ -311,16 +312,17 @@
     height: auto;
 }
 .fluid #content .content-in .rightcol .head,
-#page #content .content-in .rightcol .head {
+#content .content-in .rightcol .head {
 	padding-bottom: 5px;
 	height: 40px;
 }
 #content .content-in .cart .rightcol {
     width: 320px !important;
 }
-#content /*.content-in*/ .cart .rightcol .section .head {
+#content .content-in .cart .rightcol .section .head {
     height: auto;
     margin: 0;
+    padding-bottom: 4px;
 }
 #content .cart .rightcol .section-in {
     padding: 20px;
@@ -417,7 +419,7 @@
     font-size: 17px !important;
 }
 #content .cart .total-price {
-    padding: 20px 0;
+    padding: 0 0 20px;
 }
 #content .cart .total-price p {
     margin-top: 9px;
@@ -500,6 +502,7 @@
 #content .content-in .content.general_content > .rightcol {
     padding-left: 0;
     padding-right: 0;
+    padding-bottom: 0 !important;
 }
 #content .content-in .general_content .rightcol {
     width: auto !important;
@@ -513,7 +516,7 @@
     border-bottom: none;
     margin: 20px 0;
 }
-#content .content-in .content .rightcol > #form_register ~ #form_register {
+#content .content-in .content .rightcol > form ~ #form_register {
     margin-bottom: 0;
 }
 #content .content-in .content .rightcol > .form_contact {

@@ -43,10 +43,14 @@ $(document).ready(function()
             id_produkt = el.html();
         } else {
             var xx = preview.parent().find('.pict').html();
-            var pos = xx.search('id_image');
-            var pos2 = xx.substr(pos+9).search('&quot');
+            var x1 = xx.substr(
+                xx.search('id_image=') + 9
+            );
             id_produkt = parseInt(
-                xx.substr(pos+9, pos2)
+                x1.substr(
+                    0,
+                    x1.search('&quot')
+                )
             );
         }
         previewLightbox = $('.image-lightbox');
@@ -54,12 +58,11 @@ $(document).ready(function()
         var au;
         au = $('#au').html();
         au = parseInt(au);
-        if (!isNaN(au))
+        if (! isNaN(au))
         {
             image = preview.parent().find('img').attr('src').replace('_2', '_4');
             image = image.replace('d=2', 'd=4');
-        } else
-        {
+        } else {
             image = preview.parent().find('img').attr('src').replace('_2', '_3');
             image = image.replace('d=2', 'd=3');
         }
@@ -73,7 +76,7 @@ $(document).ready(function()
         var leftpos = preview.position().left;
         if (leftpos < 100)
         {
-            leftpos = preview.offset().left - $('#page').offset().left;
+            //leftpos = preview.offset().left/* - $('#page').offset().left*/;
             pictograms = pictograms.replace('yespreview', 'yespreview-offset');
         }
         previewLightbox

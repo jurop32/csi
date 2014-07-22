@@ -1776,7 +1776,12 @@ div#dev-gt-1140{display:block}
 @media all and (max-width: 767px) {
     div#dev *{display:none}div#dev-767{display:block}
 
-    #content .content-in .content,
+    #content .content-in .content {
+        padding-top: 0;
+    }
+    #content .cart .total-price {
+        padding: 20px 0;
+    }
     #page.fluid #content .content-in > .header + .content {
         padding-top: 0;
     }
@@ -2225,6 +2230,15 @@ div#dev-gt-1140{display:block}
         border-bottom: solid #e0e0e0 1px;
         margin-top: 0 !important;
     }
+    #page #content .content-in .rightcol .head,
+    .fluid #content .content-in .rightcol .head {
+        height: auto;
+    }
+    .fluid #content .content-in .rightcol .head.c select#filter_lightbox_category {
+        display: block;
+        margin: 0 auto;
+        width: 160px !important;
+    }
     .resp-kwcolumn {
         width: 50%;
         float: left;
@@ -2291,11 +2305,11 @@ div#dev-gt-1140{display:block}
         text-align: center;
         line-height: normal;
     }
-    .fluid #content .content-in .rightcol .head.c select#filter_lightbox_category {
+    /*.fluid #content .content-in .rightcol .head.c select#filter_lightbox_category {
         display: block;
         margin: 0 auto;
         width: 160px !important;
-    }
+    }*/
     #content .content-in .rightcol .head:first-child {
         height: auto;
     }
