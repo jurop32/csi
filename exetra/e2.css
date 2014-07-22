@@ -539,7 +539,7 @@ form#form_login div.item a.forgotpassword,
     text-align: center;
 }
 #content .cart #cart_status_bottom.total-price-bottom .left {
-	width: auto;
+	width: auto !important;
 	padding-top: 8px;
     float: left !important;
 }
