@@ -61,6 +61,9 @@
     width: auto;
     padding-right: 1px;
 }
+#content .content-in .header .item label {
+    vertical-align: middle;
+}
 #content .content-in .header .resp-search input
 {
     margin-left: 3px;
@@ -68,6 +71,14 @@
     height: 30px !important;
     float: left;
     font-size: 14px;
+}
+#page.fluid #content .content-in > .header + .content {
+    padding-top: 20px;
+}
+#page #content .content-in .content,
+.fluid #content .content-in .content,
+#page.fluid #content .content-in > .header.c + .content {
+    padding-top: 0;
 }
 #resp-subpagebenefits {
     clear: both;
@@ -113,6 +124,7 @@
 	padding-right: 0 !important;
 }
 .image-content.search p.info {
+	height: auto;
     padding: 20px 0;
 }
 .image-content .filter ul li {
@@ -287,12 +299,21 @@
 }
 .fluid #content .content-in .rightcol .head {
     padding: 5px 0 5px 4%;
+    height: auto;
+}
+.fluid #content .content-in .rightcol .head select {
+    padding-top: 5px;
 }
 #content .content-in .rightcol .head {
     padding: 5px 20px 4px;
     background-color: #f5f5f5;
     margin-left: 0;
     height: auto;
+}
+.fluid #content .content-in .rightcol .head,
+#page #content .content-in .rightcol .head {
+	padding-bottom: 5px;
+	height: 40px;
 }
 #content .content-in .cart .rightcol {
     width: 320px !important;
@@ -396,11 +417,18 @@
     font-size: 17px !important;
 }
 #content .cart .total-price {
-    padding-bottom: 20px;
+    padding: 20px 0;
 }
 #content .cart .total-price p {
     margin-top: 9px;
     padding-right: 0;
+}
+#content .cart .total-price p.required {
+    float: none;
+    margin-top: 0;
+    padding: 0;
+    text-align: center;
+    font-size: 14px;
 }
 #content .cart .total-price-bottom {
     clear: both;
@@ -485,7 +513,7 @@
     border-bottom: none;
     margin: 20px 0;
 }
-#content .content-in .content .rightcol > .head + #form_register {
+#content .content-in .content .rightcol > #form_register ~ #form_register {
     margin-bottom: 0;
 }
 #content .content-in .content .rightcol > .form_contact {
@@ -505,6 +533,15 @@
     width: auto;
     /*padding-bottom: 0;*/
     margin-bottom: 20px;
+}
+#content .content-in .rightcol .email-item ul,
+#content .content-in .rightcol .email-item ul li {
+    width: auto;
+}
+#content .content-in .rightcol .email-item ul li label {
+	width: 96%;
+	float: right;
+	padding-top: 7px;
 }
 #content .content-in .rightcol .item a {
     color: #5187B6;

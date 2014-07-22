@@ -69,6 +69,9 @@ div#dev-gt-1140{display:block}
     #content .content-in .rightcol form#form_register .item select#company_type {
         margin-left: auto;
     }
+    #content .content-in .content .rightcol > #form_register ~ #form_register {
+        /*margin-bottom: 20px;*/
+    }
     #content .content-in .content .rightcol {
         /*width: 77%;*/
         padding-bottom: 0 !important;
@@ -183,18 +186,11 @@ div#dev-gt-1140{display:block}
     #content .content-in .rightcol .email-item ul li input {
         width: 30px !important;
     }
-    /*#content .content-in .header select.small {
-        width: auto;
-        padding-right: 1px;
-    }*/
     #content .content-in .header .item input {
          width: 30px !important;
          height: 30px !important;
          position: static;
          vertical-align: middle;
-    }
-    #content .content-in .header .item label {
-        vertical-align: middle;
     }
     #content .cart .leftcol .item label,
     #content .cart .leftcol .item input,
@@ -226,14 +222,7 @@ div#dev-gt-1140{display:block}
     #content .content-in .rightcol .invoices .item input {
         display: inline;
     }
-    #content .content-in .rightcol .email-item ul {
-        width: 75%;
-    }
-    #content .content-in .rightcol .email-item ul li {
-        width: auto;
-    }
     #content .cart .leftcol .item label,
-    #content .content-in .rightcol .email-item ul li label,
     #content .content-in .rightcol .item label,
     .lightbox .pricing .rightcol .item label {
         width: 77%;
@@ -241,8 +230,7 @@ div#dev-gt-1140{display:block}
         float: none;
     }
     #content .content-in .rightcol .email-item ul li label {
-        width: 90%;
-        float: right;
+        width: 94%;
     }
     .lightbox .pricing .rightcol .item label {
         width: 87%;
@@ -264,9 +252,12 @@ div#dev-gt-1140{display:block}
 /*         float: none; */
     }
     .fluid #content .content-in .rightcol .head select {
-        width: 75px !important;
+        /*width: 75px !important;*/
         margin: 0 auto;
-        padding-top: 5px;
+        /*padding-top: 5px;*/
+    }
+    .fluid #content .content-in .rightcol .head select:first-child {
+    	width: 75px;
     }
     #content .cart .leftcol .item label,
     #content .cart .leftcol .item select,
@@ -369,12 +360,11 @@ div#dev-gt-1140{display:block}
         float: none !important;
     }
     .image-content.search p.info {
-        height: auto;
         background-color: #f5f5f5;
         background-image: none;
         margin-bottom: 0;
         padding: 20px;
-        text-align: left;
+        line-height: normal !important;/*text-align: left;*/
     }
     .image-content.search .filter-box form > input + div + div + div {
         width: 100% !important;
@@ -781,6 +771,9 @@ div#dev-gt-1140{display:block}
     #content .content-in .content .rightcol div p:last-child {
         display: none;
     }
+    #content .content-in .content .rightcol div.oneitem p:last-child {
+        display: block;
+    }
     #content .content-in .rightcol {
         width: 77% !important;
         min-width: 200px;
@@ -947,6 +940,7 @@ div#dev-gt-1140{display:block}
     }
     #content .content-in .rightcol .head-2 div:last-child > select {
         width: auto;
+        padding-top: 5px;
     }
     #content .content-in .rightcol .oneitem {
         margin-left: 4%;
@@ -1010,13 +1004,6 @@ div#dev-gt-1140{display:block}
     }
     #content .cart .payment .clear {
         display: none;
-    }
-    #content .cart .total-price p.required {
-        float: none;
-        margin-top: 0;
-        padding: 0;
-        text-align: center;
-        font-size: 14px;
     }
     #content .cart #cart_status_bottom.total-price-bottom .left a {
     	margin-left: 0;
@@ -1300,6 +1287,9 @@ div#dev-gt-1140{display:block}
     }
     #content .home-content ul.country li a {
         line-height: 40.6px;
+    }
+    #content .content-in .rightcol .email-item ul li label {
+        width: 92%;
     }
     #content .content-in .cart .leftcol,
     #content .cart .total-price-bottom .left {
@@ -1759,9 +1749,6 @@ div#dev-gt-1140{display:block}
     #content .content-in .header .item {
         margin-left: 10px;
     }
-    .image-content.search p.info {
-        text-align: center;
-    }
     .image-content .arrow > div {
         display: inline-block;
         display: block;
@@ -1789,8 +1776,9 @@ div#dev-gt-1140{display:block}
 @media all and (max-width: 767px) {
     div#dev *{display:none}div#dev-767{display:block}
 
-    #content .content-in .content {
-        /*padding-top: 0;*/
+    #content .content-in .content,
+    #page.fluid #content .content-in > .header + .content {
+        padding-top: 0;
     }
     #content .content-in .general_content {
     	padding-top: 20px;
@@ -1798,6 +1786,10 @@ div#dev-gt-1140{display:block}
     #content .content-in .rightcol .head:first-child {
         margin-top: 0;
         margin-right: 0;
+        padding-bottom: 10px;
+    }
+    #page #content .content-in .rightcol .head {
+        padding-top: 10px;
         padding-bottom: 10px;
     }
     #content .home-content ul.country div.pick-more-keywords {
@@ -1809,14 +1801,15 @@ div#dev-gt-1140{display:block}
     #content .home-slider #controls {
         display: none;
     }
-    .image-content.search p.info {
-        background-image: none;
-        margin-bottom: 0;
+    #content .content-in .cart > #cart_status_top {
+        padding-top: 20px;
     }
-    #content .content-in .cart > #cart_status_top,
     #content .content-in .content > .image-content.search .arrow {
         padding-left: 20px !important;
         padding-right: 20px !important;
+    }
+    #resp-license-details {
+        display: block;
     }
     .lightbox .header .desc {
         position: static;
@@ -1838,8 +1831,13 @@ div#dev-gt-1140{display:block}
     .resp-license-details-hide {
         display: none;
     }
-    #resp-license-details {
-        display: block;
+    .image-content.search p.info {
+        margin-bottom: 0;
+        text-align: center;
+        background-image: none;
+    }
+    .image-content.search a.button {
+        margin: 0;
     }
     .lightbox .pricing .leftcol .image {
         width: 168px;
@@ -1958,6 +1956,9 @@ div#dev-gt-1140{display:block}
         width: 100% !important;
         margin-left: 0;
         margin-bottom: 0;
+    }
+    #content .content-in .content .rightcol > #form_register ~ #form_register {
+        margin-bottom: 20px;
     }
     #page.in980,
     #page.fluid {
@@ -2196,9 +2197,12 @@ div#dev-gt-1140{display:block}
 @media all and (max-width: 567px) {
     div#dev *{display:none}div#dev-567{display:block}
 
-    .resp-kwcolumn {
-        width: 50%;
-        float: left;
+    #content .content-in .rightcol .head-2 div:last-child {
+        margin: 0 auto;
+        float: none !important;
+        line-height: normal;
+        text-align: center;
+        padding-top: 5px;
     }
     #keywords_wrapper .resp-kwcolumn > div {
         width: 100% !important;
@@ -2220,6 +2224,15 @@ div#dev-gt-1140{display:block}
     #keywords_wrapper #keywords_body > div.resp-kwcolumn ul > li {
         border-bottom: solid #e0e0e0 1px;
         margin-top: 0 !important;
+    }
+    .resp-kwcolumn {
+        width: 50%;
+        float: left;
+    }
+    .image-content.search a.button {
+        display: block;
+        margin: 0 auto 20px;
+        float: none;
     }
 }
 @media all and (max-width: 565px) {
@@ -2286,12 +2299,13 @@ div#dev-gt-1140{display:block}
     #content .content-in .rightcol .head:first-child {
         height: auto;
     }
-    #content .content-in .rightcol .head-2 div:last-child {
+    /*#content .content-in .rightcol .head-2 div:last-child {
         margin: 0 auto;
         float: none !important;
         line-height: normal;
         text-align: center;
-    }
+        padding-top: 5px;
+    }*/
     #content .content-in .rightcol .purchase-item {
         margin-left: 0;
     }
@@ -2304,7 +2318,6 @@ div#dev-gt-1140{display:block}
 
     .image-content.search {
         padding-bottom: 0;
-        font-size: 12px;
     }
 }
 @media all and (max-width: 530px) {
@@ -2324,11 +2337,6 @@ div#dev-gt-1140{display:block}
 @media all and (max-width: 500px) {
     div#dev *{display:none}div#dev-500{display:block}
 
-    .image-content.search a.button {
-        display: block;
-        margin: 0 auto 10px;
-        float: none;
-    }
 }
 @media all and (max-width: 480px) {
     div#dev *{display:none}div#dev-480{display:block}
@@ -2493,7 +2501,7 @@ div#dev-gt-1140{display:block}
     .image-content .filter ul li:last-child {
         margin-bottom: 15px;
     }
-    div.search .c from > div > div {
+    div.search .c from > div > div { /*!*/
         width: auto;
         float: none;
         width: 100%;
@@ -2507,9 +2515,6 @@ div#dev-gt-1140{display:block}
     }
     #page.fluid #content .content-in .header .item {
         padding-right: 8px !important;
-    }
-    .tostartpricing {
-        padding-left: 8px !important;
     }
     #page.fluid #content .content-in .header .item + .item {
         padding-right: 0 !important;
@@ -2535,14 +2540,8 @@ div#dev-gt-1140{display:block}
     #content .content-in .header select.small {
         margin-left: 0;
     }
-    .image-content .arrow {
-        position: static;
-        text-align: center;
-        padding-bottom: 20px;
-    }
-    .image-content .arrow a.next,
-    .image-content .arrow a.prev {
-        padding: 0 20px;
+    #content .content-in .rightcol .email-item ul li label {
+        width: 90%;
     }
     #content .cart #cart_status_bottom.total-price-bottom .left {
         float: none !important;
@@ -2598,13 +2597,21 @@ div#dev-gt-1140{display:block}
         margin-left: auto;
         margin-right: auto;
     }
-    #content .cart #cart_status_bottom.total-price-bottom .left a/*.button-blue,/
-    /*#content .cart .total-price-bottom .left a.button-grey*/ {
+    #content .cart #cart_status_bottom.total-price-bottom .left a {
         margin-left: auto;
         margin-right: auto;
     }
-    .filter-box form #q+div {
+    .filter-box form #q + div {
         width: auto !important;
+    }
+    .image-content .arrow {
+        position: static;
+        text-align: center;
+        padding-bottom: 20px;
+    }
+    .image-content .arrow a.next,
+    .image-content .arrow a.prev {
+        padding: 0 20px;
     }
     #similar-images ul li {
         width: 50%;
@@ -2716,11 +2723,6 @@ div#dev-gt-1140{display:block}
 @media all and (max-width: 440px) {
     div#dev *{display:none}div#dev-440{display:block}
 
-    .image-content.search a.button {
-        display: block;
-        margin: 0 auto 10px;
-        float: none;
-    }
     #content .cart .cart-item .price p {
         width: 45%;
     }
@@ -2741,6 +2743,10 @@ div#dev-gt-1140{display:block}
     }
     .lightbox .header .arrow #prev_image_arrow {
         float: left;
+    }
+    .tostartpricing {
+        padding-left: 8px !important;
+        padding-right: 8px !important;
     }
     .closebutton.inheader,
     .closebutton.imagedetail.inheader {
@@ -2781,12 +2787,8 @@ div#dev-gt-1140{display:block}
         height: 328px;
         line-height: 328px;
     }
-    #content .content-in .rightcol .email-item ul,
-    #content .content-in .rightcol .email-item ul li {
-        width: auto;
-    }
     #content .content-in .rightcol .email-item ul li label {
-        width: 80%;
+        width: 86%;
     }
     #content .content-in .rightcol .invoices .item .item-1 input {
         margin-right: 18px;
@@ -2814,6 +2816,11 @@ div#dev-gt-1140{display:block}
     #content .cart .total-price-bottom .left .c {
         width: auto;
     }
+    .tostartpricing {
+        /*padding-left: 8px !important;
+        padding-right: 8px !important;*/
+        font-size:13px;
+    }
 }
 @media all and (max-width: 385px) {
     div#dev *{display:none}div#dev-385{display:block}
@@ -2836,13 +2843,13 @@ div#dev-gt-1140{display:block}
 @media all and (max-width: 360px) {
     div#dev *{display:none}div#dev-360{display:block}
 
-    #content .cart .payment img {
-        width: 278px;
-    }
     #content .content-in .rightcol .item {
         width: auto;
         padding-left: 20px;
         padding-right: 20px;
+    }
+    #content .cart .payment img {
+        width: 278px;
     }
     #content .cart .leftcol .item input,
     #content .cart .leftcol .item textarea,
@@ -2861,6 +2868,9 @@ div#dev-gt-1140{display:block}
     .lightbox .pricing .rightcol .item label,
     #content .cart .leftcol .item select {
         width: 100%;
+    }
+    #content .cart .cart-item .price p {
+        width: 44%;
     }
     .lightbox .pricing .rightcol .item label {
         float: none;
@@ -2886,8 +2896,12 @@ div#dev-gt-1140{display:block}
         height: 261px;
         line-height: 261px;
     }
-    #content .cart .cart-item .price p {
-        width: 44%;
+    .image-content.search p.info {
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+    .tostartpricing {
+        font-size: 12px;
     }
 }
 @media all and (max-width: 350px) {
