@@ -119,6 +119,48 @@ div#dev-gt-1140{display:block}
         position: static;
         margin: 10px 0 0 10px;
     }
+
+    /* lightbox - preview */
+    .lightbox .preview .rightcol {
+        float: none;
+        width: auto;
+        padding: 20px 20px 0 20px;
+        border-top: 1px solid #e0e0e0;
+    }
+    .lightbox .preview .rightcol ul {
+        /*width: auto;*/
+        height: auto;
+    }
+    .lightbox .preview .rightcol ul li {
+        /*width: auto;*/
+    }
+    .lightbox .preview .rightcol ul li a {
+        /*width: auto;*/
+        background-position: -180px 0 !important;
+        padding-left: 50px;
+        color: #a0a0a0;
+        text-decoration: none;
+        line-height: 40px;
+    }
+    .lightbox .preview .rightcol ul li a:hover {
+        background-position: -180px -40px !important;
+        color: #000000;
+    }
+    .lightbox .preview .rightcol ul li.second a {
+        line-height: 30px;
+    }
+    .lightbox .preview .rightcol ul li.second a span {
+        font-size: 12pt;
+    }
+    .lightbox .preview .rightcol ul li.second span a {
+        top: 18px !important;
+        padding-left: 0;
+        margin-left: 50px;
+    }
+    .lightbox .preview .rightcol p.c,
+    .lightbox .preview .rightcol .button-info {
+        display: none;
+    }
     .lightbox .preview .leftcol,
     .lightbox .preview .leftcol.fullwidth {
         float: none;
@@ -135,28 +177,6 @@ div#dev-gt-1140{display:block}
     .lightbox .preview .leftcol .desc table tr td {
         width: auto;
     }
-    .lightbox .preview .rightcol {
-        float: none;
-        width: auto;
-        padding: 20px 20px 0 20px;
-        border-top: 1px solid #e0e0e0;
-    }
-    .lightbox .preview .rightcol ul {
-        height: auto;
-    }
-    .lightbox .pricing .rightcol h4 span {
-        font-size: 16px;
-    }
-    .lightbox .pricing .rightcol div > p {
-        font-size: 14px;
-    }
-    #publish_start_date_forinline_display.hasDatepicker .ui-datepicker-inline {
-        margin: 15px auto 10px;
-    }
-    .lightbox .preview .rightcol p.c,
-    .lightbox .preview .rightcol .button-info {
-        display: none;
-    }
     .lightbox .preview .c .leftcol.text.fullwidth p > span {
         display: block;
         padding-top: 20px;
@@ -164,12 +184,23 @@ div#dev-gt-1140{display:block}
     .lightbox > .preview > .c > .leftcol.text.fullwidth > p > a > span {
         font-size: 16px;
     }
+
+    /* lightbox - pricing */
+    .lightbox .pricing .rightcol h4 span {
+        font-size: 16px;
+    }
+    .lightbox .pricing .rightcol div > p {
+        font-size: 14px;
+    }
+
+    /* image list*/
     .image-list li p strong {
         font-size: 14px;
     }
     .image-list li p span {
         font-size: 13px;
     }
+
     #content .content-in .rightcol .email-item {
         padding: 20px 20px;
         margin-bottom: 0;
@@ -1011,6 +1042,8 @@ div#dev-gt-1140{display:block}
     #content .content-in .header .item label span {
         display: none;
     }
+
+    /* image list */
     .image-content .filter ul li {
         width: 27%;
         padding: .5% 1%;
@@ -1117,8 +1150,35 @@ div#dev-gt-1140{display:block}
         border-right: none;
         width: 85px;
     }
+
+    /* image - lightbox */
     .image-lightbox {
         display: none !important;
+    }
+
+    /* category - lightbox */
+    .lightbox-category {
+        position: absolute !important;
+        top: 40px !important;
+        left: 0 !important;
+        margin-left: 0 !important;
+        margin-top: 0 !important;
+    }
+
+    .lightbox .cs_addtocart/*,
+    .lightbox .cs_addtolightbox*/ {
+        border: 1px solid #C0C0C0;
+        border-radius: 5px;
+        box-shadow: #9D9D9D 0 0 8px 2px;
+        background-color: #E8E8E8 !important;
+        color: #696969 !important;
+        line-height: 25px;
+        padding: 0 !important;
+    }
+    .lightbox .cs_addtocart/*,
+    .lightbox .cs_addtolightbox*/ {
+        left: 70px;
+        top: 110px !important;
     }
     #content .content-in .content .rightcol .email-content .head {
         margin-left: 0;
@@ -1163,6 +1223,11 @@ div#dev-gt-1140{display:block}
     #content .home-desc h1 {
         font-size: 21px;
         letter-spacing: 7px;
+    }
+
+    /* other */
+    #publish_start_date_forinline_display.hasDatepicker .ui-datepicker-inline {
+        margin: 15px auto 10px;
     }
 }
 @media all and (max-width: 1120px) {
@@ -1670,7 +1735,7 @@ div#dev-gt-1140{display:block}
         padding-top: 20px;
         padding-bottom: 20px;
     }
-    .lightbox .cs_addtocart,
+    /*.lightbox .cs_addtocart,*/
     .lightbox .cs_addtolightbox {
         background-color: #E8E8E8 !important;
         border: 1px solid #C0C0C0;
@@ -1685,12 +1750,15 @@ div#dev-gt-1140{display:block}
         top: 70px !important;
         display: block;
     }
-    .lightbox .lightbox-category {
+    /*.lightbox-category {
         position: fixed !important;
         top: 50% !important;
         left: 50% !important;
         margin-left: -130px !important;
         margin-top: -100px !important;
+    }*/
+    .lightbox-category {
+        left: 20px !important;
     }
     #content .content-in .rightcol .invoices .item-detail .left a.button {
         width: 120px;
@@ -1794,6 +1862,13 @@ div#dev-gt-1140{display:block}
         height: auto;
         padding: 12px 20px;
         line-height: normal;
+    }
+    .lightbox .cs_addtocart/*,
+    .lightbox .cs_addtolightbox*/ {
+    	position: absolute !important;
+    	left: 70px !important;
+    	top: 110px !important;
+    	margin-left: 0 !important;
     }
     .closebuttonholder {
         text-align: center;
@@ -2707,6 +2782,52 @@ div#dev-gt-1140{display:block}
 @media all and (max-width: 440px) {
     div#dev *{display:none}div#dev-440{display:block}
 
+    body * {
+        outline: red thin dotted;
+    }
+
+    /* category - lightbox */
+    .lightbox-category {
+        position: absolute !important;
+        top: 40px !important;
+        left: 20px !important;
+        margin-left: 0 !important;
+        margin-top: 0 !important;
+    }
+
+    /* lightbox */
+    .lightbox .header a.logo {
+    	position: static;
+    }
+    .lightbox .header a.logo img {
+    	margin: 3px 0 0 -3px;
+    }
+    .lightbox .header .arrow {
+    	float: right !important;
+    	clear: none !important;
+        width: auto !important;
+        margin-top: 0 !important;
+    }
+    .lightbox .header .arrow a.next {
+    	margin-left: 10px;
+    }
+
+    /* lightbox - preview */
+    .lightbox .preview {
+        margin-top: 9px;
+    }
+    .lightbox .preview .leftcol .image {
+        width: auto;
+        margin: 0 20px;
+    }
+    .lightbox .preview .leftcol .desc .head {
+        text-align: left;
+    }
+    .lightbox .preview .leftcol .desc table tr th {
+        padding-left: 10px;
+    }
+
+    /* cart */
     #content .cart .cart-item .price p {
         width: 45%;
     }

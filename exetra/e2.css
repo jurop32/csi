@@ -687,14 +687,25 @@ form#form_login div.item a.forgotpassword,
 .lightbox .preview {
     font-size: 14px;
 }
-.lightbox .preview button {
-    padding: 5px 0;
-    width: 112px;
-    height: auto;
+.lightbox .preview .rightcol {
+    /*padding: 20px 0 0;*/
+    padding: 0;
+    border-top: none;
 }
-.lightbox .preview .search .head {
-    padding-left: 20px;
-    padding-right: 20px;
+.lightbox .preview .rightcol p.c {
+    display: block;
+}
+.lightbox .preview .rightcol p.button-info {
+    margin-top: 20px;
+    padding-top: 0;
+}
+.lightbox .preview .rightcol a.button-blue {
+    padding: 5px 0;
+    width: 200px;
+}
+.lightbox .preview .rightcol ul li.second span a {
+    top: 14px !important;
+    width: 180px;
 }
 .lightbox .preview .leftcol.fullwidth > br,
 .lightbox .preview .leftcol.fullwidth + .rightcol {
@@ -747,45 +758,24 @@ form#form_login div.item a.forgotpassword,
     padding-bottom: 15px;
     padding-top: 15px;
 }
-.lightbox .preview .rightcol {
-    /*padding: 20px 0 0;*/
-    padding: 0;
-    border-top: none;
-}
-.lightbox .preview .rightcol p.c {
-    display: block;
-    /*margin-top: 163px;*/
-}
-.lightbox .preview .rightcol p.button-info {
-    margin-top: 20px;
-    padding-top: 0;
-}
-.lightbox .preview .rightcol a.button-blue {
+.lightbox .preview .c .leftcol.text p > a {
     padding: 5px 0;
-    width: 200px;
+    display: inline-block;
 }
-.lightbox .preview .rightcol ul {
-    height: 520px;
-    width: auto;
+.lightbox .preview .search {
+    padding-bottom: 0;
 }
-.lightbox .preview .rightcol ul li {
-    width: auto;
+.lightbox .preview .search .head {
+    padding-left: 20px;
+    padding-right: 20px;
 }
-.lightbox .preview .rightcol ul li a {
-    width: auto;
-    background-position: -180px 0 !important;
-    padding-left: 50px;
-    color: #a0a0a0;
-    text-decoration: none;
-    line-height: 40px;
+.lightbox .preview button {
+    padding: 5px 0;
+    width: 112px;
+    height: auto;
 }
-.lightbox .preview .rightcol ul li a:hover {
-    background-position: -180px -40px !important;
-    color: #000000;
-}
-.lightbox .preview .rightcol ul li.second a {
-    line-height: 30px;
-}
+
+/* other */
 div.my-account-lightbox-categories {
     text-align: center;
 }
@@ -796,11 +786,4 @@ div#div_existing_categories > p > b {
     display: inline-block;
     width: 15%;
     text-align: left;
-}
-.lightbox .preview .search {
-    padding-bottom: 0;
-}
-.lightbox .preview .c .leftcol.text p > a {
-    padding: 5px 0;
-    display: inline-block;
 }
