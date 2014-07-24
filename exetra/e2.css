@@ -243,8 +243,8 @@
     padding: 0 10px;
     margin-left: -1px; /* jpf-2015 */
     margin-right: -127%;
-    /*background: -webkit-linear-gradient(#FFFFFF, #F0F0F0);
-    background: -o-linear-gradient(#FFFFFF, #F0F0F0);*/
+    background: -webkit-linear-gradient(#FFFFFF, #F0F0F0);
+    background: -o-linear-gradient(#FFFFFF, #F0F0F0);
     background: -moz-linear-gradient(#FFFFFF, #F0F0F0);
     background: linear-gradient(#FFFFFF, #F0F0F0);
     border: 1px solid #B0B0B0;
@@ -738,8 +738,8 @@ form#form_login div.item a.forgotpassword,
     padding: 0 10px !important;
     border-radius: 4px;
     text-decoration: none;
-    /*background: -webkit-linear-gradient(#FFFFFF, #F0F0F0);
-    background: -o-linear-gradient(#FFFFFF, #F0F0F0);*/
+    background: -webkit-linear-gradient(#FFFFFF, #F0F0F0);
+    background: -o-linear-gradient(#FFFFFF, #F0F0F0);
     background: -moz-linear-gradient(#FFFFFF, #F0F0F0);
     background: linear-gradient(#FFFFFF, #F0F0F0);
     border: solid #babcbe 1px;

@@ -75,8 +75,8 @@ select {
     width: 180px;
     color: #000000;
     background-color: #ffffff;
-    /*background: -webkit-linear-gradient(#FFFFFF, #d8d8d8);
-    background: -o-linear-gradient(#FFFFFF, #d8d8d8);*/
+    background: -webkit-linear-gradient(#FFFFFF, #d8d8d8);
+    background: -o-linear-gradient(#FFFFFF, #d8d8d8);
     background: -moz-linear-gradient(#FFFFFF, #d8d8d8);
     background: linear-gradient(#FFFFFF, #d8d8d8);
     border: solid #babcbe 1px;
@@ -237,8 +237,8 @@ select {
     font-size: 12px;
     width: 86px;
     text-align: center;
-    /*background: -webkit-linear-gradient(#ffffff, #f0f0f0);
-    background: -o-linear-gradient(#ffffff, #f0f0f0);*/
+    background: -webkit-linear-gradient(#ffffff, #f0f0f0);
+    background: -o-linear-gradient(#ffffff, #f0f0f0);
     background: -moz-linear-gradient(#ffffff, #f0f0f0);
     background: linear-gradient(#ffffff, #f0f0f0);
     padding: 2px 0;
@@ -368,8 +368,8 @@ select {
     padding: 1px;
 }
 #publish_start_date_forinline_display.hasDatepicker .ui-datepicker-inline .ui-state-active {
-    /*background: -webkit-linear-gradient(#7FCBFF, #37A5EF);
-    background: -o-linear-gradient(#7FCBFF, #37A5EF);*/
+    background: -webkit-linear-gradient(#7FCBFF, #37A5EF);
+    background: -o-linear-gradient(#7FCBFF, #37A5EF);
     background: -moz-linear-gradient(#7FCBFF, #37A5EF);
     background: linear-gradient(#7FCBFF, #37A5EF);
 }
