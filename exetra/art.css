@@ -115,9 +115,10 @@ div#dev-gt-1140{display:block}
     }
     .lightbox .header .arrow {
         display: block !important;
-        float: right;
-        position: static;
-        margin: 10px 0 0 10px;
+        margin-top: 0;
+    }
+    .lightbox .header .arrow a.next {
+        margin-left: 10px;
     }
 
     /* lightbox - preview */
@@ -176,6 +177,11 @@ div#dev-gt-1140{display:block}
     }
     .lightbox .preview .leftcol .desc table tr td {
         width: auto;
+        padding-right: 30px;
+        white-space: nowrap;
+    }
+    .lightbox .preview .leftcol .desc table tr th {
+        padding-left: 30px;
     }
     .lightbox .preview .c .leftcol.text.fullwidth p > span {
         display: block;
@@ -2317,6 +2323,29 @@ div#dev-gt-1140{display:block}
         margin: 0 auto 20px;
         float: none;
     }
+
+    /* lightbox */
+    .lightbox .header a.logo {
+        position: static;
+    }
+    .lightbox .header a.logo img {
+    	width: 150px;
+        margin: 3px 0 0 -3px;
+    }
+    .lightbox .header .arrow {
+        float: right !important;
+        clear: none !important;
+        width: auto !important;
+        margin-top: 0 !important;
+    }
+
+    /* lightbox - preview */
+   .lightbox .preview .leftcol .desc table tr td {
+        padding-right: 0;
+    }
+    .lightbox .preview .leftcol .desc table tr th {
+        padding-left: 10px;
+    }
 }
 @media all and (max-width: 565px) {
     div#dev *{display:none}div#dev-565{display:block}
@@ -2324,12 +2353,6 @@ div#dev-gt-1140{display:block}
     /*.lightbox {
         padding-top: 10px;
     }*/
-    .lightbox .header a.logo { /*!*/
-        margin-top: 9px;
-    }
-    .lightbox .header a.logo img {
-        width: 150px;
-    }
     .lightbox .preview .leftcol .image {
         height: 416px;
         line-height: 416px;
@@ -2485,9 +2508,8 @@ div#dev-gt-1140{display:block}
     }
     .lightbox .header .arrow a#prev_image_arrow,
     .lightbox .header .arrow a#next_image_arrow {
-        background-image: none;
-        padding-left: 12px;
-        padding-right: 12px;
+        /*padding-left: 12px;
+        padding-right: 12px;*/
     }
     .lightbox .preview .leftcol .image {
         height: 380px;
@@ -2782,10 +2804,6 @@ div#dev-gt-1140{display:block}
 @media all and (max-width: 440px) {
     div#dev *{display:none}div#dev-440{display:block}
 
-    body * {
-        outline: red thin dotted;
-    }
-
     /* category - lightbox */
     .lightbox-category {
         position: absolute !important;
@@ -2802,15 +2820,6 @@ div#dev-gt-1140{display:block}
     .lightbox .header a.logo img {
     	margin: 3px 0 0 -3px;
     }
-    .lightbox .header .arrow {
-    	float: right !important;
-    	clear: none !important;
-        width: auto !important;
-        margin-top: 0 !important;
-    }
-    .lightbox .header .arrow a.next {
-    	margin-left: 10px;
-    }
 
     /* lightbox - preview */
     .lightbox .preview {
@@ -2822,9 +2831,6 @@ div#dev-gt-1140{display:block}
     }
     .lightbox .preview .leftcol .desc .head {
         text-align: left;
-    }
-    .lightbox .preview .leftcol .desc table tr th {
-        padding-left: 10px;
     }
 
     /* cart */
@@ -2838,13 +2844,6 @@ div#dev-gt-1140{display:block}
     .lightbox .preview .leftcol .image {
         height: 371px;
         line-height: 371px;
-    }
-    .lightbox .header .arrow {
-        clear: both;
-        float: left;
-        width: 100%;
-        margin-top: 20px;
-        margin-left: 0;
     }
     .lightbox .header .arrow #prev_image_arrow {
         float: left;

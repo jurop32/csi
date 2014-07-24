@@ -651,7 +651,7 @@ form#form_login div.item a.forgotpassword,
 .lightbox .header .arrow {
     float: right;
     position: static;
-    margin: 10px 0 0 10px;
+    margin-top: 5px;
 }
 .lightbox .header .arrow a {
     display: block !important;
