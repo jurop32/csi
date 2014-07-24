@@ -2395,11 +2395,8 @@ div#dev-gt-1140{display:block}
         margin-left: auto !important;
         margin-right: auto !important;
     }
-    .lightbox {
-        /*padding: 0 0 20px 0;*/
-    }
     .lightbox .header {
-        padding: 10px 20px 20px 20px;
+        padding: 0 20px 20px;
     }
     .lightbox .header .desc {
         margin-left: -20px;
