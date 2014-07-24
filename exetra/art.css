@@ -32,7 +32,7 @@ div#dev-gt-1140{display:block}
         font-size: 18px;
     }
     #content .home-text .item .desc p {
-        width: 71%;
+        /*width: 71%;*/
     }
     #content .home-content.shadow-3 {
         box-shadow: none;
@@ -108,24 +108,16 @@ div#dev-gt-1140{display:block}
     }
     .lightbox {
         /*width: auto;*/
-        /*padding: 20px 0;*/
-    }
-    .lightbox .header {
-        /*height: auto;*/
-        /*padding-bottom: 20px;*/
+        padding: 20px 0;
     }
     .lightbox .header a.logo img {
         /*width: 200px;*/
     }
     .lightbox .header .arrow {
-        display: none;
+        display: block !important;
         float: right;
         position: static;
         margin: 10px 0 0 10px;
-    }
-    .lightbox .header .arrow a {
-        height: 32px;
-        line-height: 32px;
     }
     .lightbox .preview .leftcol,
     .lightbox .preview .leftcol.fullwidth {
@@ -417,10 +409,7 @@ div#dev-gt-1140{display:block}
     #content .cart > #cart_status_bottom,
     #content .cart > .cart-item,
     #content .cart .rightcol .section > *,
-    .lightbox .header,
-    .lightbox .pricing > .leftcol,
     .lightbox .preview .search > *,
-    .lightbox .preview .c .leftcol.text.fullwidth > *,
     .lightbox .preview .leftcol > .popup,
     .lightbox .preview .leftcol .desc > *,
     .lightbox .pricing .rightcol > *,
@@ -456,10 +445,6 @@ div#dev-gt-1140{display:block}
         color: #ffffff;
         padding: 0;
         text-align: center;
-    }
-    .lightbox .pricing .rightcol .buttons {
-        margin: 0 auto;
-        padding: 21px 0 0;
     }
     .lightbox .pricing .rightcol .buttons p.price {
         position: static;
@@ -676,23 +661,9 @@ div#dev-gt-1140{display:block}
     #footer .in.fluid {
         width: auto;
     }
-    .closebutton {
-        display: block;
-        padding-top: 4px;
-        padding-bottom: 4px;
-        height: auto;
-    }
-    .closebuttonholder {
-        text-align: left;
-        margin-left: 20px;
-    }
     .closebuttonholder.imagedetail {
         width: auto;
         width: 100%;
-    }
-    .closebuttonholder > .closebutton {
-        margin-left: 0;
-        margin-top: -31px;
     }
     .closebutton.inheader {
         /*display: inline-block;*/
@@ -702,9 +673,6 @@ div#dev-gt-1140{display:block}
     .closebutton.imagedetail.inheader {
         position: static;
         margin-top: 10px;
-        padding-top: 4px;
-        padding-bottom: 4px;
-        height: auto;
     }
     #next_image_arrow > span,
     #prev_image_arrow > span {
@@ -820,11 +788,17 @@ div#dev-gt-1140{display:block}
     #content .content-in .rightcol .email-content {
         padding-bottom: 0;
     }
+
+    /* invoices */
+    #content .content-in .rightcol .head-3 a,
+    #content .content-in .rightcol .invoices .item div {
+        width: 24% !important;
+    }
     #content .content-in .rightcol .head-3 a.item-3,
     #content .content-in .rightcol .invoices .item .item-3 {
         display: none;
     }
-    #content .content-in .rightcol .head-3 a.item-1,
+    /*#content .content-in .rightcol .head-3 a.item-1,
     #content .content-in .rightcol .head-3 a.item-2,
     #content .content-in .rightcol .head-3 a.item-4,
     #content .content-in .rightcol .head-3 a.item-5 {
@@ -843,7 +817,7 @@ div#dev-gt-1140{display:block}
     #content .content-in .rightcol .invoices .item .item-1 {
         padding-left: 4%;
         width: 23%;
-    }
+    }*/
     #content .content-in .rightcol .invoices .item .item-1 input {
         margin-right: 38px;
     }
@@ -944,10 +918,10 @@ div#dev-gt-1140{display:block}
         width: auto;
         padding-top: 5px;
     }
-    #content .content-in .rightcol .oneitem {
+    /*#content .content-in .rightcol .oneitem {
         margin-left: 4%;
         margin-right: 4%;
-    }
+    }*/
     #content .cart {
         font-size: 14px;
     }
@@ -1161,6 +1135,7 @@ div#dev-gt-1140{display:block}
     .lightbox .pricing .rightcol {
         width: 60%;
         padding-left: 0 !important;
+        padding-right: 0 !important;
     }
     .lightbox .pricing .rightcol .item ul {
         width: 85% !important;
@@ -1266,6 +1241,7 @@ div#dev-gt-1140{display:block}
     #content .home-text .item .desc p {
         width: 68%;
         font-size: 12px;
+        margin-top: 0;
     }
     #content .home-content .in {
         max-height: 1269px;
@@ -1295,6 +1271,12 @@ div#dev-gt-1140{display:block}
     }
     #content .content-in .cart .rightcol {
         width: 300px !important;
+    }
+    .lightbox > .header,
+    .lightbox .pricing > .leftcol,
+    .lightbox .preview .c .leftcol.text.fullwidth > * {
+        padding-left: 20px !important;
+        padding-right: 20px !important;
     }
 }
 @media all and (max-width: 970px) {
@@ -1675,15 +1657,6 @@ div#dev-gt-1140{display:block}
     .lightbox .preview .leftcol.fullwidth + .rightcol {
         display: none;
     }
-    /*.lightbox .preview .leftcol .image { -> e2 412*/
-    /*.lightbox .preview .rightcol { -> 189*/
-    /*.lightbox .preview .rightcol ul { -> e2 474*/
-    /*.lightbox .preview .rightcol ul li { -> e2 478*/
-    /*.lightbox .preview .rightcol ul li a { -> e2 481*/
-    /*.lightbox .preview .rightcol ul li a:hover { -> e2 489*/
-    /*.lightbox .preview .rightcol ul li.second a { -> e2 493*/
-    /*.lightbox .preview .rightcol p.c,
-    .lightbox .preview .rightcol .button-info { -> 204*/
     .lightbox .preview .leftcol .desc .head {
         text-align: center;
         font-size: 18px;
@@ -1828,8 +1801,8 @@ div#dev-gt-1140{display:block}
         margin-left: 0;
     }
     .closebuttonholder > .closebutton {
-        display: inline-block;
-        margin-top: 20px;
+        /*display: inline-block;*/
+        /*margin-top: 20px;*/
     }
     .resp-license-details-hide {
         display: none;
@@ -1857,6 +1830,8 @@ div#dev-gt-1140{display:block}
     .lightbox .pricing .rightcol {
         width: auto;
         float: none;
+        padding-left: 20px !important;
+        padding-right: 20px !important;
     }
     .lightbox .pricing .rightcol {
         margin-top: 0;
@@ -2250,10 +2225,10 @@ div#dev-gt-1140{display:block}
 @media all and (max-width: 565px) {
     div#dev *{display:none}div#dev-565{display:block}
 
-    .lightbox {
+    /*.lightbox {
         padding-top: 10px;
-    }
-    .lightbox .header a.logo {
+    }*/
+    .lightbox .header a.logo { /*!*/
         margin-top: 9px;
     }
     .lightbox .header a.logo img {
@@ -2265,10 +2240,10 @@ div#dev-gt-1140{display:block}
         width: 82%;
     }
     .lightbox .preview .leftcol .image img {
-        width: auto;
-        height: auto;
+        width: 100%;
+        /*height: auto;
         max-width: 100%;
-        max-height: 100%;
+        max-height: 100%;*/
     }
     .lightbox #popup {
         width: auto !important;
@@ -2277,11 +2252,17 @@ div#dev-gt-1140{display:block}
     #content .content-in .rightcol .email-content {
         padding: 0;
     }
+
+    /* invoices */
+    #content .content-in .rightcol .head-3 a,
+    #content .content-in .rightcol .invoices .item div {
+        width: 32% !important;
+    }
     #content .content-in .rightcol .head-3 a.item-4,
     #content .content-in .rightcol .invoices .item .item-4 {
         display: none;
     }
-    #content .content-in .rightcol .head-3 a.item-1,
+    /*#content .content-in .rightcol .head-3 a.item-1,
     #content .content-in .rightcol .head-3 a.item-2,
     #content .content-in .rightcol .head-3 a.item-5 {
         width: 30%;
@@ -2291,7 +2272,7 @@ div#dev-gt-1140{display:block}
     #content .content-in .rightcol .invoices .item .item-5 {
         width: 22%;
         padding-left: 10%;
-    }
+    }*/
     .fluid #content .content-in .rightcol .head select#sort,
     .fluid #content .content-in .rightcol .head span {
         display: block;
@@ -2421,7 +2402,7 @@ div#dev-gt-1140{display:block}
         margin-right: auto !important;
     }
     .lightbox {
-        padding: 0 0 20px 0;
+        /*padding: 0 0 20px 0;*/
     }
     .lightbox .header {
         padding: 10px 20px 20px 20px;
@@ -2805,7 +2786,10 @@ div#dev-gt-1140{display:block}
     #content .content-in .rightcol .invoices .item .item-1 input {
         margin-right: 18px;
     }
-    #content .content-in .rightcol .head-3 a.item-1,
+    #content .content-in .rightcol .head-3 a {
+        font-size: 12px;
+    }
+    /*#content .content-in .rightcol .head-3 a.item-1,
     #content .content-in .rightcol .head-3 a.item-2,
     #content .content-in .rightcol .head-3 a.item-5 {
         font-size: 12px;
@@ -2817,7 +2801,7 @@ div#dev-gt-1140{display:block}
     }
     #content .content-in .rightcol .head-3 a.item-5 {
         padding-left: 4%;
-    }
+    }*/
     #content .content-in .rightcol .purchase-item {
         padding: 3%;
     }

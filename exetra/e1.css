@@ -16,13 +16,6 @@ select {
 #paging {
     display: none;
 }
-#page.fluid {
-    /*padding-left: 30px;*/
-    /*padding-right: 30px;*/
-    /*width: 980px;*/
-    /*margin : 0 auto;*/
-    /*min-width: 200px;*/
-}
 #content .content-in {
     border: none;
     /*-webkit-box-shadow: none;
@@ -53,6 +46,8 @@ select {
 }
 #content .home-text .item .desc p {
     font-size: 14px;
+    width: 100%;
+    margin-top: 20px;
 }
 #content .home-text .item > p {
     font-size: 13px;
@@ -70,11 +65,10 @@ select {
     border-top: 1px solid #e0e0e0;
 }
 .closebutton {
-    display: none;
-    margin: 10px auto;
-    margin-left: auto;
-    margin-right: auto;
-    height: 32px;
+    display: block;
+    margin: 0px auto;
+    padding: 4px 0;
+    width: 180px;
     color: #000000;
     background-color: #ffffff;
     /*background: -webkit-linear-gradient(#FFFFFF, #d8d8d8);
@@ -85,25 +79,17 @@ select {
     border-radius: 4px;
     cursor: pointer;
     line-height: 30px;
-    padding: 0 10px;
     font-size: 14px;
-}
-.closebutton.inheader {
-    float: right;
-    margin-bottom: 0;
 }
 .closebutton.inheader,
 .closebuttonholder.imagedetail > .closebutton {
     display: block;
     margin: 20px auto;
-    padding-top: 4px;
-    padding-bottom: 4px;
-    width: 180px;
-    height: auto;
 }
 .closebutton.inheader {
+	display: none;
+	float: right;
     margin: 0;
-    display: none;
 }
 #responsivecontrols {
     display: none;
@@ -364,19 +350,6 @@ select {
     width: 0;
     height: 0;
 }
-.lightbox .pricing .rightcol ul > li,
-.lightbox .pricing .rightcol ul > li label {
-    width: auto !important;
-    display: inline-block;
-}
-.lightbox .preview {
-    font-size: 14px;
-}
-.lightbox .preview
-.lightbox .preview .search .head {
-    padding-left: 20px;
-    padding-right: 20px;
-}
 #keywords_wrapper #keywords_header_right > a.gray2 {
     display: inline-block;
     padding-right: 10px;
@@ -404,13 +377,6 @@ select {
     height: 25px;
     line-height: 25px;
     text-align: center;
-}
-.lightbox-category a.close {
-    background-position: 50% 50%;
-    width: 32px;
-    height: 32px;
-    top: 5px;
-    right: 5px;
 }
 #resp-kwlist {
     display: none;
@@ -453,11 +419,6 @@ div.search .c form > div button {
     position: relative;
     margin: 8px auto 0;
     width: 180px;
-}
-.lightbox .preview button {
-    padding: 5px 0;
-    width: 112px;
-    height: auto;
 }
 #similar-images {
     padding: 12px 0;

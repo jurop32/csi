@@ -1,7 +1,3 @@
-.lightbox .header {
-    height: auto;
-    padding-bottom: 20px;
-}
 .lightbox .pricing .rightcol div > p {
     font-size: 14px;
 }
@@ -61,14 +57,9 @@
     line-height: 38px;
     font-size: 15px;
 }
-.lightbox .header,
-.lightbox .pricing > .leftcol,
-.lightbox .pricing .rightcol > * {
-    padding-left: 20px !important;
-    padding-right: 20px !important;
-}
 .lightbox .pricing .rightcol > .info {
-    margin-right: 20px;
+    /*margin-right: 20px;*/
+   clear: both;
 }
 .lightbox .pricing #resp-license-details span {
     padding-left: 0 !important;
@@ -86,10 +77,6 @@
     padding: 0;
     text-align: center;
 }
-.lightbox .pricing .rightcol .buttons {
-    margin: 0 auto;
-    padding: 21px 0 0;
-}
 .lightbox .pricing .rightcol .buttons p.price {
     position: static;
     margin-bottom: 20px !important;
@@ -106,53 +93,16 @@
 .lightbox .pricing .rightcol .item.noheight {
     padding-bottom: 0;
 }
-.closebutton {
-    display: block;
-    padding-top: 4px;
-    padding-bottom: 4px;
-    height: auto;
-}
-.closebuttonholder {
-    text-align: left;
-    /*margin-left: 20px;*/
-}
-.closebuttonholder > .closebutton {
-    margin-left: 0;
-    margin-top: -31px;
-}
 .closebutton.inheader {
-    display: inline-block;
-    display: none;
     position: static;
     margin-top: 10px;
 }
 .lightbox .closebuttonholder {
-    clear: both;
+    /*clear: both;*/
     margin-top: 20px;
-    margin-left: 0;
     padding-top: 20px;
     border-top: 1px solid #e0e0e0;
 }
-.lightbox .closebuttonholder > .closebutton {
-    margin: 0 auto;
-}
-.lightbox .header .desc {
-    position: static;
-    clear: both;
-    width: 100%;
-    margin-top: 15px;
-}
-.lightbox {
-    padding: 20px 0;
-}
-.lightbox .header a.logo {
-    position: static;
-    float: left;
-}
-/*.lightbox .header a.logo img {
-    width: 200px;
-    height: auto;
-}*/
 .lightbox .pricing .rightcol .item ul li label {
     margin-left: 15px !important;
     display: inline !important;
