@@ -141,6 +141,9 @@ div#dev-gt-1140{display:block}
         padding: 20px 20px 0 20px;
         border-top: 1px solid #e0e0e0;
     }
+    .lightbox .preview .rightcol ul {
+        height: auto;
+    }
     .lightbox .pricing .rightcol h4 span {
         font-size: 16px;
     }
@@ -397,7 +400,7 @@ div#dev-gt-1140{display:block}
     }
     #content .home-content > *,
     #content .home-info > *,
-    #content .home-text > *,
+    /*#content .home-text > *,*/
     #content .content-in .header > *,
     #page.fluid #content .content-in .header > *,
     #content .content-in .content .rightcol > *,
@@ -1542,6 +1545,10 @@ div#dev-gt-1140{display:block}
     #content .home-text {
         display: block;
     }
+    #content .home-text > * {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
     #content .home-text .item {
         margin-bottom: 15px;
         padding: 0;
@@ -1612,20 +1619,14 @@ div#dev-gt-1140{display:block}
     }
     #content #resp-subpagebenefits .home-info > p {
         border-color: #e0e0e0;
-        border-radius: 0;
     }
-    #content .home-info > p {
-        border-color: #696969;
-        border-radius: 0;
-    }
-    #page.fluid #content .home-info > p {
+    #content .home-info/* >*/ p,
+    #page.fluid #content .home-info/* >*/ p {
         border-color: #696969;
     }
     #content .home-info p {
         font-size: 14px;
         letter-spacing: 1px;
-        border-left: none;
-        border-right: none;
     }
     #content #resp-subpagebenefits .home-info p a {
         color: #a0a0a0;
@@ -1800,10 +1801,10 @@ div#dev-gt-1140{display:block}
     .lightbox .closebuttonholder {
         margin-left: 0;
     }
-    .closebuttonholder > .closebutton {
-        /*display: inline-block;*/
-        /*margin-top: 20px;*/
-    }
+    /*.closebuttonholder > .closebutton {
+        display: inline-block;
+        margin-top: 20px;
+    }*/
     .resp-license-details-hide {
         display: none;
     }
@@ -1972,8 +1973,13 @@ div#dev-gt-1140{display:block}
     #resp-header .resp-benefitbtn {
         width: 70%;
     }
-    #content .home-content {
+    #content .home-content,
+    #content .home-info/* >*/ p {
         border-radius: 0;
+    }
+    #content .home-info p {
+        border-left: none;
+        border-right: none;
     }
     #content .home-desc {
         padding: 8px 0;
@@ -2019,6 +2025,10 @@ div#dev-gt-1140{display:block}
     }
     #similar-images ul li {
         width: 33.333%;
+    }
+    #content .home-text > * {
+        padding-left: 20px !important;
+        padding-right: 20px !important;
     }
 }
 @media all and (max-width: 715px) {
@@ -2207,6 +2217,17 @@ div#dev-gt-1140{display:block}
     .fluid #content .content-in .rightcol .head {
         height: auto;
     }
+    .fluid #content .content-in .rightcol .head.c {
+        text-align: center;
+        line-height: normal;
+    }
+    .fluid #content .content-in .rightcol .head span {
+        display: block;
+        margin-top: 10px;
+    }
+    .fluid #content .content-in .rightcol .head select#sort {
+        display: block;
+    }
     .fluid #content .content-in .rightcol .head.c select#filter_lightbox_category {
         display: block;
         margin: 0 auto;
@@ -2262,33 +2283,6 @@ div#dev-gt-1140{display:block}
     #content .content-in .rightcol .invoices .item .item-4 {
         display: none;
     }
-    /*#content .content-in .rightcol .head-3 a.item-1,
-    #content .content-in .rightcol .head-3 a.item-2,
-    #content .content-in .rightcol .head-3 a.item-5 {
-        width: 30%;
-    }
-    #content .content-in .rightcol .invoices .item .item-1,
-    #content .content-in .rightcol .invoices .item .item-2,
-    #content .content-in .rightcol .invoices .item .item-5 {
-        width: 22%;
-        padding-left: 10%;
-    }*/
-    .fluid #content .content-in .rightcol .head select#sort,
-    .fluid #content .content-in .rightcol .head span {
-        display: block;
-    }
-    .fluid #content .content-in .rightcol .head span {
-        margin-top: 10px;
-    }
-    .fluid #content .content-in .rightcol .head.c {
-        text-align: center;
-        line-height: normal;
-    }
-    /*.fluid #content .content-in .rightcol .head.c select#filter_lightbox_category {
-        display: block;
-        margin: 0 auto;
-        width: 160px !important;
-    }*/
     #content .content-in .rightcol .head:first-child {
         height: auto;
     }
