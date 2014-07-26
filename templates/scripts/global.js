@@ -76,7 +76,10 @@ $(document).ready(function()
         var leftpos = preview.position().left;
         if (leftpos < 100)
         {
-            leftpos = preview.offset().left/* - $('#page').offset().left*/;
+            var shift_left = $('.rightcol').length
+                ? $('.rightcol').offset().left
+                : $('#page').offset().left;
+            leftpos = preview.offset().left - shift_left;
             pictograms = pictograms.replace('yespreview', 'yespreview-offset');
         }
         previewLightbox
