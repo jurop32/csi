@@ -1,5 +1,5 @@
 html {
-	/*text-size-adjust: none !important;*/
+	text-size-adjust: none !important;
     -webkit-text-size-adjust: none !important;
     -moz-text-size-adjust: none !important;
     -o-text-size-adjust: none !important;
@@ -9,23 +9,36 @@ html {
 body * {
     max-height: 999999px;
 }
+input {
+    padding: 0 5px !important;
+}
+select {
+    padding-top: 5px !important;
+}
 input,
 select {
     height: 30px !important;
+}
+.general_content .item input
+{
+    position: static;
+}
+.item label {
+    margin-bottom: 5px !important;
 }
 #paging {
     display: none;
 }
 #content .content-in {
     border: none;
-    /*-webkit-box-shadow: none;
-    -moz-box-shadow: none;*/
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
     box-shadow: none;
 }
 #page #content .content-in {
     border: 1px solid #c0c0c0;
-    /*-webkit-box-shadow: 0 0 8px 2px #e8e8e8;
-    -moz-box-shadow: 0 0 8px 2px #e8e8e8;*/
+    -webkit-box-shadow: 0 0 8px 2px #e8e8e8;
+    -moz-box-shadow: 0 0 8px 2px #e8e8e8;
     box-shadow: 0 0 8px 2px #e8e8e8;
 }
 #content .content-in {
