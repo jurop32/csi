@@ -10,7 +10,7 @@ body * {
     max-height: 999999px;
 }
 input {
-    padding: 0 5px !important;
+   padding: 0 5px !important;
 }
 select {
     padding-top: 5px !important;
@@ -18,6 +18,26 @@ select {
 input,
 select {
     height: 30px !important;
+    font-size: 14px !important;
+    -moz-box-sizing: border-box !important;
+    -webkit-box-sizing: border-box !important;
+    box-sizing: border-box !important;
+}
+input[type="checkbox"] {
+     -webkit-appearance: checkbox !important;
+     -moz-appearance: checkbox !important;
+     -ms-appearance: checkbox !important;
+     -o-appearance: checkbox !important;
+     appearance: checkbox !important;
+}
+textarea {
+    -moz-box-sizing: border-box !important;
+    -webkit-box-sizing: border-box !important;
+    box-sizing: border-box !important;
+    padding: 5px;
+}
+.rightcol label input {
+    float: left;
 }
 .general_content .item input
 {
@@ -28,6 +48,12 @@ select {
 }
 #paging {
     display: none;
+}
+#content {
+    padding-bottom: 0px;
+}
+#page #content {
+    padding-bottom: 40px;
 }
 #content .content-in {
     border: none;
@@ -158,7 +184,6 @@ select {
 }
 .responsivetitle {
     border-bottom: solid #bbbbbb 1px;
-    /*display: none;*/
     padding: 0 0 15px;
 }
 #content.search .content-in .header.c h1 {
@@ -204,6 +229,8 @@ select {
     float: none;
     font-size: inherit;
 }
+
+/* resp-header */
 #resp-header {
     display: none;
 }
@@ -211,7 +238,6 @@ select {
     width: 47%;
     float: left;
     margin-left: 12px;
-    padding: 1px 1px;
     border: solid #dbdbdb 1px;
     border-radius: 3px;
 }
@@ -224,8 +250,7 @@ select {
     float: right;
 }
 .resp-search input {
-    width: 70%;
-    border: none;
+    width: 67%;
 }
 .resp-search button {
     width: 20%;
@@ -373,6 +398,9 @@ select {
 }
 #publish_start_date_forinline_display.hasDatepicker {
     height: auto;
+}
+#publish_start_date_forinline_display input {
+    margin-bottom: 15px !important;
 }
 #publish_start_date_forinline_display.hasDatepicker .ui-datepicker-inline {
 	clear: both;

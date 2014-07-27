@@ -16,6 +16,13 @@
     border-top: 1px solid #e0e0e0;
 }
 
+#content .home-content > *,
+.lightbox .preview .leftcol .desc > *,
+#footer .in > * {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+}
+
 /* .. */
 #header a.logo {
     top: 45px;
@@ -49,11 +56,6 @@
 #content .home-content {
     padding: 20px 0;
 }
-#content .home-content .in {
-   padding-left: 20px;
-   padding-right: 20px;
-   background: none;
-}
 #content .content-in .header {
 	padding-right: 20px;
     border-radius: 0;
@@ -70,7 +72,6 @@
 }
 #content .content-in .header select {
     padding-top: 5px;
-    font-size: 14px;
     vertical-align: baseline;
 }
 #content .content-in .header select.small {
@@ -80,13 +81,11 @@
 #content .content-in .header .item label {
     vertical-align: middle;
 }
-#content .content-in .header .resp-search input
-{
+#content .content-in .header .resp-search input {
     margin-left: 3px;
     padding: 0 0 0 3px;
     height: 30px !important;
     float: left;
-    font-size: 14px;
 }
 #content .content-in .content {
     padding: 20px;
@@ -114,10 +113,6 @@
     min-width: 280px;
     padding-left: 0;
     padding-right: 0;
-}
-#footer .in > * {
-    padding-left: 20px !important;
-    padding-right: 20px !important;
 }
 #footer .in .box {
     text-align: left !important;
@@ -272,7 +267,6 @@
 #content .content-in .content .rightcol {
 	width: 77%;
 }
-
 #page.fluid #content .content-in .header > *
 {
     padding-left: 20px !important;
@@ -296,30 +290,26 @@
     padding-left: 0;
 }
 .fluid #content .content-in .rightcol .head {
-    padding: 5px 0 5px 4%;
+    padding-left: 4%;
     height: auto;
 }
 .fluid #content .content-in .rightcol .head select {
     padding-top: 5px;
 }
 #content .content-in .rightcol .head {
-    padding: 5px 20px 4px;
+    /*padding: 5px 20px 4px;*/
     background-color: #f5f5f5;
     margin-left: 0;
     height: auto;
 }
-.fluid #content .content-in .rightcol .head,
-#content .content-in .rightcol .head {
-	padding-bottom: 5px;
-	height: 40px;
-}
+
+/* cart */
 #content .content-in .cart .rightcol {
     width: 320px !important;
 }
 #content .content-in .cart .rightcol .section .head {
     height: auto;
     margin: 0;
-    padding-bottom: 4px;
 }
 #content .cart .rightcol .section-in {
     padding: 20px;
@@ -341,6 +331,7 @@
     font-size: 14px;
 }
 #content .content-in .leftcol .head {
+	font-size: 16px;
     height: auto;
     padding: 0;
 }
@@ -353,37 +344,27 @@
     padding: 5px 0;
 }
 #content .content-in .cart .leftcol,
-    #content .cart .total-price-bottom .left {
+#content .cart .total-price-bottom .left {
     width: 63.6% !important;
     margin-top: 0;
     margin-left: 0;
 }
-#content .cart .leftcol .item {
-    padding: 0 20px 20px;
-    text-align: center;
-    font-size: 14px;
+
+#content .content-in .rightcol .head,
+.fluid #content .content-in .rightcol .head,
+#content .content-in .leftcol .section .head,
+#content .cart .leftcol .section .head,
+#content .content-in .cart .rightcol .section .head {
+    padding: 0 20px;
+    line-height: 49px;
+    height: auto;
 }
-#content .cart .leftcol .item label {
-    text-align: right;
+#content .content-in .rightcol .head,
+.fluid #content .content-in .rightcol .head {
+    line-height: 50px;
 }
-#content .cart .leftcol .item input {
-	width: 55%;
-	margin: 0;
-}
-#content .cart .leftcol .item select {
-	width: 57.2%;
-	margin: 0;
-    padding: 5px 1px;
-    position: static;
-}
-#content .cart .leftcol .item textarea {
-	display: block;
-    padding: 1%;
-    line-height: 18px;
-    width: 91%;
-    margin: 4% auto;
-    text-align: left;
-    float: none;
+#content .cart .leftcol .section label.licence {
+    float: left;
 }
 #content .cart .leftcol .section input.licence {
     margin-left: 10%;
@@ -392,14 +373,42 @@
 }
 #content .cart .leftcol .section .section {
     border: none;
-    margin-bottom: 0;
 }
-#content .cart .leftcol .section .head,
-#content .content-in .leftcol .section .head {
-    padding-top: 5px;
-    padding-bottom: 4px;
-    height: auto;
+#content .cart .leftcol .item {
+	height: 30px;
+    margin-bottom: 15px;
+    padding: 0 12%;
+    text-align: center;
+    font-size: 14px;
 }
+#content .cart .leftcol .section .section + .section .item {
+	height:auto;
+}
+#content .cart .leftcol .item label {
+	width: auto;
+    float: left;
+    text-align: right;
+}
+#content .cart .leftcol .item input {
+	width: 60%;
+	margin: 0;
+	float: right;
+}
+#content .cart .leftcol .item select {
+	position: static;
+	width: 60%;
+	float: right;
+	margin: 0;
+}
+#content .cart .leftcol .item textarea {
+	width: 100%;
+	/*display: block;*/
+    line-height: 18px;
+    margin: 0 auto;
+    text-align: left;
+    float: none;
+}
+
 #content .cart .payment #place_your_order {
     width: 200px;
     padding: 10px 0;
@@ -437,9 +446,7 @@
 }
 #content .content-in .rightcol .item {
 /*#content .content-in .rightcol .item.last {*/
-    width: 80%;
-    margin: 0 auto;
-    padding: 0 0 20px 0;
+    padding: 0 20% 20px;
 }
 #content .content-in .rightcol .head-3 {
     padding: 5px 0;
@@ -459,33 +466,28 @@
 }
 #content .content-in .rightcol #form_login .item:first-child {
     text-align: center;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
 }
 #content .content-in .rightcol .item label,
 #content .content-in .rightcol .item input,
 #content .content-in .rightcol .item select,
 #content .content-in .rightcol .item textarea {
-    font-size: 13px;
+	width: 100%;
+    font-size: 13px; /* Q */
     float: none;
     display: inline-block;
     margin: 0 auto;
     text-align: left;
 }
-#content .content-in .rightcol .item input,
-#content .content-in .rightcol .item select,
-#content .content-in .rightcol .item textarea {
-    width: 65%;
-}
 #content .content-in .rightcol .item select {
-    left: 0;
-    width: 67.3%;
+	position: static;
 }
 #content .content-in .rightcol .item textarea {
-    padding: 1%;
     line-height: 18px;
 }
 #content .content-in .rightcol .item span {
     display: block;
-    width: 71.5%;
     text-align: left;
     margin-left: auto;
     font-size: 14px;
@@ -513,16 +515,14 @@
 }
 #content .content-in .content .rightcol > #form_register {
     border-bottom: none;
-    margin: 20px 0;
-}
-#content .content-in .content .rightcol > form ~ #form_register {
-    margin-bottom: 0;
 }
 #content .content-in .content .rightcol > .form_contact {
     margin: 20px 0;
 }
-#content .content-in .rightcol form#form_register .item select {
-    vertical-align: baseline;
+#password + br,
+#content .content-in .rightcol form#form_register #password + label,
+#content .content-in .rightcol form#form_register #password + br + label {
+    display: none;
 }
 #content .content-in .rightcol .email-content {
     width: auto;
@@ -532,10 +532,16 @@
 #content .content-in .rightcol .email-item ul li {
     width: auto;
 }
+#content .content-in .rightcol .email-item ul li {
+	margin-bottom: 35px;
+}
 #content .content-in .rightcol .email-item ul li label {
-	width: 96%;
+	padding: 0;
 	float: right;
-	padding-top: 7px;
+	width: 94%;
+}
+#content .content-in .rightcol .email-item ul li input {
+	height: initial !important;
 }
 #content .content-in .rightcol .item a {
     color: #5187B6;
@@ -606,6 +612,7 @@ form#form_login div.item a.forgotpassword,
     height: auto;
     margin-left: 20px;
     margin-right: 20px;
+    vertical-align: top;
 }
 .image-list li > p {
     min-height: 57px !important;
@@ -618,9 +625,6 @@ form#form_login div.item a.forgotpassword,
 }
 
 /* lightbox */
-.lightbox {
-    padding: 20px 0;
-}
 .lightbox .header {
     height: auto;
     padding-bottom: 20px;
@@ -662,6 +666,8 @@ form#form_login div.item a.forgotpassword,
     margin: 20px auto;
     padding: 20px !important;
 }
+
+/* lightbox -preview */
 .lightbox .preview {
     font-size: 14px;
 }
@@ -757,104 +763,90 @@ form#form_login div.item a.forgotpassword,
 }
 
 /* lightbox - pricing */
-.lightbox .pricing .item.territories {
-    height: auto !important;
-}
-.lightbox .pricing .item.territories ul {
-    height: 300px;
-}
-.lightbox .pricing .item.territories ul > li {
-    margin: 10px 0 !important;
-}
-.lightbox .pricing .item.territories ul > li span input {
-    margin-top: -4px;
-    margin-left: 10px;
-}
 .lightbox .pricing .rightcol {
-    width: 60%;
-    padding-left: 0px !important;
-}
-.lightbox .pricing .rightcol div > p {
+    width: 57%;
     font-size: 14px;
+}
+.lightbox .pricing .rightcol .item {
+    height: 30px;
 }
 .lightbox .pricing .rightcol .item label,
 .lightbox .pricing .rightcol .item input,
 .lightbox .pricing .rightcol .item select,
 .lightbox .pricing .rightcol .item div.description {
     display: block;
-    width: 75%;
-    margin: 0 auto;
+    width: 77%;
     text-align: left;
     font-size: 14px;
-    float: none;
 }
-.lightbox .pricing .rightcol .item input,
 .lightbox .pricing .rightcol .item div.description {
-    width: 73.5%;
     float: right;
+    margin-right: 0;
+    padding: 5px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
 }
 .lightbox .pricing .rightcol .item label {
-    width: 77%;
-    font-size: 14px;
-    float: none;
-}
-.lightbox .pricing .rightcol .item label {
-    width: 87%;
-    width: auto;
+	width: auto;
     float: left;
-    background: none;
+    background-position: 0 19px;
 }
 .lightbox .pricing .rightcol .item input {
-    padding-left: 1%;
-    padding-right: 1%;
-    margin-right: auto !important;
     margin-bottom: 15px;
-    margin-left: auto !important;
+    margin-right: 0 !important;
     float: right;
-    width: 74.5%;
 }
 .lightbox .pricing .rightcol .item select {
-    left: 0;
-    width: 77%;
-    margin-bottom: 15px;
-    padding-top: 5px;
-    font-size: 14px;
-    vertical-align: baseline;
+	position: static;
     float: right;
 }
 .lightbox .pricing .rightcol > .info {
    clear: both;
 }
-.lightbox .pricing .rightcol .item {
-    height: auto;
-    padding-bottom: 20px;
-    clear: both;
-}
 .lightbox .pricing .rightcol .item.noheight {
     padding-bottom: 0;
 }
-.lightbox .pricing .rightcol .item ul li label {
-    margin-left: 15px !important;
-    display: inline !important;
-}
 .lightbox .pricing .rightcol .item ul {
-    width: 85% !important;
-    width: 74.5% !important;
+    width: 77% !important;
     margin-left: auto;
     margin-right: auto !important;
-    padding: 0 1%;
-    float: none !important;
+    padding: 10px 5px 0;
     float: right !important;
 }
 .lightbox .pricing .rightcol ul > li,
 .lightbox .pricing .rightcol ul > li label {
     width: auto !important;
-    display: inline-block;
+}
+.lightbox .pricing .rightcol .item.territories {
+    height: auto !important;
+}
+.lightbox .pricing .rightcol .item.territories ul {
+    height: 300px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.lightbox .pricing .rightcol .item.territories ul li {
+    height: auto !important;
+    height: 30px !important;
+}
+.lightbox .pricing .rightcol .item.territories ul li.separator {
+    height: 1px !important;
+}
+.lightbox .pricing .rightcol .item.territories ul label {
+   margin: 0 0 0 8px !important;
+   height: 24px;
+   line-height: 24px;
+   background: none;
+}
+.lightbox .pricing .rightcol .item.territories input {
+    height: 24px !important;
+    margin: 0;
+    padding: 0 !important;
 }
 .lightbox .pricing .rightcol .buttons {
     margin: 0 auto;
-    padding: 20px 0 0;
-    clear: both;
 }
 .lightbox .pricing .rightcol .buttons p.price {
     position: static;

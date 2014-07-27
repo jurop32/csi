@@ -2,6 +2,25 @@ div#dev{/*dev display:none;*/position:fixed;right:15px;top:111px;font-size:20px;
 div#dev *{display:none;position:relative;font-size:55px}
 div#dev-gt-1140{display:block}
 
+/* reset
+ * typography
+ * layout
+ * header
+ * footer
+ * content
+ * home
+ * content-in
+ * cart - step 1
+ * cart - step 2
+ * cart - step 3
+ * image list
+ * image - lightbox
+ * category - lightbox
+ * lightbox
+ * lightbox - preview
+ * lightbox - pricing step 1
+ *
+ */
 @media all and (max-width: 1140px) {
     div#dev *{display:none}div#dev-1140{display:block}
 
@@ -16,6 +35,72 @@ div#dev-gt-1140{display:block}
         -webkit-box-shadow: none;
         box-shadow: none;
     }
+
+    /* zobakove deti */
+    #content .home-info > *,
+    #content .content-in .header > *,
+    #page.fluid #content .content-in .header > *,
+    #content .content-in .content .rightcol > *,
+    #content .content-in .content .rightcol > .purchase-item > *,
+    #content .content-in .content .rightcol > .purchase-item > table + div > div,
+    #content .content-in .content .rightcol > .purchase-item > table + div > p,
+    #content .content-in .content.general_content > *,
+    #content .cart > #cart_status_top,
+    #content .cart > #cart_status_bottom,
+    #content .cart > .cart-item,
+    #content .cart .rightcol .section > *,
+    .lightbox .preview .search > *,
+    .lightbox .preview .leftcol > .popup,
+    /*.lightbox .pricing .rightcol > *,*/
+    .image-content .arrow.resp {
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+    }
+    #content .cart > *,
+    #content .cart .leftcol .section > form,
+    #content .content-in .cart .rightcol > .section,
+    #content .content-in .content.general_content > .rightcol,
+    #content .content-in .content .rightcol > form,
+    #content .content-in .content .rightcol > .purchase-item,
+    #content .content-in .content .rightcol > .purchase-item > table + div,
+    #content .content-in .content.general_content > table,
+    #content .content-in .content.general_content > #resp-subpagebenefits,
+    #page.fluid #content .content-in .header > .resp-search,
+    .lightbox .pricing #resp-license-details span,
+    #footer .in .box.second,
+    #footer #footer-background {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+
+    /* form input */
+    #content .content-in .rightcol .item label,
+    #content .content-in .rightcol .item input,
+    #content .content-in .rightcol .item select,
+    #content .content-in .rightcol .item textarea,
+    #content .cart .leftcol .item label,
+    #content .cart .leftcol .item input,
+    #content .cart .leftcol .item select,
+    #content .cart .leftcol .item textarea,
+    .lightbox .pricing .rightcol .item label,
+    .lightbox .pricing .rightcol .item input,
+    .lightbox .pricing .rightcol .item select,
+    .lightbox .pricing .rightcol .item textarea,
+    .lightbox .pricing .rightcol .item div.description {
+        display: block;
+        width: 100%;
+        margin-left: auto !important;
+        margin-right: auto !important;
+        text-align: left;
+        font-size: 14px;
+        float: none;
+    }
+    #content .content-in .rightcol .item textarea,
+    #content .cart .leftcol .item textarea {
+        line-height: 18px;
+    }
+
+    /* content */
     #content .home-text {
         padding: 0;
     }
@@ -35,9 +120,6 @@ div#dev-gt-1140{display:block}
         box-shadow: none;
         border: none;
     }
-    .fluid #content .content-in .rightcol .head span {
-        margin-left: 20px;
-    }
     #content .home-content ul.imagelist {
         width: 60%;
         overflow: hidden;
@@ -47,21 +129,39 @@ div#dev-gt-1140{display:block}
         margin-bottom: -75.3%;
         margin-left: 1px;
     }
-    #content .cart .cart-item {
-        border-width: 1px 0;
+    #content .content-in .header .item {
+        float: right;
+        margin: 15px 0 0 15px;
+        padding: 0;
     }
-    .image-content .filter ul li a.close {
-        top: 8px;
+    #content .content-in .header .item input {
+         position: static;
+         vertical-align: middle;
     }
-    .image-content.search {
-        padding-bottom: 0;
-        font-size: 14px;
+    #content .content-in .header span.sort {
+        margin: 15px 0 0 15px;
+        padding: 0;
     }
-    .image-content.search .filter-box form > input + div + div {
-        width: 94% !important;
-        height: auto !important;
-        margin-bottom: 20px;
-        padding: 5px 3% !important;
+    #content .content-in .header .search {
+        padding: 0;
+        margin-left: 15px;
+        margin-right: 0;
+        text-align: right;
+    }
+    #content .content-in .header .search input {
+        margin-right: 10px;
+        float: none;
+    }
+    #content .content-in .header .search button {
+        width: 70px;
+        height: 30px;
+    }
+    #content .content-in .header .item label span {
+        display: none;
+    }
+    #content .content-in .rightcol .email-item {
+        padding: 20px 20px;
+        margin-bottom: 0;
     }
     #content .content-in .rightcol form#form_register .item select#company_type {
         margin-left: auto;
@@ -72,15 +172,148 @@ div#dev-gt-1140{display:block}
     #content .content-in .content .rightcol input#login_password {
         margin-left: auto;
     }
-    .image-content .filter-box ul li {
-        padding-bottom: 15px;
+    .fluid #content .content-in .rightcol .head span {
+        margin-left: 20px;
     }
     .fluid #content .content-in .rightcol .head,
     .fluid #content .content-in .rightcol .head * {
         font-size: 14px;
     }
-    div#div_existing_categories {
+    .fluid #content .content-in .rightcol .head select {
+        margin: 0 auto;
+    }
+    .fluid #content .content-in .rightcol .head select:first-child {
+        width: 75px;
+    }
+    #content .content-in .rightcol .invoices .item input {
+        display: inline;
+    }
+    #content .content-in .rightcol .email-item ul li label {
+        padding: 0;
+    }
+    #content .content-in .rightcol .purchase-item a.button-blue,
+    #content .content-in .rightcol .purchase-item a.button-grey {
+        width: 130px;
+        font-size: 13px;
+        position: static;
+        height: 38px;
+        line-height: 38px;
+    }
+    #content .content-in .rightcol .purchase-item a.button-blue {
+        float: left;
+    }
+    #content .content-in .content .rightcol > #form_login {
+        border-bottom: none;
+    }
+    #content .content-in .rightcol .my-account-lightbox-categories {
+        padding: 0 4%;
+    }
+    #content .content-in .my-account-lightbox-categories h4 {
+        clear: both;
+        text-align: center;
+    }
+    #content .content-in,
+    #page #content .content-in {
+        width: auto !important;
+        border: none;
+        border-radius: 0;
+        box-shadow: none;
+    }
+    #content .content-in .header {
+        padding: 0;
+        border-radius: 0;
+    }
+    #content .content-in .content {
+
+    }
+    #page #content .content-in .content {
+        padding: 20px 0 0;
         font-size: 14px;
+    }
+    #content .content-in .content .rightcol div p:last-child {
+        display: none;
+    }
+    #content .content-in .content .rightcol div.oneitem p:last-child {
+        display: block;
+    }
+    #content .content-in .rightcol {
+        width: 77% !important;
+        min-width: 200px;
+        font-size: 14px;
+    }
+    /*#content .content-in .leftcol .item,*/
+    #content .content-in .rightcol .item {
+        padding-left: 25% !important;
+        padding-right: 25% !important;
+        padding-bottom: 20px;
+        text-align: center;
+        font-size: 14px;
+    }
+    /*#content .content-in .rightcol .item a {
+        color: #5187B6;
+        text-decoration: underline;
+    }*/
+    #content .content-in .content.general_content > table {
+        border: none !important;
+    }
+    #content .content-in .content .rightcol > form > .email-content {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+    #content .content-in .content .rightcol .email-content .head {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    #content .content-in .rightcol .email-content {
+        padding-bottom: 0;
+    }
+    #content .content-in .rightcol .item span {
+        margin-right: auto;
+    }
+    #content .content-in .rightcol .email-item p {
+        font-size: 14px;
+    }
+    #content .content-in .content.general_content > p {
+            font-size: 14px;
+    }
+    #content .content-in .general_content table {
+        width: 100% !important;
+        height: auto;
+    }
+    #content .content-in .general_content table img {
+        width: 100% !important;
+        height: auto;
+    }
+    #content .content-in .general_content table td,
+    #content .content-in .general_content table th {
+        height: auto !important;
+    }
+    #content .content-in .leftcol {
+        width: 20% !important;
+        min-width: 100px;
+        display: block;
+    }
+    #content .content-in .leftcol ul.left-menu li a {
+        height: auto;
+        line-height: 40px;
+    }
+    #content .content-in .leftcol ul.left-menu {
+        border: solid #9f9f9f 1px;
+    }
+    #content .content-in .leftcol ul.left-menu li {
+        border-bottom: solid #9f9f9f 1px;
+    }
+    #content .content-in .leftcol ul.left-menu li a {
+        border: none;
+    }
+    #content .content-in .leftcol ul.left-menu li:last-child,
+    #content .content-in .leftcol ul.left-menu li:last-child a {
+        border-bottom: none;
+    }
+
+    /* cart */
+    #content .cart .cart-item {
+        border-width: 1px 0;
     }
     #content .cart .cart-item .desc label {
         font-size: 14px;
@@ -102,8 +335,89 @@ div#dev-gt-1140{display:block}
     #content .cart .cart-item .price p {
         font-size: 16px;
     }
+    #content .content-in .cart > .cart-item > table + div {
+        width: 100% !important;
+        padding-top: 20px;
+        padding-bottom: 30px;
+    }
+    #content .cart .leftcol .item {
+        padding: 0 25%;
+        height: auto;
+    }
+    #content .cart .leftcol .section label.licence {
+        font-size: 14px;
+    }
+    #content .cart .leftcol .section .section + .section .item {
+    	padding: 0 15%;
+    }
+    #content .content-in .cart .leftcol,
+    #content .cart .total-price-bottom .left {
+        width: 68.9% !important;
+    }
+    #content .cart .leftcol .section,
+    #content .cart .rightcol .section {
+        margin-bottom: 20px;
+    }
+
+    #content .content-in .leftcol .section .head,
+    #content .cart .leftcol .section .head,
+    #content .content-in .cart .rightcol .section .head {
+        line-height: 59px;
+    }
+    #content .content-in .rightcol .head,
+    .fluid #content .content-in .rightcol .head {
+        line-height: 60px;
+    }
+
+    #content .cart .leftcol .section .head {
+        line-height: 59px;
+        background-color: #c0c0c0;
+        color: #ffffff;
+    }
+    #content .cart .rightcol .head {
+        padding: 10px 0 9px;
+    }
+    #content .cart .leftcol .section .item a {
+        display: block;
+    }
+    #content .cart .total-price-bottom .left br,
+    #content .cart .leftcol .section .item br {
+        display: none;
+    }
+    #content .cart .payment {
+        padding: 0 20px;
+        font-size: 12px;
+    }
+    #content .cart .payment * {
+        font-size: 14px !important;
+    }
+    #content .cart .payment img {
+        width: auto;
+        margin-left: auto;
+        margin-right: auto !important;
+        display: block;
+    }
+    #content .cart .payment div:last-child {
+        padding: 15px !important;
+        margin-bottom: 10px !important;
+    }
+    #content .cart .payment .clear {
+        display: none;
+    }
+    #content .cart #cart_status_bottom.total-price-bottom .left a {
+        margin-left: 0;
+    }
+    #content .cart .total-price-bottom .left a.button-grey {
+        margin-top: 0;
+        background-image: none;
+    }
+    #content .cart #cart_status_bottom.total-price-bottom .left a {
+        float: none;
+    }
+
+    /* lightbox */
     .lightbox {
-        padding: 20px 0;
+        /*padding: 20px 0;*/
     }
     .lightbox .header .arrow {
         display: block !important;
@@ -177,13 +491,101 @@ div#dev-gt-1140{display:block}
     .lightbox > .preview > .c > .leftcol.text.fullwidth > p > a > span {
         font-size: 16px;
     }
+    .lightbox .preview .search .head {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
 
     /* lightbox - pricing */
+    .lightbox .pricing .rightcol {
+        width: 60%;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
     .lightbox .pricing .rightcol h4 span {
         font-size: 16px;
     }
-    .lightbox .pricing .rightcol div > p {
-        font-size: 14px;
+    .lightbox .pricing .rightcol .item {
+    	padding-left: 55px !important;
+        padding-right: 55px !important;
+        height: auto;
+    }
+    .lightbox .pricing .rightcol .item.territories ul {
+    	width: 100% !important;
+    }
+    .lightbox .pricing .rightcol .item label {
+        /*width: 100%;*/
+        background: none;
+    }
+    .lightbox .pricing .rightcol .item input {
+        /*width: 100%;*/
+    }
+    .lightbox .pricing .rightcol .item select {
+        /*width: 100%;*/
+    }
+    .lightbox .pricing .rightcol .item div.description {
+       /*width: 100%;*/
+    }
+    .lightbox .pricing .rightcol a.button-blue {
+        width: 180px;
+        height: 38px;
+        line-height: 38px;
+        font-size: 15px;
+    }
+    .lightbox .pricing .leftcol span.h2 {
+        margin: 15px 0;
+        height: 40px;
+        line-height: 40px;
+        background-color: #a9a9a9;
+        color: #ffffff;
+        padding: 0;
+        text-align: center;
+    }
+    .lightbox .pricing .rightcol .item ul {
+        float: none !important;
+    }
+    .lightbox .pricing .rightcol .item.territories ul label {
+    	float: left;
+    }
+    .lightbox .pricing .rightcol .item ul li label {
+        margin-left: 15px !important;
+    }
+    .lightbox .pricing .item.territories ul li label {
+        height: auto !important;
+    }
+    .lightbox .pricing .rightcol .buttons p.price {
+        position: static;
+        margin-bottom: 20px !important;
+        font-size: 17px;
+        text-align: center;
+        border-bottom: 1px #e0e0e0 solid;
+        padding-bottom: 20px;
+    }
+
+    /* category - lightbox */
+    .lightbox-category {
+        /*position: absolute !important;*/
+        /*top: 40px !important;*/
+        left: 0;
+        /*margin: 0;*/
+    }
+    .lightbox-category button {
+        height: auto !important;
+        padding: 5px 0;
+        margin: 0 auto;
+        float: none !important;
+    }
+    .lightbox .cs_addtocart/*,
+    .lightbox .cs_addtolightbox*/ {
+        left: 70px;
+        top: 110px !important;
+        border: 1px solid #C0C0C0;
+        border-radius: 5px;
+        box-shadow: #9D9D9D 0 0 8px 2px;
+        background-color: #E8E8E8 !important;
+        color: #696969 !important;
+        line-height: 25px;
+        padding: 0 !important;
     }
 
     /* image list*/
@@ -193,102 +595,21 @@ div#dev-gt-1140{display:block}
     .image-list li p span {
         font-size: 13px;
     }
-
-    #content .content-in .rightcol .email-item {
-        padding: 20px 20px;
-        margin-bottom: 0;
+    .image-content .filter ul li a.close {
+        top: 8px;
     }
-    #content .content-in .header .item input,
-    #content .content-in .rightcol .email-item ul li input {
-        width: 30px !important;
-    }
-    #content .content-in .header .item input {
-         width: 30px !important;
-         height: 30px !important;
-         position: static;
-         vertical-align: middle;
-    }
-    #content .cart .leftcol .item label,
-    #content .cart .leftcol .item input,
-    #content .cart .leftcol .item select,
-    #content .cart .leftcol .item textarea,
-    #content .content-in .rightcol .item label,
-    #content .content-in .rightcol .item input,
-    #content .content-in .rightcol .item select,
-    #content .content-in .rightcol .item textarea,
-    .lightbox .pricing .rightcol .item label,
-    .lightbox .pricing .rightcol .item input,
-    .lightbox .pricing .rightcol .item select,
-    .lightbox .pricing .rightcol .item textarea,
-    .lightbox .pricing .rightcol .item div.description {
-        display: block;
-        width: 67%;
-        margin-left: auto !important;
-        margin-right: auto !important;
-        text-align: left;
+    .image-content.search {
+        padding-bottom: 0;
         font-size: 14px;
-        float: none;
     }
-    #content .content-in .rightcol .invoices .item input {
-        display: inline;
+    .image-content.search .filter-box form > input + div + div {
+        width: 94% !important;
+        height: auto !important;
+        margin-bottom: 20px;
+        padding: 5px 3% !important;
     }
-    #content .content-in .rightcol .email-item ul li label {
-        width: 94%;
-    }
-    #content .content-in .rightcol .item select {
-        width: 67.8%;
-    }
-    #content .content-in .rightcol .item select,
-    .lightbox .pricing .rightcol .item select {
-        width: 68.4%;
-    }
-    #content .content-in .rightcol form#form_register .item select {
-    	width: 68.7%;
-    }
-    #content .cart .leftcol .item label,
-    #content .cart .leftcol .item select,
-    #content .content-in .rightcol .item label {
-        width: 69%;
-    }
-    .fluid #content .content-in .rightcol .head select {
-        margin: 0 auto;
-    }
-    .fluid #content .content-in .rightcol .head select:first-child {
-        width: 75px;
-    }
-
-    /* lightbox */
-    .lightbox .pricing .rightcol .item input,
-    .lightbox .pricing .rightcol .item div.description {
-        width: 85%;
-    }
-    .lightbox .pricing .rightcol .item label {
-        width: 77%;
-        font-size: 14px;
-        float: none;
-    }
-    .lightbox .pricing .rightcol .item label {
-        width: 87%;
-        background: none;
-    }
-
-    #content .cart .leftcol .item textarea,
-    #content .content-in .rightcol .item textarea,
-    .lightbox .pricing .rightcol .item textarea {
-        padding: 1%;
-        line-height: 18px;
-    }
-
-    .lightbox .pricing .rightcol .item select {
-        vertical-align: baseline;
-    }
-    #resp-header .resp-search input,
-    .lightbox .preview .search ul li input {
-        margin-left: 3px;
-        padding: 0 0 0 3px;
-        height: 30px !important;
-        float: left;
-        font-size: 14px;
+    .image-content .filter-box ul li {
+        padding-bottom: 15px;
     }
     .image-content.search .filter-box form > div + div > input {
         width: 30px !important;
@@ -299,6 +620,9 @@ div#dev-gt-1140{display:block}
         position: static !important;
         float: right;
         margin-top: 9px;
+    }
+    .image-content a.top {
+        display: none;
     }
     .image-content .arrow a.paging {
         padding: 0 2px;
@@ -313,29 +637,12 @@ div#dev-gt-1140{display:block}
         padding-top: 3px;
         padding-bottom: 3px;
     }
-    .lightbox .pricing .rightcol a.button-blue {
-        width: 180px;
-        height: 38px;
-        line-height: 38px;
-        font-size: 15px;
-    }
     .image-content .arrow {
         position: static;
     }
     .image-content .arrow a.next,
     .image-content .arrow a.prev {
         background-image: none !important;
-    }
-    #content .content-in .rightcol .purchase-item a.button-blue,
-    #content .content-in .rightcol .purchase-item a.button-grey {
-        width: 130px;
-        font-size: 13px;
-        position: static;
-        height: 38px;
-        line-height: 38px;
-    }
-    #content .content-in .rightcol .purchase-item a.button-blue {
-        float: left;
     }
     .image-content .filter-box button {
         position: static;
@@ -353,12 +660,6 @@ div#dev-gt-1140{display:block}
         width: 180px;
         padding: 4px 0;
         height: auto;
-    }
-    .lightbox-category button {
-        height: auto !important;
-        padding: 5px 0;
-        margin: 0 auto;
-        float: none !important;
     }
     .image-content.search p.info {
         background-color: #f5f5f5;
@@ -381,104 +682,14 @@ div#dev-gt-1140{display:block}
     .image-list li p {
         text-align: center;
     }
-    .responsivetitle {
-        display: block;
-        white-space: nowrap;
-    }
-    #content .content-in .my-account-lightbox-categories h4 {
-        clear: both;
-        text-align: center;
-    }
     .image-content.search .filter-box form > input + div {
         width: 100% !important;
     }
-    #content .content-in .cart > .cart-item > table + div {
-        width: 100% !important;
-        padding-top: 20px;
-        padding-bottom: 30px;
+    #content .content-in .rightcol .image-content {
+        padding: 0 4%;
     }
-    #content .content-in .content .rightcol > #form_login {
-        border-bottom: none;
-    }
-    #content .home-content > *,
-    #content .home-info > *,
-    #content .content-in .header > *,
-    #page.fluid #content .content-in .header > *,
-    #content .content-in .content .rightcol > *,
-    #content .content-in .content .rightcol > .purchase-item > *,
-    #content .content-in .content .rightcol > .purchase-item > table + div > div,
-    #content .content-in .content .rightcol > .purchase-item > table + div > p,
-    #content .content-in .content.general_content > *,
-    #content .cart > #cart_status_top,
-    #content .cart > #cart_status_bottom,
-    #content .cart > .cart-item,
-    #content .cart .rightcol .section > *,
-    .lightbox .preview .search > *,
-    .lightbox .preview .leftcol > .popup,
-    .lightbox .preview .leftcol .desc > *,
-    .lightbox .pricing .rightcol > *,
-    .image-content .arrow.resp,
-    #footer .in > * { /* zobakove deti */
-        padding-left: 20px !important;
-        padding-right: 20px !important;
-    }
-    #content .cart > *,
-    #content .cart .leftcol .section > form,
-    #content .content-in .cart .rightcol > .section,
-    #content .content-in .content.general_content > .rightcol,
-    #content .content-in .content .rightcol > form,
-    #content .content-in .content .rightcol > .purchase-item,
-    #content .content-in .content .rightcol > .purchase-item > table + div,
-    #content .content-in .content.general_content > table,
-    #content .content-in .content.general_content > #resp-subpagebenefits,
-    #page.fluid #content .content-in .header > .resp-search,
-    .lightbox .pricing #resp-license-details span,
-    #footer .in .box.second,
-    #footer #footer-background {
-        padding-left: 0 !important;
-        padding-right: 0 !important;
-    }
-    .lightbox .pricing .leftcol span.h2 {
-        margin: 15px 0;
-        height: 40px;
-        line-height: 40px;
-        background-color: #a9a9a9;
-        color: #ffffff;
-        padding: 0;
-        text-align: center;
-    }
-    .lightbox .pricing .rightcol .buttons p.price {
-        position: static;
-        margin-bottom: 20px !important;
-        font-size: 17px;
-        text-align: center;
-        border-bottom: 1px #e0e0e0 solid;
-        padding-bottom: 20px;
-    }
-    .lightbox .preview .search .head {
-        padding-top: 10px;
-        padding-bottom: 10px;
-    }
-    #content .cart .leftcol .section label.licence {
-        font-size: 14px;
-    }
-    #content .content-in .header .item {
-        float: right;
-        margin: 15px 0 0 15px;
-        padding: 0;
-    }
-    form#form_login div.item a {
-        margin-left: auto;
-        margin-right: auto;
-    }
-    form#form_login div.item div.center {
-        width: 100%;
-        text-align: center;
-    }
-    #content .content-in .header span.sort {
-        margin: 15px 0 0 15px;
-        padding: 0;
-    }
+
+    /* keywords */
     #keywords {
         max-height: 163px !important;
         margin-top: 0 !important;
@@ -530,6 +741,8 @@ div#dev-gt-1140{display:block}
         margin-left: 50% !important;
         border-color: #e0e0e0 !important;
     }
+
+    /* header */
     #header a.logo > img {
         width: 190px;
         margin-left: 3px;
@@ -571,6 +784,8 @@ div#dev-gt-1140{display:block}
     #header .menu li.last div {
         right: 0;
     }
+
+    /**/
     #content .home-slider,
     #content .home-slider-in,
     #content .home-slider-in ul li {
@@ -658,126 +873,6 @@ div#dev-gt-1140{display:block}
     #content .home-content ul.country > div.pick-more-keywords {
         margin-right: -140%;
     }
-    .closebuttonholder.imagedetail {
-        width: auto;
-        width: 100%;
-    }
-    .closebutton.inheader {
-        position: static;
-        margin-top: 10px;
-    }
-    .closebutton.imagedetail.inheader {
-        position: static;
-        margin-top: 10px;
-    }
-    #next_image_arrow > span,
-    #prev_image_arrow > span {
-        display: none;
-    }
-    #next_image_arrow {
-        padding: 4px 30px 4px 12px;
-        background-position: 110% 50%;
-    }
-    #prev_image_arrow {
-        padding: 4px 12px 4px 30px;
-        background-position: 10px 50%;
-    }
-    #resp-kwlist > a {
-        color: #404040;
-        display: inline-block;
-        text-align: center;
-        height: 30px;
-        line-height: 30px;
-        padding: 0 10px !important;
-        border-radius: 4px;
-        text-decoration: none;
-        background: -webkit-linear-gradient(#FFFFFF, #F0F0F0);
-        background: -o-linear-gradient(#FFFFFF, #F0F0F0);
-        background: -moz-linear-gradient(#FFFFFF, #F0F0F0);
-        background: linear-gradient(#FFFFFF, #F0F0F0);
-        border: solid #babcbe 1px;
-        margin: 10px 10px 0 0 !important;
-        cursor: pointer;
-    }
-
-    /* content */
-    #content .content-in,
-    #page #content .content-in {
-        width: auto !important;
-        border: none;
-        border-radius: 0;
-        box-shadow: none;
-    }
-    #content .content-in .header {
-        padding: 0;
-        border-radius: 0;
-    }
-    #content .content-in .content {
-        padding: 20px 0 0;
-        font-size: 14px;
-    }
-    #content .content-in .content .rightcol div p:last-child {
-        display: none;
-    }
-    #content .content-in .content .rightcol div.oneitem p:last-child {
-        display: block;
-    }
-    #content .content-in .rightcol {
-        width: 77% !important;
-        min-width: 200px;
-        font-size: 14px;
-    }
-
-    /*#content .content-in .leftcol .item,*/
-    #content .content-in .rightcol .item {
-        padding-left: 0;
-        padding-bottom: 20px;
-        text-align: center;
-        font-size: 14px;
-    }
-    /*#content .content-in .rightcol .item a {
-        color: #5187B6;
-        text-decoration: underline;
-    }*/
-    #content .content-in .content.general_content > table {
-        border: none !important;
-    }
-    #content .content-in .content .rightcol > form > .email-content {
-        padding-left: 0 !important;
-        padding-right: 0 !important;
-    }
-    #content .content-in .content .rightcol .email-content .head {
-        margin-left: 0;
-        margin-right: 0;
-    }
-    #content .content-in .content.general_content > p {
-            font-size: 14px;
-    }
-    #content .content-in .general_content table {
-        width: 100% !important;
-        height: auto;
-    }
-    #content .content-in .general_content table img {
-        width: 100% !important;
-        height: auto;
-    }
-    #content .content-in .general_content table td,
-    #content .content-in .general_content table th {
-        height: auto !important;
-    }
-    #content .content-in .leftcol {
-        width: 20% !important;
-        min-width: 100px;
-        display: block;
-        font-size: 14px;
-    }
-    #content .content-in .leftcol ul.left-menu li a {
-        height: auto;
-        line-height: 40px;
-    }
-    #content .content-in .rightcol .email-content {
-        padding-bottom: 0;
-    }
 
     /* invoices */
     #content .content-in .rightcol .head-3 a,
@@ -836,15 +931,6 @@ div#dev-gt-1140{display:block}
         padding: 0;
         margin: 0;
     }
-    #content .content-in .rightcol .my-account-lightbox-categories {
-        padding: 0 4%;
-    }
-    #content .content-in .rightcol .image-content {
-        padding: 0 4%;
-    }
-    .image-content a.top {
-        display: none;
-    }
     #content .content-in .rightcol .purchase-item table {
         clear: left;
         width: 44%;
@@ -874,13 +960,6 @@ div#dev-gt-1140{display:block}
     #content .content-in .rightcol .head-2 div:last-child > select {
         width: auto;
     }
-    #content .content-in .rightcol .item span {
-        margin-right: auto;
-        width: 77%;
-    }
-    #content .content-in .rightcol .email-item p {
-        font-size: 14px;
-    }
     #content .content-in .rightcol .invoices .item-detail .left a.button {
         float: none;
         display: block;
@@ -888,101 +967,9 @@ div#dev-gt-1140{display:block}
         margin-right: auto;
     }
 
-    #content .content-in .leftcol ul.left-menu {
-        border: solid #9f9f9f 1px;
-    }
-    #content .content-in .leftcol ul.left-menu li {
-        border-bottom: solid #9f9f9f 1px;
-    }
-    #content .content-in .leftcol ul.left-menu li a {
-        border: none;
-    }
-    #content .content-in .leftcol ul.left-menu li:last-child,
-    #content .content-in .leftcol ul.left-menu li:last-child a {
-        border-bottom: none;
-    }
-
     #content .home-desc h1 {
         font-size: 21px;
         letter-spacing: 7px;
-    }
-
-    /* cart */
-    #content .cart {
-        font-size: 14px;
-    }
-    #content .content-in .cart .leftcol,
-    #content .cart .total-price-bottom .left {
-        width: 68.9% !important;
-    }
-    #content .cart .leftcol .section,
-    #content .cart .rightcol .section {
-        margin-bottom: 20px;
-    }
-    #content .cart .leftcol .section .head {
-        padding: 20px;
-        line-height: normal;
-        background-color: #c0c0c0;
-        color: #ffffff;
-    }
-    #content .cart .rightcol .head {
-        padding: 10px 0 9px;
-    }
-    #content .cart .leftcol .section .item a {
-        display: block;
-        padding: 0 0 20px;
-    }
-    #content .cart .total-price-bottom .left br,
-    #content .cart .leftcol .section .item br {
-        display: none;
-    }
-    #content .cart .payment {
-        padding: 0 20px;
-        font-size: 12px;
-    }
-    #content .cart .payment * {
-        font-size: 14px !important;
-    }
-    #content .cart .payment img {
-        width: auto;
-        margin-left: auto;
-        margin-right: auto !important;
-        display: block;
-    }
-    #content .cart .payment div:last-child {
-        padding: 15px !important;
-        margin-bottom: 10px !important;
-    }
-    #content .cart .payment .clear {
-        display: none;
-    }
-    #content .cart #cart_status_bottom.total-price-bottom .left a {
-    	margin-left: 0;
-    }
-    #content .cart .total-price-bottom .left a.button-grey {
-        margin-top: 0;
-        background-image: none;
-    }
-    #content .cart #cart_status_bottom.total-price-bottom .left a {
-        float: none;
-    }
-
-    #content .content-in .header .search {
-        padding: 0;
-        margin-left: 15px;
-        margin-right: 0;
-        text-align: right;
-    }
-    #content .content-in .header .search input {
-        margin-right: 10px;
-        float: none;
-    }
-    #content .content-in .header .search button {
-        width: 70px;
-        height: 30px;
-    }
-    #content .content-in .header .item label span {
-        display: none;
     }
 
     /* image list */
@@ -1098,57 +1085,6 @@ div#dev-gt-1140{display:block}
         display: none !important;
     }
 
-    /* category - lightbox */
-    .lightbox-category {
-        position: absolute !important;
-        top: 40px !important;
-        left: 0 !important;
-        margin-left: 0 !important;
-        margin-top: 0 !important;
-    }
-
-    .lightbox .cs_addtocart/*,
-    .lightbox .cs_addtolightbox*/ {
-        left: 70px;
-        top: 110px !important;
-        border: 1px solid #C0C0C0;
-        border-radius: 5px;
-        box-shadow: #9D9D9D 0 0 8px 2px;
-        background-color: #E8E8E8 !important;
-        color: #696969 !important;
-        line-height: 25px;
-        padding: 0 !important;
-    }
-    .lightbox .pricing .rightcol {
-        width: 60%;
-        padding-left: 0 !important;
-        padding-right: 0 !important;
-    }
-    .lightbox .pricing .rightcol .item ul {
-        width: 85% !important;
-        margin-left: auto;
-        margin-right: auto !important;
-        padding: 0 1%;
-        float: none !important;
-    }
-    .lightbox .pricing .rightcol .item ul li label {
-        margin-left: 15px !important;
-        display: inline !important;
-    }
-    .lightbox .pricing .item.territories {
-        height: auto !important;
-    }
-    .lightbox .pricing .item.territories ul {
-        height: 300px;
-    }
-    .lightbox .pricing .item.territories ul > li {
-        margin: 10px 0 !important;
-    }
-    .lightbox .pricing .item.territories ul > li span input {
-        margin-top: -4px;
-        margin-left: 10px;
-    }
-
     /* footer */
     #footer .in.in980,
     #footer .in.fluid {
@@ -1156,8 +1092,67 @@ div#dev-gt-1140{display:block}
     }
 
     /* other */
+    .closebuttonholder.imagedetail {
+        width: auto;
+        width: 100%;
+    }
+    .closebutton.inheader {
+        position: static;
+        margin-top: 10px;
+    }
+    .closebutton.imagedetail.inheader {
+        position: static;
+        margin-top: 10px;
+    }
+    #next_image_arrow > span,
+    #prev_image_arrow > span {
+        display: none;
+    }
+    #next_image_arrow {
+        padding: 4px 30px 4px 12px;
+        background-position: 110% 50%;
+    }
+    #prev_image_arrow {
+        padding: 4px 12px 4px 30px;
+        background-position: 10px 50%;
+    }
+    #resp-kwlist > a {
+        color: #404040;
+        display: inline-block;
+        text-align: center;
+        height: 30px;
+        line-height: 30px;
+        padding: 0 10px !important;
+        border-radius: 4px;
+        text-decoration: none;
+        background: -webkit-linear-gradient(#FFFFFF, #F0F0F0);
+        background: -o-linear-gradient(#FFFFFF, #F0F0F0);
+        background: -moz-linear-gradient(#FFFFFF, #F0F0F0);
+        background: linear-gradient(#FFFFFF, #F0F0F0);
+        border: solid #babcbe 1px;
+        margin: 10px 10px 0 0 !important;
+        cursor: pointer;
+    }
+    form#form_login div.item a {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    form#form_login div.item div.center {
+        width: 100%;
+        text-align: center;
+    }
+   .responsivetitle {
+        display: block;
+        white-space: nowrap;
+    }
+    #publish_start_date_forinline_display input {
+        margin: 0 !important;
+    }
     #publish_start_date_forinline_display.hasDatepicker .ui-datepicker-inline {
         margin: 15px auto 10px;
+    }
+    div#div_existing_categories {
+        font-size: 14px;
     }
 }
 @media all and (max-width: 1120px) {
@@ -1228,6 +1223,22 @@ div#dev-gt-1140{display:block}
 @media all and (max-width: 980px) {
     div#dev *{display:none}div#dev-980{display:block}
 
+    #content .content-in .rightcol .email-item ul li label {
+        width: 92%;
+    }
+    #content .content-in .rightcol .email-item ul li input {
+    	width: 15px !important;
+    	height: 15px !important;
+        -ms-transform-origin: left center;
+        -moz-transform-origin: left center;
+        -webkit-transform-origin: left center;
+        -o-transform-origin: left center;
+        transform-origin: left center;
+        -ms-transform: scale(2);
+        -moz-transform: scale(2);
+        -webkit-transform: scale(2);
+        -o-transform: scale(2);
+    }
     #content .home-desc h1 {
     	font-size: 16px;
         letter-spacing: 7px;
@@ -1239,7 +1250,7 @@ div#dev-gt-1140{display:block}
     #content .home-text .item .desc p {
         width: 68%;
         font-size: 12px;
-        margin-top: 0;
+        margin-center: 0;
     }
     #content .home-content .in {
         max-height: 1269px;
@@ -1260,33 +1271,17 @@ div#dev-gt-1140{display:block}
     #content .home-content ul.country li a {
         line-height: 40.6px;
     }
-    #content .content-in .rightcol .email-item ul li label {
-        width: 92%;
-    }
-    #content .content-in .rightcol form#form_register .item select {
-        width: 69%;
-    }
 
     /* cart */
-    #content .cart .leftcol .item label,
-    #content .cart .leftcol .item select,
-    #content .content-in .rightcol .item label {
-        width: 69.5%;
-    }
     #content .content-in .cart .leftcol,
     #content .cart .total-price-bottom .left {
         width: 66.1% !important;
     }
+    #content .cart .leftcol .section input.licence {
+        margin-left: 20px;
+    }
     #content .content-in .cart .rightcol {
         width: 300px !important;
-    }
-
-    /* lightbox */
-    .lightbox .header,
-    .lightbox .pricing .leftcol,
-    .lightbox .preview .c .leftcol.fullwidth > * {
-        padding-left: 20px !important;
-        padding-right: 20px !important;
     }
 }
 @media all and (max-width: 970px) {
@@ -1457,6 +1452,23 @@ div#dev-gt-1140{display:block}
     #content .cart .total-price-bottom .left {
         width: 58.1% !important;
     }
+
+    /* lightbox */
+    .lightbox {
+    	padding: 20px 0;
+    	width: auto;
+    }
+    .lightbox .header {
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+    }
+    .lightbox .pricing .leftcol,
+    .lightbox .preview .c .leftcol.fullwidth > * {
+    	padding-left: 20px !important;
+    }
+    .lightbox .pricing .rightcol {
+    	padding-right: 20px !important;
+	}
 }
 @media all and (max-width: 790px) {
     div#dev *{display:none}div#dev-790{display:block}
@@ -1668,7 +1680,6 @@ div#dev-gt-1140{display:block}
         display: none;
     }
     .lightbox .preview .leftcol .desc .head {
-        text-align: center;
         font-size: 18px;
         letter-spacing: 2px;
         border: none;
@@ -1768,11 +1779,11 @@ div#dev-gt-1140{display:block}
     #content .content-in .rightcol .head:first-child {
         margin-top: 0;
         margin-right: 0;
-        padding-bottom: 10px;
+        /*padding-bottom: 10px;*/
     }
     #page #content .content-in .rightcol .head {
-        padding-top: 10px;
-        padding-bottom: 10px;
+        /*padding-top: 10px;*/
+        /*padding-bottom: 10px;*/
     }
     #content .home-content ul.country div.pick-more-keywords {
         margin-left: -218.5%;
@@ -1794,11 +1805,10 @@ div#dev-gt-1140{display:block}
         display: block;
     }
     .lightbox .header .desc {
-        position: static;
         width: auto;
         height: auto;
-        padding: 12px 20px;
-        line-height: normal;
+        padding: 0px 20px;
+        line-height: 30px;
     }
     .lightbox .cs_addtocart/*,
     .lightbox .cs_addtolightbox*/ {
@@ -1847,6 +1857,14 @@ div#dev-gt-1140{display:block}
         padding-top: 35px;
         border-top: solid #c4c4c4 1px;
     }
+    .lightbox .pricing .rightcol .item {
+        padding-left: 15% !important;
+        padding-right: 15% !important;
+    }
+    #content .content-in .rightcol .item {
+        padding-left: 20% !important;
+        padding-right: 20% !important;
+    }
     .lightbox .pricing .rightcol a.button-blue {
         float: none !important;
         margin-left: auto;
@@ -1855,9 +1873,6 @@ div#dev-gt-1140{display:block}
     }
     .lightbox .pricing .rightcol a.button-blue.left {
         margin-bottom: 0;
-    }
-    .lightbox .pricing .rightcol > .info {
-        margin-left: 20px;
     }
     #content .cart .total-price-bottom .left a {
         margin-left: auto;
@@ -1870,6 +1885,12 @@ div#dev-gt-1140{display:block}
     #content .cart .leftcol .section,
     #content .cart .rightcol .section {
         border: none;
+    }
+    #content .cart .leftcol .section {
+        padding-bottom: 0;
+    }
+    #content .cart .leftcol .section .section + .section {
+        margin-bottom: 60px;
     }
     #content .content-in .cart .rightcol .section .head {
         background-color: #C0C0C0;
@@ -2193,6 +2214,10 @@ div#dev-gt-1140{display:block}
 @media all and (max-width: 567px) {
     div#dev *{display:none}div#dev-567{display:block}
 
+    #content .content-in .rightcol .email-item ul li label {
+        width: 90%;
+    }
+
     #content .content-in .rightcol .head-2 div:last-child {
         margin: 0 auto;
         float: none !important;
@@ -2468,7 +2493,7 @@ div#dev-gt-1140{display:block}
     #content .cart .leftcol .item select,
     #content .content-in .rightcol .item label,
     #content .content-in .rightcol form#form_register .item select {
-        width: 70.5%;
+        /*width: 70.5%;*/
     }
     #content .cart .cart-item .price a.button-grey-new,
     #content .cart .cart-item .price a.button-grey-newB {
@@ -2723,6 +2748,18 @@ div#dev-gt-1140{display:block}
 @media all and (max-width: 440px) {
     div#dev *{display:none}div#dev-440{display:block}
 
+    /* content */
+    #content .content-in .rightcol .item {
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+    }
+
+    /* cart */
+    #content .cart .leftcol .item {
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+    }
+
     /* category - lightbox */
     .lightbox-category {
         position: absolute !important;
@@ -2758,6 +2795,11 @@ div#dev-gt-1140{display:block}
         text-align: left;
     }
 
+    /* lightbox - pricing */
+    .lightbox .pricing .rightcol .item {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
     /* cart */
     #content .cart .cart-item .price p {
         width: 45%;
@@ -2860,37 +2902,8 @@ div#dev-gt-1140{display:block}
 @media all and (max-width: 360px) {
     div#dev *{display:none}div#dev-360{display:block}
 
-    #content .content-in .rightcol .item {
-        width: auto;
-        padding-left: 20px;
-        padding-right: 20px;
-    }
     #content .cart .payment img {
         width: 278px;
-    }
-    #content .cart .leftcol .item input,
-    #content .cart .leftcol .item textarea,
-    #content .content-in .rightcol .item input,
-    #content .content-in .rightcol .item textarea,
-    .lightbox .pricing .rightcol .item input,
-    .lightbox .pricing .rightcol .item select,
-    .lightbox .pricing .rightcol .item textarea {
-        width: 98%;
-    }
-    #content .content-in .rightcol .item select {
-    	width: 100.5%;
-    }
-    #content .content-in .rightcol form#form_register .item select {
-    	width: 102%;
-    }
-    #content .cart .leftcol .item label,
-
-    #content .content-in .rightcol .item label,
-    .lightbox .pricing .rightcol .item label {
-        width: 100%;
-    }
-    #content .cart .leftcol .item select {
-        width: 102%;
     }
     #content .cart .cart-item .price p {
         width: 44%;
@@ -2900,7 +2913,6 @@ div#dev-gt-1140{display:block}
     }
     .lightbox .pricing .rightcol .item select {
         float: none;
-        width: 100%;
     }
     .lightbox .pricing .rightcol .item div.description,
     #publish_start_date_forinline_display.hasDatepicker .ui-datepicker-inline {
@@ -2912,7 +2924,6 @@ div#dev-gt-1140{display:block}
         float: none;
     }
     .lightbox .pricing .rightcol .item input {
-        width: 98%;
         float: none;
     }
     .lightbox .preview .leftcol .image {
