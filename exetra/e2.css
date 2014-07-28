@@ -215,6 +215,7 @@
     background: none repeat scroll 0% 0% rgb(193, 193, 193);
 }
 
+/**/
 #content .home-content ul.country > div.pick-more-keywords {
     display: block;
     background-color: #bbbbbb;
@@ -257,6 +258,8 @@
     line-height: 34px;
     -webkit-text-rendering: auto;
 }
+
+/* content - in */
 #content .content-in .content.general_content > p {
     margin: 10px 0;
     font-size: 13px;
@@ -266,20 +269,39 @@
     margin: 0 0 20px;
 }
 #content .content-in .rightcol {
-    font-size: 13px;
     font-size: 14px;
 }
 #content .content-in .content .rightcol {
-	width: 77%;
+	width: 77%; /* -> 1140 */
+	width: inherit;
 }
-#content .content-in .content .rightcol > .purchase-item > table + div {
+#content .content-in .rightcol {
+	width: 760px;
+}
+
+#content .content-in .rightcol .purchase-item .desc {
+	font-size: 14px;
+}
+#content .content-in .rightcol .purchase-item table + div {
+	/*width: auto !important;*/
     padding-left: 0 !important;
 }
-#content .content-in .content .rightcol > .purchase-item > table + div > div {
-    margin-bottom: 0 !important;
+#content .content-in .rightcol .purchase-item table + div p + p span {
+	margin-left: 3px;
+	white-space: nowrap;
 }
-#content .content-in .content .rightcol > .purchase-item > table + div > p > input:last-child {
+#content .content-in .rightcol .purchase-item table + div p + p a.link {
+	display: block;
+    text-align: right;
+}
+#content .content-in .rightcol .purchase-item table + div p input:last-child {
     display: none;
+}
+#content .content-in .rightcol .purchase-item table + div div {
+    display: none;
+}
+#content .content-in .rightcol .purchase-item table + div div + div {
+	display: block;
 }
 #page.fluid #content .content-in .header > .item,
 #page.fluid #content .content-in .header > form {
@@ -303,10 +325,9 @@
     height: auto;
 }
 #content .content-in .rightcol .head {
-    /*padding: 5px 20px 4px;*/
+	height: auto;
     background-color: #f5f5f5;
     margin-left: 0;
-    height: auto;
 }
 
 /* cart */
@@ -412,13 +433,11 @@
 }
 #content .cart .leftcol .item textarea {
 	width: 100%;
-	/*display: block;*/
     line-height: 18px;
     margin: 0 auto;
     text-align: left;
     float: none;
 }
-
 #content .cart .payment #place_your_order {
     width: 200px;
     padding: 10px 0;
@@ -459,32 +478,29 @@
 #content .content-in .rightcol .head-3 {
     padding: 5px 0;
 }
-
-/* invoices */
-    #content .content-in .rightcol .invoices .item-detail {
-        margin-left: 4%;
-        margin-left: 20px !important;
-        margin-right: 20px !important;
-        width: auto !important;
-        background-image: none;
-        background-color: #f8f8f8;
-        min-height: 0;
-        position: relative;
-    }
-    #content .content-in .rightcol .invoices .item-detail .left {
-        width: 30%;
-        background-color: #e8e8e8;
-        padding: 2%;
-        position: absolute;
-        float: none;
-        top: 0;
-        bottom: 0;
-    }
-    #content .content-in .rightcol .invoices .item-detail .right {
-        padding: 2%;
-        width: 62%;
-    }
-
+#content .content-in .rightcol .invoices .item-detail {
+    margin-left: 4%;
+    margin-left: 20px !important;
+    margin-right: 20px !important;
+    width: auto !important;
+    background-image: none;
+    background-color: #f8f8f8;
+    min-height: 0;
+    position: relative;
+}
+#content .content-in .rightcol .invoices .item-detail .left {
+    width: 30%;
+    background-color: #e8e8e8;
+    padding: 2%;
+    position: absolute;
+    float: none;
+    top: 0;
+    bottom: 0;
+}
+#content .content-in .rightcol .invoices .item-detail .right {
+    padding: 2%;
+    width: 62%;
+}
 #content .content-in .rightcol .head-3 a,
 #content .content-in .rightcol .invoices .item div {
     width: 19% !important;
@@ -506,7 +522,6 @@
 #content .content-in .rightcol .item select,
 #content .content-in .rightcol .item textarea {
 	width: 100%;
-    font-size: 13px; /* Q */
     float: none;
     display: inline-block;
     margin: 0 auto;
@@ -553,7 +568,7 @@
 }
 #content .content-in .content .rightcol > .form_contact {
     margin-bottom: 20px;
-    margin-bottom: 15px; /*!*/
+    margin-bottom: 15px;
 }
 #password + br,
 #content .content-in .rightcol form#form_register #password + label,
@@ -660,7 +675,16 @@ form#form_login div.item a.forgotpassword,
     margin-right: 20px;
     vertical-align: top;
 }
-.image-list li > p {
+
+/* image list */
+.image-list li .pict {
+    margin-bottom: 9px !important;
+}
+.image-list li p,
+.image-list li p strong {
+    font-size: 13px;
+}
+.image-list li p {
     min-height: 57px !important;
 }
 .image-list li .cs_addtocart {
@@ -713,7 +737,7 @@ form#form_login div.item a.forgotpassword,
     padding: 20px !important;
 }
 
-/* lightbox -preview */
+/* lightbox - preview */
 .lightbox .preview {
     font-size: 14px;
 }
@@ -755,7 +779,6 @@ form#form_login div.item a.forgotpassword,
 .lightbox .preview .leftcol .desc table tr th {
     padding-left: 30px;
 }
-
 .lightbox .preview .leftcol .desc table tr th span {
     display: inline-block;
     border-radius: 3px;

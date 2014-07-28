@@ -42,7 +42,7 @@ div#dev-gt-1140{display:block}
     #page.fluid #content .content-in .header > *,
     #content .content-in .content .rightcol > *,
     /*#content .content-in .content .rightcol > .purchase-item > *,*/
-    #content .content-in .content .rightcol > .purchase-item > table + div > div,
+    /*#content .content-in .content .rightcol > .purchase-item > table + div > div,*/
     /*#content .content-in .content .rightcol > .purchase-item > table + div > p,*/
     #content .content-in .content.general_content > *,
     #content .cart > #cart_status_top,
@@ -159,18 +159,34 @@ div#dev-gt-1140{display:block}
     #content .content-in .header .item label span {
         display: none;
     }
-    #content .content-in .rightcol .email-item {
-        padding: 20px 20px;
-        margin-bottom: 0;
+    #content .content-in .rightcol {
+        width: 77% !important;
+        min-width: 200px;
+        font-size: 14px;
     }
-    #content .content-in .rightcol form#form_register .item select#company_type {
-        margin-left: auto;
+    #content .content-in .rightcol .head,
+    #content .content-in .leftcol .head a,
+    #content .content-in .rightcol .head-2,
+    .fluid #content .content-in .rightcol .head {
+        line-height: 60px;
+        height: 60px;
     }
-    #content .content-in .content .rightcol {
-        padding-bottom: 0 !important;
+    #content .content-in .rightcol .head-2 div:first-child {
+        display: none;
     }
-    #content .content-in .content .rightcol input#login_password {
-        margin-left: auto;
+    #content .content-in .rightcol .head-2 div:last-child {
+        float: left !important;
+    }
+    #content .content-in .rightcol .head-2 div:last-child > select {
+        width: auto;
+    }
+    #content .content-in .rightcol .head-3 a,
+    #content .content-in .rightcol .invoices .item div {
+        width: 24% !important;
+    }
+    #content .content-in .rightcol .head-3 a.item-3,
+    #content .content-in .rightcol .invoices .item .item-3 {
+        display: none;
     }
     .fluid #content .content-in .rightcol .head span {
         margin-left: 20px;
@@ -183,22 +199,99 @@ div#dev-gt-1140{display:block}
         margin: 0 auto;
         width: 160px !important;
     }
-    #content .content-in .rightcol .invoices .item input {
-        display: inline;
+    #content .content-in .rightcol .email-content {
+        padding-bottom: 0;
+    }
+    #content .content-in .rightcol .email-item {
+        padding: 20px 20px;
+        margin-bottom: 0;
+    }
+    #content .content-in .rightcol .email-item p {
+        font-size: 14px;
     }
     #content .content-in .rightcol .email-item ul li label {
         padding: 0;
     }
+    #content .content-in .rightcol .item {
+        padding-left: 25% !important;
+        padding-right: 25% !important;
+        padding-bottom: 20px;
+        text-align: center;
+        font-size: 14px;
+    }
+    #content .content-in .rightcol .item span {
+        margin-right: auto;
+    }
+
+    #content .content-in .content .rightcol {
+        padding-bottom: 0 !important;
+    }
+    #content .content-in .content .rightcol input#login_password {
+        margin-left: auto;
+    }
     #content .content-in .rightcol .purchase-item a.button-blue,
     #content .content-in .rightcol .purchase-item a.button-grey {
-        width: 130px;
-        font-size: 13px;
-        position: static;
-        height: 38px;
-        line-height: 38px;
+    	position: static;
+        height: 40px;
+        line-height: 40px;
     }
     #content .content-in .rightcol .purchase-item a.button-blue {
-        float: left;
+    	display: inline-block;
+        height: 40px;
+        line-height: 40px;
+        float: none;
+    }
+    #content .content-in .rightcol .purchase-item a.button-grey {
+    	margin-left: 20px;
+    }
+    /*#content .content-in .rightcol .purchase-item table {
+        clear: left;
+        width: 44%;
+    }*/
+    #content .content-in .rightcol .purchase-item table + div {
+        width: 46% !important;
+    }
+    #content .content-in .rightcol .purchase-item table + div > div + div + p,
+	#content .content-in .rightcol .purchase-item table + div > p + p + p {
+    	width: 100%;
+    	text-align: right;
+    }
+    #content .content-in .rightcol .invoices .item input {
+        /*display: inline;*/
+    }
+    #content .content-in .rightcol .invoices .item .item-1 input {
+        margin-right: 38px;
+    }
+    #content .content-in .rightcol .invoices .item-detail .right .desc {
+        float: none;
+        width: auto;
+        text-align: center;
+        padding-top: 0;
+        margin-bottom: 20px;
+    }
+    #content .content-in .rightcol .invoices .item-detail .right .desc .image {
+        line-height: normal;
+        margin: 0 auto;
+        height: auto;
+    }
+    #content .content-in .rightcol .invoices .item-detail .right table tr th.h2 {
+        display: none;
+    }
+    #content .content-in .rightcol .invoices .item-detail .right table tr th {
+        text-align: left;
+    }
+    #content .content-in .rightcol .invoices .item-detail .right .hr {
+        padding: 0;
+        margin: 0;
+    }
+    #content .content-in .rightcol .invoices .item-detail .left a.button {
+        float: none;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #content .content-in .rightcol form#form_register .item select#company_type {
+        margin-left: auto;
     }
     #content .content-in .content .rightcol > #form_login {
         border-bottom: none;
@@ -223,28 +316,13 @@ div#dev-gt-1140{display:block}
     }
     #page #content .content-in .content {
         padding: 20px 0 0;
-        font-size: 14px;
+        font-size: 14px !important;
     }
     #page.fluid #content.search .content {
     	padding-top: 0;
     }
-    #content .content-in .content .rightcol div p:last-child {
-        display: none;
-    }
     #content .content-in .content .rightcol div.oneitem p:last-child {
         display: block;
-    }
-    #content .content-in .rightcol {
-        width: 77% !important;
-        min-width: 200px;
-        font-size: 14px;
-    }
-    #content .content-in .rightcol .item {
-        padding-left: 25% !important;
-        padding-right: 25% !important;
-        padding-bottom: 20px;
-        text-align: center;
-        font-size: 14px;
     }
     #content .content-in .content.general_content > table {
         border: none !important;
@@ -256,15 +334,6 @@ div#dev-gt-1140{display:block}
     #content .content-in .content .rightcol .email-content .head {
         margin-left: 0;
         margin-right: 0;
-    }
-    #content .content-in .rightcol .email-content {
-        padding-bottom: 0;
-    }
-    #content .content-in .rightcol .item span {
-        margin-right: auto;
-    }
-    #content .content-in .rightcol .email-item p {
-        font-size: 14px;
     }
     #content .content-in .content.general_content > p {
             font-size: 14px;
@@ -357,13 +426,7 @@ div#dev-gt-1140{display:block}
     #content .content-in .cart .rightcol .section .head {
         line-height: 59px;
     }
-    #content .content-in .rightcol .head,
-    #content .content-in .leftcol .head a,
-    .fluid #content .content-in .rightcol .head,
-    #content .content-in .rightcol .head-2 {
-        line-height: 60px;
-        height: 60px;
-    }
+
 
     #content .cart .leftcol .section .head {
         line-height: 59px;
@@ -856,98 +919,6 @@ div#dev-gt-1140{display:block}
         margin-right: -140%;
     }
 
-    /* invoices */
-    #content .content-in .rightcol .head-3 a,
-    #content .content-in .rightcol .invoices .item div {
-        width: 24% !important;
-    }
-    #content .content-in .rightcol .head-3 a.item-3,
-    #content .content-in .rightcol .invoices .item .item-3 {
-        display: none;
-    }
-    #content .content-in .rightcol .invoices .item .item-1 input {
-        margin-right: 38px;
-    }
-    /*#content .content-in .rightcol .invoices .item-detail {
-        margin-left: 4%;
-        margin-left: 20px !important;
-        margin-right: 20px !important;
-        width: auto !important;
-        background-image: none;
-        background-color: #f8f8f8;
-        min-height: 0;
-        position: relative;
-    }
-    #content .content-in .rightcol .invoices .item-detail .left {
-        width: 30%;
-        background-color: #e8e8e8;
-        padding: 2%;
-        position: absolute;
-        float: none;
-        top: 0;
-        bottom: 0;
-    }
-    #content .content-in .rightcol .invoices .item-detail .right {
-        padding: 2%;
-        width: 62%;
-    } -> e2 */
-    #content .content-in .rightcol .invoices .item-detail .right .desc {
-        float: none;
-        width: auto;
-        text-align: center;
-        padding-top: 0;
-        margin-bottom: 20px;
-    }
-    #content .content-in .rightcol .invoices .item-detail .right .desc .image {
-        line-height: normal;
-        margin: 0 auto;
-        height: auto;
-    }
-    #content .content-in .rightcol .invoices .item-detail .right table tr th.h2 {
-        display: none;
-    }
-    #content .content-in .rightcol .invoices .item-detail .right table tr th {
-        text-align: left;
-    }
-    #content .content-in .rightcol .invoices .item-detail .right .hr {
-        padding: 0;
-        margin: 0;
-    }
-    #content .content-in .rightcol .purchase-item table {
-        clear: left;
-        width: 44%;
-    }
-    #content .content-in .rightcol .purchase-item table + div {
-        width: 54% !important;
-        padding-left: 0 !important;
-        margin-top: -126px;
-    }
-    #content .content-in .rightcol .purchase-item table+div > p:nth-child(2) {
-        margin-bottom: 0 !important;
-        line-height: 30px;
-    }
-    #content .content-in .rightcol .purchase-item > div.desc {
-        margin-bottom: 10px;
-    }
-    #content .content-in .rightcol .purchase-item > div.desc > div.image {
-        background: none;
-        border: none;
-    }
-    #content .content-in .rightcol .head-2 div:first-child {
-        display: none;
-    }
-    #content .content-in .rightcol .head-2 div:last-child {
-        float: left !important;
-    }
-    #content .content-in .rightcol .head-2 div:last-child > select {
-        width: auto;
-    }
-    #content .content-in .rightcol .invoices .item-detail .left a.button {
-        float: none;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-    }
 
     #content .home-desc h1 {
         font-size: 21px;
@@ -986,9 +957,7 @@ div#dev-gt-1140{display:block}
         max-height: 100%;
         width: auto;
     }
-    .image-list li .pict span {
-        display: none;
-    }
+
     .image-list li > p {
        background-image: none;
     }
@@ -1002,15 +971,19 @@ div#dev-gt-1140{display:block}
         padding: 0;
         cursor: pointer;
     }
-    .image-list li.hover .pict {
-        display: block;
-    }
     .image-lightbox2 .pict a,
     .image-list li .pict a {
         width: 85px;
         height: 85px;
         margin: 0;
     }
+    .image-list li .pict span {
+        display: none;
+    }
+    .image-list li.hover .pict {
+        display: block;
+    }
+
     .image-list li .pict a.item-1 {
         width: 84px;
         height: 84px;
@@ -1194,7 +1167,8 @@ div#dev-gt-1140{display:block}
     #content .content-in .rightcol .email-item ul li label {
         width: 92%;
     }
-    #content .content-in .rightcol .email-item ul li input {
+    #content .content-in .rightcol .email-item ul li input,
+    #content .content-in .rightcol .purchase-item table + div p + p input[type="radio"] {
     	width: 15px !important;
     	height: 15px !important;
         -ms-transform-origin: left center;
@@ -1207,6 +1181,46 @@ div#dev-gt-1140{display:block}
         -webkit-transform: scale(2);
         -o-transform: scale(2);
     }
+    #content .content-in .rightcol .purchase-item > div.desc {
+        float: none;
+        margin: 0 auto;
+    }
+    #content .content-in .rightcol .purchase-item > div.desc > div.image {
+        background: none;
+        border: none;
+    }
+    #content .content-in .rightcol .purchase-item table {
+    /*#content .content-in .rightcol .purchase-item .desc .image {*/
+        width: auto;
+        float: none;
+        margin: 20px auto;
+    }
+    #content .content-in .rightcol .purchase-item table tr td {
+        padding-right: 30px;
+    }
+    #content .content-in .rightcol .purchase-item table tr th {
+        padding-left: 30px;
+    }
+    #content .content-in .rightcol .purchase-item table + div {
+        width: auto !important;
+    }
+    #content .content-in .rightcol .purchase-item table + div div + div {
+    	width: 350px !important;
+    }
+    #content .content-in .rightcol .purchase-item table + div div + div,
+    #content .content-in .rightcol .purchase-item table + div p + p {
+        margin-bottom: 20px !important;
+    }
+    #content .content-in .rightcol .purchase-item table + div p + p + p {
+        margin-bottom: 0 !important;
+    }
+    #content .content-in .rightcol .purchase-item table + div p + p a.link {
+    	display: inline;
+    }
+    #content .content-in .rightcol .purchase-item table + div p + p input[type="radio"] + span {
+        padding-left: 20px;
+        line-height: 40px;
+    }
     #content .home-desc h1 {
     	font-size: 16px;
         letter-spacing: 7px;
@@ -1218,7 +1232,7 @@ div#dev-gt-1140{display:block}
     #content .home-text .item .desc p {
         width: 68%;
         font-size: 12px;
-        margin-center: 0;
+        margin: 0;
     }
     #content .home-content .in {
         max-height: 1269px;
@@ -1738,20 +1752,12 @@ div#dev-gt-1140{display:block}
     #content .cart .total-price {
         padding: 20px 0;
     }
-    #page.fluid #content .content-in > .header + .content {
-        /*padding-top: 0;*/
-    }
     #content .content-in .general_content {
     	padding: 20px 0 20px;
     }
     #content .content-in .rightcol .head:first-child {
         margin-top: 0;
         margin-right: 0;
-        /*padding-bottom: 10px;*/
-    }
-    #page #content .content-in .rightcol .head {
-        /*padding-top: 10px;*/
-        /*padding-bottom: 10px;*/
     }
     #content .home-content ul.country div.pick-more-keywords {
         margin-left: -218.5%;
@@ -2002,22 +2008,31 @@ div#dev-gt-1140{display:block}
     #content .home-slider #controls li#controls3 a,
     #content .home-slider #controls li#controls4 a {
         font-weight: normal;
-        font-size: 13px;
+    font-size: 13px; /*!*/
     }
     #content .content-in .rightcol .purchase-item .desc {
         width: 34%;
     }
     #content .content-in .rightcol .purchase-item table {
-    	width: 65%;
-        float: right;
         clear: none;
     }
     #content .content-in .rightcol .purchase-item table + div {
-        width: 100% !important;
-        clear: both;
-        float: right !important;
+        /*width: 75% !important;*/
         padding-top: 15px;
-        margin-top: 0;
+        /*margin: 0 auto;*/
+    }
+    #content .content-in .rightcol .purchase-item table + div p + p + p {
+    	width: auto;
+    	float: right;
+    }
+    #content .content-in .rightcol .purchase-item a.button-blue {
+        position: static;
+        float: left;
+        margin-right: 15px;
+    }
+    #content .content-in .rightcol .purchase-item a.button-grey {
+        position: static;
+        float: left;
     }
     #content .content-in .cart .total-price-bottom {
         padding-left: 0;
@@ -2342,6 +2357,10 @@ div#dev-gt-1140{display:block}
 @media all and (max-width: 500px) {
     div#dev *{display:none}div#dev-500{display:block}
 
+    .tostartpricing a {
+    	display: block;
+        white-space: nowrap;
+    }
     .lightbox .header .desc {
         margin-top: 5px;
     }
@@ -2455,22 +2474,10 @@ div#dev-gt-1140{display:block}
         width: auto;
     }
     #content .content-in .rightcol .purchase-item .desc {
-        float: none;
-        width: auto;
         text-align: center;
     }
     #content .content-in .rightcol .purchase-item table+div > p > br {
         line-height: 1px;
-    }
-    #content .content-in .rightcol .purchase-item table,
-    #content .content-in .rightcol .purchase-item > div.desc > div.image {
-        width: 100%;
-    }
-    #content .cart .leftcol .item label,
-    #content .cart .leftcol .item select,
-    #content .content-in .rightcol .item label,
-    #content .content-in .rightcol form#form_register .item select {
-        /*width: 70.5%;*/
     }
     #content .cart .cart-item .price a.button-grey-new,
     #content .cart .cart-item .price a.button-grey-newB {
@@ -2731,6 +2738,33 @@ div#dev-gt-1140{display:block}
         padding-right: 20px !important;
     }
 
+    #content .content-in .rightcol .purchase-item table + div {
+    	width: 100% !important;
+    }
+    #content .content-in .rightcol .purchase-item table + div div + div {
+        width: 100% !important;
+    }
+    #content .content-in .rightcol .purchase-item table + div p + p a.link {
+        display: block;
+        text-align: right;
+    }
+    #content .content-in .rightcol .purchase-item table + div p + p + p {
+    	width: 100%;
+    }
+    #content .content-in .rightcol .purchase-item table + div div + div + p a.button-grey,
+    #content .content-in .rightcol .purchase-item table + div p + p a.button-blue,
+    #content .content-in .rightcol .purchase-item table + div p + p a.button-grey {
+    	display: block !important;
+        width: 150px !important;
+        float: none !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+    #content .content-in .rightcol .purchase-item a.button-grey {
+        margin-top: 20px !important;
+    }
+
+
     /* cart */
     #content .cart .leftcol .item {
         padding-left: 20px !important;
@@ -2942,10 +2976,6 @@ div#dev-gt-1140{display:block}
         width: 100%;
         margin: 10px auto;
     }
-    /*#content .content-in .rightcol .purchase-item .desc,
-    #content .content-in .rightcol .purchase-item .desc .image {
-        text-align: left;
-    }*/
     #content .content-in .rightcol form#form_register {
         text-align: left;
     }
@@ -3016,7 +3046,7 @@ div#dev-gt-1140{display:block}
     }
     #content .content-in .rightcol .purchase-item a.button-blue,
     #content .content-in .rightcol .purchase-item a.button-grey {
-        width: 120px;
+        width: 120px !important;
         float: none;
         margin: 5px auto;
     }
