@@ -60,7 +60,8 @@
 }
 #content .content-in .header {
 	padding-right: 20px;
-    margin-bottom: 20px;
+    /*margin-bottom: 20px;*/
+    margin-bottom: 0;
     border-radius: 0;
 }
 #content .content-in .header.c {
@@ -77,8 +78,8 @@
     display: none;
 }
 #content .content-in .header select {
-    padding-top: 5px;
-    vertical-align: baseline;
+    /*padding-top: 5px;*/
+    /*vertical-align: baseline;*/
 }
 #content .content-in .header select.small {
     width: auto;
@@ -89,14 +90,12 @@
 }
 #content .content-in .header .resp-search input {
     margin-left: 3px;
-    padding: 0 0 0 3px;
-    height: 30px !important;
     float: left;
 }
 #content .content-in .content {
     padding: 20px;
 }
-#page.fluid #content .content-in .content {
+#page.fluid #content.search .content {
     padding-top: 0;
 }
 #resp-subpagebenefits {
@@ -452,8 +451,10 @@
     padding: 0;
 }
 #content .content-in .rightcol .item {
-/*#content .content-in .rightcol .item.last {*/
     padding: 0 20% 20px;
+}
+#content .content-in .rightcol .invoices .item {
+	padding: 0 !important;
 }
 #content .content-in .rightcol .head-3 {
     padding: 5px 0;
@@ -628,9 +629,19 @@ form#form_login div.item a.forgotpassword,
 }
 
 /* image-content */
+.image-content {
+    padding-bottom: 20px;
+}
+.image-content.search {
+    padding-bottom: 20px;
+}
 .image-content.search p.info {
     height: auto;
     padding: 20px 0;
+}
+.image-content a.top,
+.image-content.search .arrow {
+    position: static;
 }
 .image-content .filter ul li {
     width: 18%;
@@ -655,7 +666,7 @@ form#form_login div.item a.forgotpassword,
 .image-list li .cs_addtocart {
     width: inherit;
     position: absolute;
-    margin-top: 5px;
+    margin-top: 0;
     padding: 3px 0 !important;
 }
 
