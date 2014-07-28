@@ -6,7 +6,13 @@
 .rightcol br {
     display: none;
 }
-
+.news_post {
+    margin-top: 20px;
+    padding-bottom: 0;
+}
+.news_post:first-child {
+	margin-top: 0 ;
+}
 
 #page.fluid #content .content-in .header > *,
 #content .content-in .content .rightcol > .oneitem,
@@ -54,7 +60,11 @@
 }
 #content .content-in .header {
 	padding-right: 20px;
+    margin-bottom: 20px;
     border-radius: 0;
+}
+#content .content-in .header.c {
+	margin-bottom: 0;
 }
 #page #content .content-in .header form {
     display: block;
@@ -86,7 +96,7 @@
 #content .content-in .content {
     padding: 20px;
 }
-#content .content-in > .header.c + .content {
+#page.fluid #content .content-in .content {
     padding-top: 0;
 }
 #resp-subpagebenefits {
@@ -263,6 +273,15 @@
 #content .content-in .content .rightcol {
 	width: 77%;
 }
+#content .content-in .content .rightcol > .purchase-item > table + div {
+    padding-left: 0 !important;
+}
+#content .content-in .content .rightcol > .purchase-item > table + div > div {
+    margin-bottom: 0 !important;
+}
+#content .content-in .content .rightcol > .purchase-item > table + div > p > input:last-child {
+    display: none;
+}
 #page.fluid #content .content-in .header > .item,
 #page.fluid #content .content-in .header > form {
     float: right;
@@ -283,9 +302,6 @@
 .fluid #content .content-in .rightcol .head {
     padding-left: 4%;
     height: auto;
-}
-.fluid #content .content-in .rightcol .head select {
-    padding-top: 5px;
 }
 #content .content-in .rightcol .head {
     /*padding: 5px 20px 4px;*/
@@ -321,18 +337,19 @@
     display: block;
     font-size: 14px;
 }
-#content .content-in .leftcol .head {
-	font-size: 16px;
-    height: auto;
+#content .content-in .leftcol .head,
+#content .content-in .leftcol .head a {
+    height: 50px;
+    line-height: 50px;
     padding: 0;
 }
+#content .content-in .leftcol .head {
+    font-size: 16px;
+}
 #content .content-in .leftcol .head a {
+	display: block;
     background-color: #c0c0c0;
-    display: block;
-    height: 40px;
-    line-height: 40px;
     text-align: center;
-    padding: 5px 0;
 }
 #content .content-in .cart .leftcol,
 #content .cart .total-price-bottom .left {
@@ -353,6 +370,9 @@
 #content .content-in .rightcol .head,
 .fluid #content .content-in .rightcol .head {
     line-height: 50px;
+}
+#content .content-in .rightcol .head-2 {
+    height: 50px;
 }
 #content .cart .leftcol .section label.licence {
     float: left;
