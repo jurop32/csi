@@ -6,17 +6,13 @@
 .rightcol br {
     display: none;
 }
-.closebutton.inheader {
-    position: static;
-    margin-top: 10px;
-}
-.lightbox .closebuttonholder {
-    margin-top: 20px;
-    padding-top: 20px;
-    border-top: 1px solid #e0e0e0;
-}
 
+
+#page.fluid #content .content-in .header > *,
+#content .content-in .content .rightcol > .oneitem,
+#content .content-in .rightcol #form_login .item:first-child,
 #content .home-content > *,
+.lightbox .preview .search .head,
 .lightbox .preview .leftcol .desc > *,
 #footer .in > * {
     padding-left: 20px !important;
@@ -267,11 +263,6 @@
 #content .content-in .content .rightcol {
 	width: 77%;
 }
-#page.fluid #content .content-in .header > *
-{
-    padding-left: 20px !important;
-    padding-right: 20px !important;
-}
 #page.fluid #content .content-in .header > .item,
 #page.fluid #content .content-in .header > form {
     float: right;
@@ -434,10 +425,6 @@
     clear: both;
     padding-top: 0;
 }
-#content .content-in .content .rightcol > .oneitem {
-    padding-left: 20px;
-    padding-right: 20px;
-}
 .oneitem:last-child {
     padding-bottom: 0;
 }
@@ -451,6 +438,32 @@
 #content .content-in .rightcol .head-3 {
     padding: 5px 0;
 }
+
+/* invoices */
+    #content .content-in .rightcol .invoices .item-detail {
+        margin-left: 4%;
+        margin-left: 20px !important;
+        margin-right: 20px !important;
+        width: auto !important;
+        background-image: none;
+        background-color: #f8f8f8;
+        min-height: 0;
+        position: relative;
+    }
+    #content .content-in .rightcol .invoices .item-detail .left {
+        width: 30%;
+        background-color: #e8e8e8;
+        padding: 2%;
+        position: absolute;
+        float: none;
+        top: 0;
+        bottom: 0;
+    }
+    #content .content-in .rightcol .invoices .item-detail .right {
+        padding: 2%;
+        width: 62%;
+    }
+
 #content .content-in .rightcol .head-3 a,
 #content .content-in .rightcol .invoices .item div {
     width: 19% !important;
@@ -466,8 +479,6 @@
 }
 #content .content-in .rightcol #form_login .item:first-child {
     text-align: center;
-    padding-left: 20px !important;
-    padding-right: 20px !important;
 }
 #content .content-in .rightcol .item label,
 #content .content-in .rightcol .item input,
@@ -516,8 +527,12 @@
 #content .content-in .content .rightcol > #form_register {
     border-bottom: none;
 }
+#content .content-in .content .rightcol > .head:first-child + #form_register {
+    margin-bottom: 20px;
+}
 #content .content-in .content .rightcol > .form_contact {
-    margin: 20px 0;
+    margin-bottom: 20px;
+    margin-bottom: 15px; /*!*/
 }
 #password + br,
 #content .content-in .rightcol form#form_register #password + label,
@@ -752,10 +767,6 @@ form#form_login div.item a.forgotpassword,
 .lightbox .preview .search {
     padding-bottom: 0;
 }
-.lightbox .preview .search .head {
-    padding-left: 20px;
-    padding-right: 20px;
-}
 .lightbox .preview button {
     padding: 5px 0;
     width: 112px;
@@ -803,6 +814,7 @@ form#form_login div.item a.forgotpassword,
 }
 .lightbox .pricing .rightcol > .info {
    clear: both;
+   margin-right: 20px;
 }
 .lightbox .pricing .rightcol .item.noheight {
     padding-bottom: 0;

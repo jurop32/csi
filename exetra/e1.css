@@ -99,16 +99,16 @@ textarea {
 .image-list li p strong {
     font-size: 13px;
 }
+
+/* re */
 .closebuttonholder {
+    width: 760px;
+    margin: 20px auto 0;
+    padding-top: 20px;
+    border-top: 1px solid #e0e0e0;
     text-align: center;
 }
-.closebuttonholder.imagedetail {
-    width: 760px;
-    margin: 0 auto;
-    border-top: 1px solid #e0e0e0;
-}
 .closebutton {
-    display: block;
     margin: 0px auto;
     padding: 4px 0;
     width: 180px;
@@ -124,15 +124,11 @@ textarea {
     line-height: 30px;
     font-size: 14px;
 }
-.closebutton.inheader,
-.closebuttonholder.imagedetail > .closebutton {
-    display: block;
-    margin: 20px auto;
+.closebutton.imagedetail.inheader {
+    display: none;
 }
 .closebutton.inheader {
-	display: none;
-	float: right;
-    margin: 0;
+    float: right;
 }
 #responsivecontrols {
     display: none;
@@ -182,55 +178,6 @@ textarea {
     width: 170px;
     margin: 0 auto;
 }
-.responsivetitle {
-    border-bottom: solid #bbbbbb 1px;
-    padding: 0 0 15px;
-}
-#content.search .content-in .header.c h1 {
-    white-space: nowrap;
-}
-#content .home-content div > a > i > span {
-    display: none;
-}
-#content .home-content ul.country li a {
-    line-height: 20px;
-    font-size: 13px;
-}
-#keywords_content {
-    min-width: 200px !important;
-    padding: 0 !important;
-}
-#content.search .content-in .header {
-    padding: 20px 0;
-    height: auto;
-}
-#content .content-in .header span {
-    padding-right: 0;
-}
-#content .content-in .header span.resp,
-#content .content-in .header span.resp span {
-    float: none;
-    padding: 0;
-    line-height: inherit;
-    color: inherit;
-    font-size: inherit;
-}
-#content .content-in .header .resp-search {
-    background: white;
-}
-.resp-kwcolumn a.h2 {
-	font-weight: bold;
-    color: #0099ff;
-}
-#content .content-in .header .item label span {
-    padding: 0;
-    line-height: normal;
-    display: inline;
-    float: none;
-    font-size: inherit;
-}
-
-/* resp-header */
 #resp-header {
     display: none;
 }
@@ -241,13 +188,14 @@ textarea {
     border: solid #dbdbdb 1px;
     border-radius: 3px;
 }
-#content .content-in .header .resp-search {
-    width: 40%;
-    border: solid #dbdbdb 1px;
-    border-radius: 3px;
-    padding: 1px;
-    margin: 15px 20px 0 10px;
-    float: right;
+
+.responsivetitle {
+    border-bottom: solid #bbbbbb 1px;
+    padding: 0 0 15px;
+}
+.resp-kwcolumn a.h2 {
+    font-weight: bold;
+    color: #0099ff;
 }
 .resp-search input {
     width: 67%;
@@ -285,22 +233,6 @@ textarea {
     color: #ffffff;
     border-color: #080808;
     background: #c0c0c0;
-}
-#header .top-menu > li > a.smart-search {
-    border: 1px solid #B0B0B0;
-    height: 28px;
-    line-height: 28px;
-    border-radius: 4px;
-    display: block;
-    float: left;
-    color: #A0A0A0 !important;
-    text-decoration: none;
-    font-size: 14px;
-    width: auto;
-    text-align: center;
-    background: linear-gradient(#FFF, #F0F0F0) repeat scroll 0% 0% transparent;
-    padding: 2px 5px;
-    margin-top: -9px;
 }
 .resp-menubtn,
 #resp-header .resp-cartbtn {
@@ -365,63 +297,9 @@ textarea {
     display: none;
     clear: both;
 }
-#content .content-in .content #resp-subpagebenefits > div.home-info > p {
-    line-height: 40px;
-    color: #a0a0a0;
-}
-.tostartpricing {
-    text-align: left;
-    padding: 10px 0;
-    padding-left: 20px !important;
-    background-color: #e8e8e8;
-    color: #808080;
-    margin-bottom: 20px;
-    font-size: 14px;
-}
-#content .home-info p a {
-    text-decoration: none;
-}
-.arrow.resp {
-    display: none;
-    padding-bottom: 15px;
-}
-.arrow.resp > span {
-    clear: both;
-    float: none;
-    display: block;
-    width: 0;
-    height: 0;
-}
-#keywords_wrapper #keywords_header_right > a.gray2 {
-    display: inline-block;
-    padding-right: 10px;
-}
-#publish_start_date_forinline_display.hasDatepicker {
-    height: auto;
-}
-#publish_start_date_forinline_display input {
-    margin-bottom: 15px !important;
-}
-#publish_start_date_forinline_display.hasDatepicker .ui-datepicker-inline {
-	clear: both;
-    width: 280px;
-    margin: 15px 0 10px auto;
-    padding: 1px;
-}
-#publish_start_date_forinline_display.hasDatepicker .ui-datepicker-inline .ui-state-active {
-    background: -webkit-linear-gradient(#7FCBFF, #37A5EF);
-    background: -o-linear-gradient(#7FCBFF, #37A5EF);
-    background: -moz-linear-gradient(#7FCBFF, #37A5EF);
-    background: linear-gradient(#7FCBFF, #37A5EF);
-}
-#publish_start_date_forinline_display.hasDatepicker .ui-datepicker-inline td > a,
-#publish_start_date_forinline_display.hasDatepicker .ui-datepicker-inline th > a,
-#publish_start_date_forinline_display.hasDatepicker .ui-datepicker-title,
-#publish_start_date_forinline_display.hasDatepicker .ui-datepicker-prev,
-#publish_start_date_forinline_display.hasDatepicker .ui-datepicker-next {
-    height: 25px;
-    line-height: 25px;
-    text-align: center;
+#keywords_content {
+    min-width: 200px !important;
+    padding: 0 !important;
 }
 #resp-kwlist {
     display: none;
@@ -459,11 +337,25 @@ textarea {
 #keywords_wrapper #keywords_header {
     display: none;
 }
-div.search .c form > div button {
+.tostartpricing {
+    text-align: left;
+    padding: 10px 0;
+    padding-left: 20px !important;
+    background-color: #e8e8e8;
+    color: #808080;
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+.arrow.resp {
+    display: none;
+    padding-bottom: 15px;
+}
+.arrow.resp > span {
+    clear: both;
     float: none;
-    position: relative;
-    margin: 8px auto 0;
-    width: 180px;
+    display: block;
+    width: 0;
+    height: 0;
 }
 #similar-images {
     padding: 12px 0;
@@ -488,4 +380,111 @@ div.search .c form > div button {
 #similar-images ul li input {
     width: 15px !important;
     height: 15px !important;
+}
+
+/* content */
+#content.search .content-in .header.c h1 {
+    white-space: nowrap;
+}
+#content .home-content div > a > i > span {
+    display: none;
+}
+#content .home-content ul.country li a {
+    line-height: 20px;
+    font-size: 13px;
+}
+#content.search .content-in .header {
+    padding: 20px 0;
+    height: auto;
+}
+#content .content-in .header span {
+    padding-right: 0;
+}
+#content .content-in .header span.resp,
+#content .content-in .header span.resp span {
+    float: none;
+    padding: 0;
+    line-height: inherit;
+    color: inherit;
+    font-size: inherit;
+}
+#content .content-in .header .resp-search {
+    background: white;
+}
+#content .content-in .header .item label span {
+    padding: 0;
+    line-height: normal;
+    display: inline;
+    float: none;
+    font-size: inherit;
+}
+#content .content-in .header .resp-search {
+    width: 40%;
+    border: solid #dbdbdb 1px;
+    border-radius: 3px;
+    padding: 1px;
+    margin: 15px 20px 0 10px;
+    float: right;
+}
+
+#header .top-menu > li > a.smart-search {
+    border: 1px solid #B0B0B0;
+    height: 28px;
+    line-height: 28px;
+    border-radius: 4px;
+    display: block;
+    float: left;
+    color: #A0A0A0 !important;
+    text-decoration: none;
+    font-size: 14px;
+    width: auto;
+    text-align: center;
+    background: linear-gradient(#FFF, #F0F0F0) repeat scroll 0% 0% transparent;
+    padding: 2px 5px;
+    margin-top: -9px;
+}
+
+#content .content-in .content #resp-subpagebenefits > div.home-info > p {
+    line-height: 40px;
+    color: #a0a0a0;
+}
+#content .home-info p a {
+    text-decoration: none;
+}
+#keywords_wrapper #keywords_header_right > a.gray2 {
+    display: inline-block;
+    padding-right: 10px;
+}
+#publish_start_date_forinline_display.hasDatepicker {
+    height: auto;
+}
+#publish_start_date_forinline_display input {
+    margin-bottom: 15px !important;
+}
+#publish_start_date_forinline_display.hasDatepicker .ui-datepicker-inline {
+	clear: both;
+    width: 280px;
+    margin: 15px 0 10px auto;
+    padding: 1px;
+}
+#publish_start_date_forinline_display.hasDatepicker .ui-datepicker-inline .ui-state-active {
+    background: -webkit-linear-gradient(#7FCBFF, #37A5EF);
+    background: -o-linear-gradient(#7FCBFF, #37A5EF);
+    background: -moz-linear-gradient(#7FCBFF, #37A5EF);
+    background: linear-gradient(#7FCBFF, #37A5EF);
+}
+#publish_start_date_forinline_display.hasDatepicker .ui-datepicker-inline td > a,
+#publish_start_date_forinline_display.hasDatepicker .ui-datepicker-inline th > a,
+#publish_start_date_forinline_display.hasDatepicker .ui-datepicker-title,
+#publish_start_date_forinline_display.hasDatepicker .ui-datepicker-prev,
+#publish_start_date_forinline_display.hasDatepicker .ui-datepicker-next {
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+}
+div.search .c form > div button {
+    float: none;
+    position: relative;
+    margin: 8px auto 0;
+    width: 180px;
 }

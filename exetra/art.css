@@ -380,10 +380,6 @@ div#dev-gt-1140{display:block}
     #content .cart .leftcol .section .item a {
         display: block;
     }
-    #content .cart .total-price-bottom .left br,
-    #content .cart .leftcol .section .item br {
-        display: none;
-    }
     #content .cart .payment {
         padding: 0 20px;
         font-size: 12px;
@@ -416,13 +412,6 @@ div#dev-gt-1140{display:block}
     }
 
     /* lightbox */
-    .lightbox {
-        /*padding: 20px 0;*/
-    }
-    .lightbox .header .arrow {
-        display: block !important;
-        margin-top: 0;
-    }
     .lightbox .header .arrow a.next {
         margin-left: 10px;
     }
@@ -886,7 +875,7 @@ div#dev-gt-1140{display:block}
     #content .content-in .rightcol .invoices .item .item-1 input {
         margin-right: 38px;
     }
-    #content .content-in .rightcol .invoices .item-detail {
+    /*#content .content-in .rightcol .invoices .item-detail {
         margin-left: 4%;
         margin-left: 20px !important;
         margin-right: 20px !important;
@@ -908,7 +897,7 @@ div#dev-gt-1140{display:block}
     #content .content-in .rightcol .invoices .item-detail .right {
         padding: 2%;
         width: 62%;
-    }
+    } -> e2 */
     #content .content-in .rightcol .invoices .item-detail .right .desc {
         float: none;
         width: auto;
@@ -1092,17 +1081,8 @@ div#dev-gt-1140{display:block}
     }
 
     /* other */
-    .closebuttonholder.imagedetail {
-        width: auto;
+    .closebuttonholder {
         width: 100%;
-    }
-    .closebutton.inheader {
-        position: static;
-        margin-top: 10px;
-    }
-    .closebutton.imagedetail.inheader {
-        position: static;
-        margin-top: 10px;
     }
     #next_image_arrow > span,
     #prev_image_arrow > span {
@@ -1462,9 +1442,12 @@ div#dev-gt-1140{display:block}
         padding-left: 20px !important;
         padding-right: 20px !important;
     }
-    .lightbox .pricing .leftcol,
     .lightbox .preview .c .leftcol.fullwidth > * {
     	padding-left: 20px !important;
+    	padding-right: 20px !important;
+    }
+    .lightbox .pricing .leftcol {
+        padding-left: 20px !important;
     }
     .lightbox .pricing .rightcol {
     	padding-right: 20px !important;
@@ -1670,15 +1653,12 @@ div#dev-gt-1140{display:block}
     }
 
     /* lightbox - preview */
-    .lightbox .preview .leftcol,
+    /*.lightbox .preview .leftcol,
     .lightbox .preview .leftcol.fullwidth {
         float: none;
         margin: 0 auto;
         width: auto;
-    }
-    .lightbox .preview .leftcol.fullwidth + .rightcol {
-        display: none;
-    }
+    }*/
     .lightbox .preview .leftcol .desc .head {
         font-size: 18px;
         letter-spacing: 2px;
@@ -1817,9 +1797,6 @@ div#dev-gt-1140{display:block}
     	top: 110px !important;
     	margin-left: 0 !important;
     }
-    .closebuttonholder {
-        text-align: center;
-    }
     .lightbox .closebuttonholder {
         margin-left: 0;
     }
@@ -1834,32 +1811,25 @@ div#dev-gt-1140{display:block}
     .image-content.search a.button {
         margin: 0;
     }
-    .lightbox .pricing .leftcol .image {
-        width: 168px;
-        height: 168px;
-        line-height: 166px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    .lightbox .pricing .leftcol p {
-        padding: 20px;
-        text-align: center;
-    }
-    .lightbox .pricing .leftcol,
-    .lightbox .pricing .rightcol {
+
+    /* lightbox -pricing */
+    .lightbox .pricing .rightcol,
+    .lightbox .pricing .leftcol {
         width: auto;
         float: none;
-        padding-left: 20px !important;
-        padding-right: 20px !important;
     }
     .lightbox .pricing .rightcol {
         margin-top: 0;
+        padding-left: 20px !important;
         padding-top: 35px;
         border-top: solid #c4c4c4 1px;
     }
     .lightbox .pricing .rightcol .item {
         padding-left: 15% !important;
         padding-right: 15% !important;
+    }
+    .lightbox .pricing .rightcol > .info {
+        margin-right: 0;
     }
     #content .content-in .rightcol .item {
         padding-left: 20% !important;
@@ -1874,6 +1844,22 @@ div#dev-gt-1140{display:block}
     .lightbox .pricing .rightcol a.button-blue.left {
         margin-bottom: 0;
     }
+    .lightbox .pricing .leftcol {
+        padding-right: 20px !important;
+    }
+    .lightbox .pricing .leftcol .image {
+        width: 168px;
+        height: 168px;
+        line-height: 166px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .lightbox .pricing .leftcol p {
+        padding: 20px;
+        text-align: center;
+    }
+
+    /* cart */
     #content .cart .total-price-bottom .left a {
         margin-left: auto;
         margin-right: auto;
@@ -1882,6 +1868,7 @@ div#dev-gt-1140{display:block}
         margin-top: 20px;
         margin-top: 0;
     }
+
     #content .cart .leftcol .section,
     #content .cart .rightcol .section {
         border: none;
@@ -1964,9 +1951,6 @@ div#dev-gt-1140{display:block}
         width: 100% !important;
         margin-left: 0;
         margin-bottom: 0;
-    }
-    #content .content-in .content .rightcol > #form_register ~ #form_register {
-        margin-bottom: 20px;
     }
     #page.in980,
     #page.fluid {
@@ -2818,11 +2802,6 @@ div#dev-gt-1140{display:block}
     .tostartpricing {
         padding-left: 8px !important;
         padding-right: 8px !important;
-    }
-    .closebutton.inheader,
-    .closebutton.imagedetail.inheader {
-        position: absolute;
-        right: 20px;
     }
 }
 @media all and (max-width: 420px) {
