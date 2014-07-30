@@ -154,7 +154,6 @@ div#dev-gt-1140{display:block}
     #content .content-in .rightcol {
         width: 77% !important;
         min-width: 200px;
-        font-size: 14px;
     }
     #content .content-in .rightcol .head,
     #content .content-in .leftcol .head a,
@@ -214,8 +213,8 @@ div#dev-gt-1140{display:block}
     #content .content-in .rightcol .item span {
         margin-right: auto;
     }
-
     #content .content-in .content .rightcol {
+    	width: 77.5%;
         padding-bottom: 0 !important;
     }
     #content .content-in .content .rightcol input#login_password {
@@ -1722,18 +1721,31 @@ div#dev-gt-1140{display:block}
 @media all and (max-width: 767px) {
     div#dev *{display:none}div#dev-767{display:block}
 
-    #content .content-in .content {
+    #page #content .content-in .content {
         padding-top: 0;
     }
+    #content .content-in .content,
+    #page.fluid #content.search .content.c {
+        padding-top: 0;
+    }
+    #page #content .content-in .general_content {
+        padding: 20px 0 20px;
+    }
     #content .cart .total-price {
+        padding: 0;
+    }
+    #content .cart .total-price p.required {
         padding: 20px 0;
     }
-    #content .content-in .general_content {
-    	padding: 20px 0 20px;
+    #content .content-in .cart > #cart_status_top {
+        padding: 20px 0;
     }
     #content .content-in .rightcol .head:first-child {
         margin-top: 0;
         margin-right: 0;
+    }
+    #content .content-in .content.general_content .rightcol > div {
+        padding-top: 20px;
     }
     #content .home-content ul.country div.pick-more-keywords {
         margin-left: -218.5%;
@@ -1743,9 +1755,6 @@ div#dev-gt-1140{display:block}
     }
     #content .home-slider #controls {
         display: none;
-    }
-    #content .content-in .cart > #cart_status_top {
-        padding-top: 20px;
     }
     #content .content-in .content > .image-content.search .arrow {
         padding-left: 20px !important;
@@ -1836,7 +1845,6 @@ div#dev-gt-1140{display:block}
         margin-top: 20px;
         margin-top: 0;
     }
-
     #content .cart .leftcol .section,
     #content .cart .rightcol .section {
         border: none;
@@ -1915,6 +1923,7 @@ div#dev-gt-1140{display:block}
     #content .content-in .header h1.my-account span.resp span {
         display: none;
     }
+    #content .content-in .content .rightcol,
     #content .content-in .rightcol {
         width: 100% !important;
         margin-left: 0;
@@ -1948,9 +1957,6 @@ div#dev-gt-1140{display:block}
     #content .home-content ul.country > div > a > i > span {
         display: inline;
     }
-    #page.fluid #content.search .content.c {
-        padding-top: 0;
-    }
     #resp-header .resp-benefitbtn {
         width: 70%;
     }
@@ -1982,7 +1988,7 @@ div#dev-gt-1140{display:block}
     #content .home-slider #controls li#controls3 a,
     #content .home-slider #controls li#controls4 a {
         font-weight: normal;
-    font-size: 13px; /*!*/
+        font-size: 13px; /*!*/
     }
     #content .content-in .rightcol .purchase-item .desc {
         width: 34%;
@@ -1991,12 +1997,19 @@ div#dev-gt-1140{display:block}
         clear: none;
     }
     #content .content-in .rightcol .purchase-item table + div {
-        /*width: 75% !important;*/
+        float: none !important;
         padding-top: 15px;
-        /*margin: 0 auto;*/
+    }
+    #content .content-in .rightcol .purchase-item table + div div + div {
+    	margin: 0 auto;
+    }
+    #content .content-in .rightcol .purchase-item table + div p + p
+    {
+        width: 50% !important;
+        margin 0 auto;
     }
     #content .content-in .rightcol .purchase-item table + div p + p + p {
-    	width: auto;
+    	width: auto !important;
     	float: right;
     }
     #content .content-in .rightcol .purchase-item a.button-blue {

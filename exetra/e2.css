@@ -270,16 +270,20 @@
 #content .content-in .rightcol {
     font-size: 14px;
 }
+#content .content-in .rightcol .purchase-item .desc,
+#content .content-in .rightcol .purchase-item table tr td,
+#content .content-in .rightcol .purchase-item table tr th {
+    font-size: 13px;
+
+}
+#content .content-in .rightcol .purchase-item .desc {
+    text-align: center;
+}
 #content .content-in .content .rightcol {
-	width: 77%; /* -> 1140 */
-	width: inherit;
+	width: 77.5% !important; /* -> 1140 */
 }
 #content .content-in .rightcol {
 	width: 760px;
-}
-
-#content .content-in .rightcol .purchase-item .desc {
-	font-size: 14px;
 }
 #content .content-in .rightcol .purchase-item table + div {
 	/*width: auto !important;*/
