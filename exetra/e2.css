@@ -92,11 +92,8 @@
     margin-left: 3px;
     float: left;
 }
-#content .content-in .content {
-    padding: 20px;
-}
 #page.fluid #content.search .content {
-    padding-top: 0;
+    /*padding-top: 0;*/
 }
 #resp-subpagebenefits {
     clear: both;
@@ -166,7 +163,6 @@
 #footer .in #logo_left,
 #footer .in #logo_right {
     height: auto;
-    background: url(img/dottedborder.png) left bottom repeat-x;
     padding: 10px 0 0 0;
     height: 80px;
 }
@@ -592,7 +588,7 @@
 	width: 94%;
 }
 #content .content-in .rightcol .email-item ul li input {
-	height: initial !important;
+	height: inherit !important;
 }
 #content .content-in .rightcol .item a {
     color: #5187B6;
@@ -646,13 +642,14 @@ form#form_login div.item a.forgotpassword,
 /* image-content */
 .image-content {
     padding-bottom: 20px;
+    position:relative;
 }
 .image-content.search {
     padding-bottom: 20px;
 }
 .image-content.search p.info {
     height: auto;
-    padding: 20px 0;
+    padding: 0 0 20px;
 }
 .image-content a.top,
 .image-content.search .arrow {
@@ -664,16 +661,25 @@ form#form_login div.item a.forgotpassword,
     margin: 0 15px 15px 0;
     height: auto;
 }
-.image-list {
+.image-list {/*lightbox.htm*/
     text-align: center;
+
+}
+.search .image-list {/*search(-filter).htm*/
+    text-align: left;
 }
 .image-list li {
     display: inline-block;
-    float: none;
     height: auto;
+    float: none;
     margin-left: 20px;
     margin-right: 20px;
     vertical-align: top;
+}
+.search .image-list li {
+	display: list-item;
+    float: left;
+    margin: 0 40px 40px 0;
 }
 
 /* image list */
@@ -708,6 +714,7 @@ form#form_login div.item a.forgotpassword,
     width: 100%;
     height: 40px;
     line-height: 40px;
+    font-size: 16px;
     margin-top: 8px;
 }
 .lightbox .header .arrow {
@@ -720,12 +727,28 @@ form#form_login div.item a.forgotpassword,
     height: 32px;
     line-height: 32px;
 }
+.lightbox-category {
+    width: 323px;
+    height: 150px !important;
+}
 .lightbox-category a.close {
-    background-position: 50% 50%;
     width: 32px;
     height: 32px;
-    top: 5px;
-    right: 5px;
+    background-position: 100% 0;
+    background-size: 100%;
+}
+.lightbox-category input,
+.lightbox-category select {
+    width: 100%;
+}
+.lightbox-category button
+/*< styles.css #content .content-in .rightcol button !*/ {
+    top: 16px !important;
+    height: 40px !important;
+    line-height: 40px !important;
+    float: none !important;
+    margin: 0 auto;
+    font-size: 16px !important;
 }
 .lightbox #popup {
     display: block !important;
@@ -742,8 +765,9 @@ form#form_login div.item a.forgotpassword,
     font-size: 14px;
 }
 .lightbox .preview .rightcol {
-    padding: 0;
+	width: auto;
     border-top: none;
+    padding: 0;
 }
 .lightbox .preview .rightcol p.c {
     display: block;
@@ -753,12 +777,31 @@ form#form_login div.item a.forgotpassword,
     padding-top: 0;
 }
 .lightbox .preview .rightcol a.button-blue {
-    padding: 5px 0;
-    width: 200px;
+	width: 180px;
+    height: 40px;
+    line-height: 40px;
+}
+.lightbox .preview .rightcol ul li a {
+    background-position: -180px 0px !important;
+    padding-left: 50px;
+    color: #a0a0a0;
+    text-decoration: none;
+    line-height: 40px;
+}
+.lightbox .preview .rightcol ul li a:hover {
+    background-position: -180px -40px !important;
+    color: #000000;
+}
+.lightbox .preview .rightcol ul li.second a {
+    line-height: 30px;
+}
+.lightbox .preview .rightcol ul li.second a span {
+    font-size: 12px;
 }
 .lightbox .preview .rightcol ul li.second span a {
-    top: 14px !important;
-    width: 180px;
+    top: 18px !important;
+    padding-left: 0;
+    margin-left: 50px;
 }
 .lightbox .preview .leftcol.fullwidth > br,
 .lightbox .preview .leftcol.fullwidth + .rightcol {
@@ -848,14 +891,14 @@ form#form_login div.item a.forgotpassword,
     float: right;
     margin-right: 0;
     padding: 5px;
+    box-sizing: border-box;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
-    box-sizing: border-box;
 }
 .lightbox .pricing .rightcol .item label {
 	width: auto;
     float: left;
-    background-position: 0 19px;
+    background: none;
 }
 .lightbox .pricing .rightcol .item input {
     margin-bottom: 15px;
@@ -868,7 +911,7 @@ form#form_login div.item a.forgotpassword,
 }
 .lightbox .pricing .rightcol > .info {
    clear: both;
-   margin-right: 20px;
+   margin-right: 0;
 }
 .lightbox .pricing .rightcol .item.noheight {
     padding-bottom: 0;
@@ -889,9 +932,9 @@ form#form_login div.item a.forgotpassword,
 }
 .lightbox .pricing .rightcol .item.territories ul {
     height: 300px;
+    box-sizing: border-box;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
-    box-sizing: border-box;
 }
 .lightbox .pricing .rightcol .item.territories ul li {
     height: auto !important;
@@ -924,13 +967,36 @@ form#form_login div.item a.forgotpassword,
 }
 .lightbox .pricing .rightcol a.button-blue {
     width: 180px;
-    height: 38px;
-    line-height: 38px;
-    font-size: 15px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 14px;
 }
-
+.lightbox .pricing .rightcol a.button-blue.left {
+    float: none !important;
+    margin: 0 auto;
+}
+.lightbox .pricing .rightcol a.button-blue + a.button-blue.left {
+	float: left !important;
+	margin: 0;
+}
+.lightbox .cs_addtocart {
+	top: 87px !important;
+    left: 50px;
+    width: 180px !important;
+    margin-top: 10px;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+.lightbox .pricing .cs_addtocart {
+	top: 148px !important;
+	right: 0;
+	left: auto !important;
+}
 .lightbox .pricing .leftcol {
     padding-right: 0 !important;
+}
+.lightbox .pricing .leftcol p {
+    font-size: 13px;
 }
 .lightbox .pricing .leftcol span.h2 {
     margin: 15px 0;

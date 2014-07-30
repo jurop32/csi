@@ -1,5 +1,5 @@
 html {
-	text-size-adjust: none !important;
+    text-size-adjust: none !important;
     -webkit-text-size-adjust: none !important;
     -moz-text-size-adjust: none !important;
     -o-text-size-adjust: none !important;
@@ -9,11 +9,49 @@ html {
 body * {
     max-height: 999999px;
 }
-label, button {
+label,
+input,
+select,
+button {
     font-size: 14px !important;
 }
+.item label {
+    margin-bottom: 5px !important;
+}
+input,
+select,
+textarea {
+    box-sizing: border-box !important;
+    -moz-box-sizing: border-box !important;
+    -webkit-box-sizing: border-box !important;
+}
 input {
-   padding: 0 5px !important;
+    padding: 0 5px !important;
+}
+input[type="checkbox"],
+input[type="radio"] {
+    height: auto !important;
+    appearance: checkbox !important;
+    -webkit-appearance: checkbox !important;
+    -moz-appearance: checkbox !important;
+    -ms-appearance: checkbox !important;
+    -o-appearance: checkbox !important;
+}
+.resp-search input {
+    width: 67%;
+}
+.rightcol label input {
+    float: left;
+}
+.general_content .item input {
+    position: static;
+}
+#publish_start_date_forinline_display input {
+    margin-bottom: 15px !important;
+}
+#similar-images ul li input {
+    width: 15px !important;
+    height: 15px !important;
 }
 select {
     padding-top: 5px !important;
@@ -23,35 +61,11 @@ input,
 select {
     height: 30px !important;
     font-size: 14px !important;
-    -moz-box-sizing: border-box !important;
-    -webkit-box-sizing: border-box !important;
-    box-sizing: border-box !important;
-}
-input[type="checkbox"],
-input[type="radio"] {
-	height: auto !important;
-     -webkit-appearance: checkbox !important;
-     -moz-appearance: checkbox !important;
-     -ms-appearance: checkbox !important;
-     -o-appearance: checkbox !important;
-     appearance: checkbox !important;
 }
 textarea {
-    -moz-box-sizing: border-box !important;
-    -webkit-box-sizing: border-box !important;
-    box-sizing: border-box !important;
     padding: 5px;
 }
-.rightcol label input {
-    float: left;
-}
-.general_content .item input
-{
-    position: static;
-}
-.item label {
-    margin-bottom: 5px !important;
-}
+
 #paging {
     display: none;
 }
@@ -101,8 +115,6 @@ textarea {
 #content .home-text .item > p {
     font-size: 13px;
 }
-
-/* re */
 .closebuttonholder {
     width: 760px;
     margin: 20px auto 0;
@@ -166,19 +178,19 @@ textarea {
     background: url(img/lightbox-preview-4.png) 0 0 no-repeat;
 }
 #responsivecontrols a.button-blue {
-    background: #37A5EF;
-    border: none;
-    border-radius: 5px;
-    color: #FFFFFF !important;
-    cursor: pointer;
-    display: block;
-    font-size: 14px;
+	display: block;
+	width: 170px;
     height: 30px;
     line-height: 30px;
+    border: none;
+    border-radius: 5px;
+    margin: 0 auto;
+    font-size: 14px;
     text-align: center;
     text-decoration: none;
-    width: 170px;
-    margin: 0 auto;
+    background: #37A5EF;
+    color: #FFFFFF !important;
+    cursor: pointer;
 }
 #resp-header {
     display: none;
@@ -197,9 +209,6 @@ textarea {
 .resp-kwcolumn a.h2 {
     font-weight: bold;
     color: #0099ff;
-}
-.resp-search input {
-    width: 67%;
 }
 .resp-search button {
     width: 20%;
@@ -381,11 +390,6 @@ textarea {
 #similar-images ul li label {
     display: inline-block;
 }
-#similar-images ul li input {
-    width: 15px !important;
-    height: 15px !important;
-}
-
 /* content */
 #content.search .content-in .header.c h1 {
     white-space: nowrap;
@@ -430,7 +434,6 @@ textarea {
     margin: 15px 20px 0 10px;
     float: right;
 }
-
 /* header */
 #header .top-menu > li > a.smart-search {
     border: 1px solid #B0B0B0;
@@ -448,7 +451,6 @@ textarea {
     padding: 2px 5px;
     margin-top: -9px;
 }
-
 #content .content-in .content #resp-subpagebenefits > div.home-info > p {
     line-height: 40px;
     color: #a0a0a0;
@@ -463,11 +465,8 @@ textarea {
 #publish_start_date_forinline_display.hasDatepicker {
     height: auto;
 }
-#publish_start_date_forinline_display input {
-    margin-bottom: 15px !important;
-}
 #publish_start_date_forinline_display.hasDatepicker .ui-datepicker-inline {
-	clear: both;
+    clear: both;
     width: 280px;
     margin: 15px 0 10px auto;
     padding: 1px;

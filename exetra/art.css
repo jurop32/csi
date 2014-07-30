@@ -1,7 +1,6 @@
 div#dev{/*dev display:none;*/position:fixed;right:15px;top:111px;font-size:20px;font-weight:bold;z-index:1000;color:#b8860b;text-align:right}
 div#dev *{display:none;position:relative;font-size:55px}
 div#dev-gt-1140{display:block}
-
 /* reset
  * typography
  * layout
@@ -19,7 +18,6 @@ div#dev-gt-1140{display:block}
  * lightbox
  * lightbox - preview
  * lightbox - pricing step 1
- *
  */
 @media all and (max-width: 1140px) {
     div#dev *{display:none}div#dev-1140{display:block}
@@ -41,9 +39,6 @@ div#dev-gt-1140{display:block}
     #content .content-in .header > *,
     #page.fluid #content .content-in .header > *,
     #content .content-in .content .rightcol > *,
-    /*#content .content-in .content .rightcol > .purchase-item > *,*/
-    /*#content .content-in .content .rightcol > .purchase-item > table + div > div,*/
-    /*#content .content-in .content .rightcol > .purchase-item > table + div > p,*/
     #content .content-in .content.general_content > *,
     #content .cart > #cart_status_top,
     #content .cart > #cart_status_bottom,
@@ -51,7 +46,6 @@ div#dev-gt-1140{display:block}
     #content .cart .rightcol .section > *,
     .lightbox .preview .search > *,
     .lightbox .preview .leftcol > .popup,
-    /*.lightbox .pricing .rightcol > *,*/
     .image-content .arrow.resp {
         padding-left: 20px !important;
         padding-right: 20px !important;
@@ -61,8 +55,6 @@ div#dev-gt-1140{display:block}
     #content .content-in .cart .rightcol > .section,
     #content .content-in .content.general_content > .rightcol,
     #content .content-in .content .rightcol > form,
-    /*#content .content-in .content .rightcol > .purchase-item,*/
-    /*#content .content-in .content .rightcol > .purchase-item > table + div,*/
     #content .content-in .content.general_content > table,
     #content .content-in .content.general_content > #resp-subpagebenefits,
     #page.fluid #content .content-in .header > .resp-search,
@@ -314,6 +306,9 @@ div#dev-gt-1140{display:block}
         padding: 0;
         border-radius: 0;
     }
+    #content .content-in .content {
+    	padding: 20px;
+    }
     #page #content .content-in .content {
         padding: 20px 0 0;
         font-size: 14px !important;
@@ -426,8 +421,6 @@ div#dev-gt-1140{display:block}
     #content .content-in .cart .rightcol .section .head {
         line-height: 59px;
     }
-
-
     #content .cart .leftcol .section .head {
         line-height: 59px;
         background-color: #c0c0c0;
@@ -485,28 +478,6 @@ div#dev-gt-1140{display:block}
     .lightbox .preview .rightcol ul {
         height: auto;
     }
-    .lightbox .preview .rightcol ul li a {
-        background-position: -180px 0 !important;
-        padding-left: 50px;
-        color: #a0a0a0;
-        text-decoration: none;
-        line-height: 40px;
-    }
-    .lightbox .preview .rightcol ul li a:hover {
-        background-position: -180px -40px !important;
-        color: #000000;
-    }
-    .lightbox .preview .rightcol ul li.second a {
-        line-height: 30px;
-    }
-    .lightbox .preview .rightcol ul li.second a span {
-        font-size: 12pt;
-    }
-    .lightbox .preview .rightcol ul li.second span a {
-        top: 18px !important;
-        padding-left: 0;
-        margin-left: 50px;
-    }
     .lightbox .preview .rightcol p.c,
     .lightbox .preview .rightcol .button-info {
         display: none;
@@ -562,23 +533,7 @@ div#dev-gt-1140{display:block}
     	width: 100% !important;
     }
     .lightbox .pricing .rightcol .item label {
-        /*width: 100%;*/
         background: none;
-    }
-    .lightbox .pricing .rightcol .item input {
-        /*width: 100%;*/
-    }
-    .lightbox .pricing .rightcol .item select {
-        /*width: 100%;*/
-    }
-    .lightbox .pricing .rightcol .item div.description {
-       /*width: 100%;*/
-    }
-    .lightbox .pricing .rightcol a.button-blue {
-        width: 180px;
-        height: 38px;
-        line-height: 38px;
-        font-size: 15px;
     }
     .lightbox .pricing .leftcol span.h2 {
         margin: 15px 0;
@@ -612,31 +567,38 @@ div#dev-gt-1140{display:block}
 
     /* category - lightbox */
     .lightbox-category {
-        /*position: absolute !important;*/
         /*top: 40px !important;*/
         left: 0;
         /*margin: 0;*/
     }
-    .lightbox-category button {
-        height: auto !important;
-        padding: 5px 0;
-        margin: 0 auto;
-        float: none !important;
-    }
     .lightbox .cs_addtocart/*,
     .lightbox .cs_addtolightbox*/ {
+    	top: 107px !important;
         left: 70px;
-        top: 110px !important;
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
         border: 1px solid #C0C0C0;
         border-radius: 5px;
         box-shadow: #9D9D9D 0 0 8px 2px;
-        background-color: #E8E8E8 !important;
-        color: #696969 !important;
-        line-height: 25px;
         padding: 0 !important;
+        background-color: #E8E8E8 !important;
+        line-height: 25px;
+        color: #696969 !important;
     }
 
     /* image list*/
+    .search .image-list {
+        text-align: center;
+    }
+    .search .image-list li {
+        display: inline-block;
+        float: none;
+        height: auto;
+        margin-left: 20px;
+        margin-right: 20px;
+        vertical-align: top;
+    }
     .image-list li p strong {
         font-size: 14px;
     }
@@ -867,8 +829,8 @@ div#dev-gt-1140{display:block}
         font-weight: bold;
     }
     #content .home-slider #controls li.current a {
-        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=99)";
         filter: alpha(opacity = 99);
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=99)";
         -moz-opacity: 0.99;
         -khtml-opacity: 0.99;
         opacity: 0.99;
@@ -1171,11 +1133,12 @@ div#dev-gt-1140{display:block}
     #content .content-in .rightcol .purchase-item table + div p + p input[type="radio"] {
     	width: 15px !important;
     	height: 15px !important;
+        transform-origin: left center;
         -ms-transform-origin: left center;
         -moz-transform-origin: left center;
         -webkit-transform-origin: left center;
         -o-transform-origin: left center;
-        transform-origin: left center;
+        transform: scale(2);
         -ms-transform: scale(2);
         -moz-transform: scale(2);
         -webkit-transform: scale(2);
@@ -1264,6 +1227,20 @@ div#dev-gt-1140{display:block}
     }
     #content .content-in .cart .rightcol {
         width: 300px !important;
+    }
+
+    /* image list */
+    .image-content .filter-box ul li input {
+    	transform-origin: left center;
+        -ms-transform-origin: left center;
+        -moz-transform-origin: left center;
+        -webkit-transform-origin: left center;
+        -o-transform-origin: left center;
+        transform: scale(2);
+        -ms-transform: scale(2);
+        -moz-transform: scale(2);
+        -webkit-transform: scale(2);
+        -o-transform: scale(2);
     }
 }
 @media all and (max-width: 970px) {
@@ -1615,9 +1592,9 @@ div#dev-gt-1140{display:block}
     #page.fluid #content .content-in .header > .item,
     #page.fluid #content .content-in .header > form {
         position: relative;
-        left: -8%; /*!*/
+        left: -8%;/*!*/
         margin: 0;
-        width: 24%; /*!*/
+        width: 24%;/*!*/
     }
     #content #resp-subpagebenefits .home-info > p {
         border-color: #e0e0e0;
@@ -1648,6 +1625,18 @@ div#dev-gt-1140{display:block}
     #content #resp-subpagebenefits .home-text .item .desc h2.opened {
         background-image: url('img/minus.png');
     }
+    #content .content-in .rightcol .invoices .item-detail .left a.button {
+        width: 120px;
+        font-size: 12px;
+    }
+    #content .content-in .rightcol .item .forgotpassword {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #publish_start_date_forinline_display.hasDatepicker .ui-datepicker-inline {
+        width: 67%;
+    }
 
     /* lightbox */
     .lightbox {
@@ -1655,12 +1644,6 @@ div#dev-gt-1140{display:block}
     }
 
     /* lightbox - preview */
-    /*.lightbox .preview .leftcol,
-    .lightbox .preview .leftcol.fullwidth {
-        float: none;
-        margin: 0 auto;
-        width: auto;
-    }*/
     .lightbox .preview .leftcol .desc .head {
         font-size: 18px;
         letter-spacing: 2px;
@@ -1672,7 +1655,6 @@ div#dev-gt-1140{display:block}
         padding-top: 20px;
         padding-bottom: 20px;
     }
-    /*.lightbox .cs_addtocart,*/
     .lightbox .cs_addtolightbox {
         background-color: #E8E8E8 !important;
         border: 1px solid #C0C0C0;
@@ -1690,20 +1672,11 @@ div#dev-gt-1140{display:block}
     .lightbox-category {
         left: 20px !important;
     }
-    #content .content-in .rightcol .invoices .item-detail .left a.button {
-        width: 120px;
-        font-size: 12px;
-    }
-    #content .content-in .rightcol .item .forgotpassword {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    #publish_start_date_forinline_display.hasDatepicker .ui-datepicker-inline {
-        width: 67%;
-    }
     .lightbox .pricing .leftcol .image {
         width: auto;
+    }
+    .lightbox .pricing .leftcol p {
+        font-size: 14px;
     }
     .lightbox .pricing .leftcol .image > img {
         max-width: 100%;
@@ -1784,12 +1757,10 @@ div#dev-gt-1140{display:block}
         padding: 0px 20px;
         line-height: 30px;
     }
-    .lightbox .cs_addtocart/*,
-    .lightbox .cs_addtolightbox*/ {
-    	position: absolute !important;
-    	left: 70px !important;
-    	top: 110px !important;
-    	margin-left: 0 !important;
+    .lightbox .pricing .rightcol .cs_addtocart {
+        left: 0 !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
     }
     .lightbox .closebuttonholder {
         margin-left: 0;
@@ -1822,21 +1793,21 @@ div#dev-gt-1140{display:block}
         padding-left: 15% !important;
         padding-right: 15% !important;
     }
-    .lightbox .pricing .rightcol > .info {
-        margin-right: 0;
-    }
     #content .content-in .rightcol .item {
         padding-left: 20% !important;
         padding-right: 20% !important;
     }
     .lightbox .pricing .rightcol a.button-blue {
-        float: none !important;
-        margin-left: auto;
-        margin-right: auto;
         margin-bottom: 20px;
     }
     .lightbox .pricing .rightcol a.button-blue.left {
         margin-bottom: 0;
+    }
+    .lightbox .pricing .rightcol a.button-blue,
+    .lightbox .pricing .rightcol a.button-blue + a.button-blue.left {
+        float: none !important;
+        margin-left: auto;
+        margin-right: auto;
     }
     .lightbox .pricing .leftcol {
         padding-right: 20px !important;
@@ -2363,6 +2334,7 @@ div#dev-gt-1140{display:block}
     }
     .lightbox .header .desc {
         margin-top: 5px;
+        font-size: 14px;
     }
 }
 @media all and (max-width: 480px) {
@@ -2493,9 +2465,6 @@ div#dev-gt-1140{display:block}
         margin-top: -65px;
     }
 
-    .image-list li .cs_addtocart {
-        /*margin-top: -53px;*/
-    }
     .arrow.resp {
         display: block;
     }
@@ -2737,7 +2706,6 @@ div#dev-gt-1140{display:block}
         padding-left: 20px !important;
         padding-right: 20px !important;
     }
-
     #content .content-in .rightcol .purchase-item table + div {
     	width: 100% !important;
     }
@@ -2764,11 +2732,13 @@ div#dev-gt-1140{display:block}
         margin-top: 20px !important;
     }
 
-
     /* cart */
     #content .cart .leftcol .item {
         padding-left: 20px !important;
         padding-right: 20px !important;
+    }
+    #content .cart .cart-item .price p {
+        width: 45%;
     }
 
     /* category - lightbox */
@@ -2786,6 +2756,11 @@ div#dev-gt-1140{display:block}
     }
     .lightbox .header a.logo img {
     	margin: 3px 0 0 -3px;
+    }
+    .lightbox .header .desc {
+        line-height: 20px;
+        padding: 5px 0;
+        font-size: 12px;
     }
     .lightbox .header .arrow a#prev_image_arrow,
     .lightbox .header .arrow a#next_image_arrow {
@@ -2810,10 +2785,6 @@ div#dev-gt-1140{display:block}
     .lightbox .pricing .rightcol .item {
         padding-left: 0 !important;
         padding-right: 0 !important;
-    }
-    /* cart */
-    #content .cart .cart-item .price p {
-        width: 45%;
     }
 }
 @media all and (max-width: 425px) {
