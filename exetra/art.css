@@ -333,6 +333,9 @@ div#dev-gt-1140{display:block}
     #content .content-in .content.general_content > p {
             font-size: 14px;
     }
+    #content .content-in .content.general_content .rightcol > div > p {
+        padding: 0;
+    }
     #content .content-in .general_content table {
         width: 100% !important;
         height: auto;

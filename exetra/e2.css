@@ -260,6 +260,9 @@
     margin: 10px 0;
     font-size: 13px;
 }
+#content .content-in .content.general_content .rightcol > div > p {
+	padding: 0 20%;
+}
 #content .content-in .content.general_content > p:first-child {
     text-align: justify;
     margin: 0 0 20px;
