@@ -758,10 +758,8 @@ form#form_login div.item a.forgotpassword,
     width: 152%;
 }
 .lightbox .preview .leftcol .desc table tr td {
+    padding-right: 30px;
     white-space: nowrap;
-}
-.lightbox .preview .leftcol .desc table tr th {
-    padding-left: 30px;
 }
 .lightbox .preview .leftcol .desc table tr th span {
     display: inline-block;

@@ -538,14 +538,6 @@ div#dev-gt-1140{display:block}
         padding-top: 10px;
         padding-bottom: 10px;
     }
-    .lightbox .preview .leftcol .desc table tr td {
-        width: auto;
-        padding-right: 30px;
-        white-space: nowrap;
-    }
-    .lightbox .preview .leftcol .desc table tr th {
-        padding-left: 30px;
-    }
     .lightbox .preview .c .leftcol.text.fullwidth p > span {
         display: block;
         padding-top: 20px;
