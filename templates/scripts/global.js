@@ -76,7 +76,7 @@ $(document).ready(function()
         if (xx == 1)
         {
             var leftMin = 92.5, //100,
-                topMin = 70; //100;
+                topMin = 85; //100;
         } else {
             var leftMin = 100,
                 topMin = 25; //5;
