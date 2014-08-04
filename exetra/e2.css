@@ -34,26 +34,6 @@
 #header .menu {
     top: 49px;
 }
-#content .home-desc .search {
-    border: solid #dbdbdb 1px;
-    border-radius: 3px;
-    width: 285px;
-    padding: 3px;
-}
-#content .home-desc .search input {
-    width: 240px;
-    border: none;
-}
-#content .home-desc .search button {
-    width: 25px;
-    height: 26px;
-    font-size: 0;
-    border: none;
-    background: #ffffff url('img/search.png') no-repeat center center;
-}
-#content .home-desc .search button:hover {
-    background: #ffffff url('img/search.png') no-repeat center center;
-}
 #content .home-content {
     padding: 20px 0;
 }
@@ -62,30 +42,20 @@
     margin-bottom: 0;
     border-radius: 0;
 }
-#page #content .content-in .header form {
-    display: block;
-}
 #page #content .content-in .header * {
     font-size: 14px;
     white-space: nowrap;
 }
+#page #content .content-in .header form {
+    display: block;
+}
+
+#content.search .content-in .header {
+    padding-left: 20px;
+    padding-right: 20px;
+}
 #content.search .content-in .header h1 {
     display: none;
-}
-#content .content-in .header select {
-    /*padding-top: 5px;*/
-    /*vertical-align: baseline;*/
-}
-#content .content-in .header select.small {
-    width: auto;
-    padding-right: 1px;
-}
-#content .content-in .header .item label {
-    vertical-align: middle;
-}
-#content .content-in .header .resp-search input {
-    margin-left: 3px;
-    float: left;
 }
 
 /* footer */
@@ -288,14 +258,26 @@
 }
 .fluid #content .content-in .header > .item,
 .fluid #content .content-in .header > form {
+	line-height: 34px;
     float: right;
-    margin: 0;
-    padding: 15px 0 0 15px !important;
-    width: 15%;
+    margin: 15px 20px 0 15px !important;
+    padding: 0 !important;
+    width: auto/*15%*/;
 }
-.fluid #content .content-in .header > .resp-search {
-    padding-left: 0 !important;
-    padding-right: 0 !important;
+.fluid #content .content-in .header .item label {
+    vertical-align: middle;
+}
+.fluid #content .content-in .header .item input,
+.fluid #content .content-in .header form {
+    position: static;
+}
+.fluid #content .content-in .header select {
+    vertical-align: top;
+    height: 34px !important;
+    padding-top: 3px !important;
+}
+#content .content-in .header select.small {
+    padding-top: 1px;
 }
 
 /* cart */
@@ -599,15 +581,27 @@ form#form_login div.item a.forgotpassword,
     height: auto;
     padding: 0 0 20px;
 }
+.image-content.search a.button {
+    width: 180px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+.image-content .filter-box ul li {
+    padding-bottom: 30px;
+}
 .image-content a.top,
 .image-content.search .arrow {
     position: static;
 }
-.image-content .filter ul li {
-    width: 18%;
-    padding: 0 24px;
-    margin: 0 15px 15px 0;
-    height: auto;
+.image-content .arrow a {
+	height: 36px;
+	line-height: 36px;
+}
+.image-content .arrow > div {
+    padding-top: 0 !important;
+}
+.image-content .arrow span.paging.current {
+    padding: 10px 14px;
 }
 .image-list {/*lightbox.htm*/
     text-align: center;
