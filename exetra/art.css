@@ -159,7 +159,7 @@ div#dev-gt-1140{display:block}
         display: none;
     }
     #content .content-in .leftcol {
-    	width: 20% !important;
+        width: 20% !important;
     }
     #content .content-in .rightcol {
         width: 77% !important;
@@ -176,7 +176,7 @@ div#dev-gt-1140{display:block}
     .fluid #content .content-in .rightcol .head,
     #content .content-in .leftcol .head a,
     #content .content-in .rightcol .head a {
-    	line-height: 60px;
+        line-height: 60px;
         height: 60px;
     }
     #content .content-in .rightcol .head-2 div:first-child {
@@ -190,37 +190,71 @@ div#dev-gt-1140{display:block}
     }
 
     /* invoices */
-    #content .content-in .rightcol .invoices .item {
-        padding: 0 !important;
+   #content .content-in .rightcol .invoices,
+   #content .content-in .rightcol .invoices .item,
+   #content .content-in .rightcol .head-3 {
+       padding: 0 !important;
     }
-    /*#content .content-in .rightcol .item .item-1 input {
-        float: left;
-        margin-top: 7.5px 10px 7.5px 0;
-        transform: scale(2);
-    }*/
-    #content .content-in .rightcol .head-3 {/**/
-        padding: 0;
-    }
-    #content .content-in .rightcol .head-3 a {/**/
-        text-align: center;
-    }
-    #content .content-in .rightcol .head-3 a,
-    #content .content-in .rightcol .invoices .item div {/**/
-        width: 19% !important;
-        padding: 0 1px  0  !important;
-        margin: 0 auto !important;
-    }
-    #content .content-in .rightcol .invoices .item div {/**/
-        text-align: left;
+    #content .content-in .rightcol .invoices .item div {
+       position: relative;
+       height: 40px;
+       line-height: 1;
+       text-align: left;
     }
     #content .content-in .rightcol .head-3 a,
     #content .content-in .rightcol .invoices .item div {
-        width: 24% !important;
+        width: 19% !important;
+        padding: 0 0 0 5.5% !important;
+        text-align: left;
+    }
+    #content .content-in .rightcol .head-3 a.item-2,
+    #content .content-in .rightcol .invoices .item .item-2 {
     }
     #content .content-in .rightcol .head-3 a.item-3,
     #content .content-in .rightcol .invoices .item .item-3 {
         display: none;
     }
+    #content .content-in .rightcol .head-3 a.item-4,
+    #content .content-in .rightcol .invoices .item .item-4 {
+    }
+    #content .content-in .rightcol .head-3 a.item-5,
+    #content .content-in .rightcol .invoices .item .item-5 {
+    }
+    #content .content-in .rightcol .invoices .item input {
+        position: absolute;
+        left: 0;
+        float: left;
+        margin: 0 !important;
+    }
+    #content .content-in .rightcol .invoices .item-detail .right .desc {
+        float: none;
+        width: auto;
+        text-align: center;
+        padding-top: 0;
+        margin-bottom: 20px;
+    }
+    #content .content-in .rightcol .invoices .item-detail .right .desc .image {
+        line-height: normal;
+        margin: 0 auto;
+        height: auto;
+    }
+    #content .content-in .rightcol .invoices .item-detail .right table tr th.h2 {
+        display: none;
+    }
+    #content .content-in .rightcol .invoices .item-detail .right table tr th {
+        text-align: left;
+    }
+    #content .content-in .rightcol .invoices .item-detail .right .hr {
+        padding: 0;
+        margin: 0;
+    }
+    #content .content-in .rightcol .invoices .item-detail .left a.button {
+        float: none;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
     .fluid #content .content-in .rightcol .head span {
         margin-left: 20px;
     }
@@ -256,7 +290,7 @@ div#dev-gt-1140{display:block}
         margin-right: auto;
     }
     #content .content-in .content .rightcol {
-    	width: 77.5%;
+        width: 77.5%;
         padding-bottom: 0 !important;
     }
     #content .content-in .content .rightcol input#login_password {
@@ -264,18 +298,18 @@ div#dev-gt-1140{display:block}
     }
     #content .content-in .rightcol .purchase-item a.button-blue,
     #content .content-in .rightcol .purchase-item a.button-grey {
-    	position: static;
+        position: static;
         height: 40px;
         line-height: 40px;
     }
     #content .content-in .rightcol .purchase-item a.button-blue {
-    	display: inline-block;
+        display: inline-block;
         height: 40px;
         line-height: 40px;
         float: none;
     }
     #content .content-in .rightcol .purchase-item a.button-grey {
-    	margin-left: 20px;
+        margin-left: 20px;
     }
     /*#content .content-in .rightcol .purchase-item table {
         clear: left;
@@ -285,43 +319,9 @@ div#dev-gt-1140{display:block}
         width: 46% !important;
     }
     #content .content-in .rightcol .purchase-item table + div > div + div + p,
-	#content .content-in .rightcol .purchase-item table + div > p + p + p {
-    	width: 100%;
-    	text-align: right;
-    }
-    #content .content-in .rightcol .invoices .item input {
-        /*display: inline;*/
-    }
-    #content .content-in .rightcol .invoices .item .item-1 input {
-        margin-right: 38px;
-    }
-    #content .content-in .rightcol .invoices .item-detail .right .desc {
-        float: none;
-        width: auto;
-        text-align: center;
-        padding-top: 0;
-        margin-bottom: 20px;
-    }
-    #content .content-in .rightcol .invoices .item-detail .right .desc .image {
-        line-height: normal;
-        margin: 0 auto;
-        height: auto;
-    }
-    #content .content-in .rightcol .invoices .item-detail .right table tr th.h2 {
-        display: none;
-    }
-    #content .content-in .rightcol .invoices .item-detail .right table tr th {
-        text-align: left;
-    }
-    #content .content-in .rightcol .invoices .item-detail .right .hr {
-        padding: 0;
-        margin: 0;
-    }
-    #content .content-in .rightcol .invoices .item-detail .left a.button {
-        float: none;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
+    #content .content-in .rightcol .purchase-item table + div > p + p + p {
+        width: 100%;
+        text-align: right;
     }
     #content .content-in .rightcol form#form_register .item select#company_type {
         margin-left: auto;
@@ -348,13 +348,13 @@ div#dev-gt-1140{display:block}
         border-radius: 0;
     }
     #content .content-in .content {
-    	padding: 20px;
+        padding: 20px;
     }
     #page #content .content-in .content {
         padding: 20px 0 0;
     }
     #page #content.search .content-in .content {
-    	padding-top: 0;
+        padding-top: 0;
     }
     #content .content-in .content .rightcol div.oneitem p:last-child {
         display: block;
@@ -448,7 +448,7 @@ div#dev-gt-1140{display:block}
         font-size: 14px;
     }
     #content .cart .leftcol .section .section + .section .item {
-    	padding: 0 15%;
+        padding: 0 15%;
     }
     #content .content-in .cart .leftcol,
     #content .cart .total-price-bottom .left {
@@ -568,12 +568,12 @@ div#dev-gt-1140{display:block}
         font-size: 16px;
     }
     .lightbox .pricing .rightcol .item {
-    	padding-left: 55px !important;
+        padding-left: 55px !important;
         padding-right: 55px !important;
         height: auto;
     }
     .lightbox .pricing .rightcol .item.territories ul {
-    	width: 100% !important;
+        width: 100% !important;
     }
     .lightbox .pricing .rightcol .item label {
         background: none;
@@ -591,7 +591,7 @@ div#dev-gt-1140{display:block}
         float: none !important;
     }
     .lightbox .pricing .rightcol .item.territories ul label {
-    	float: left;
+        float: left;
     }
     .lightbox .pricing .rightcol .item ul li label {
         margin-left: 15px !important;
@@ -616,7 +616,7 @@ div#dev-gt-1140{display:block}
     }
     .lightbox .cs_addtocart/*,
     .lightbox .cs_addtolightbox*/ {
-    	top: 107px !important;
+        top: 107px !important;
         left: 70px;
         box-sizing: border-box;
         -moz-box-sizing: border-box;
@@ -1154,7 +1154,7 @@ div#dev-gt-1140{display:block}
         /*margin-left: 15px;*/
     }
     .fluid #content .content-in .header .item input[type="checkbox"] {
-    	transform-origin: right center;
+        transform-origin: right center;
         transform: scale(2);
         -ms-transform: scale(2);
         -moz-transform: scale(2);
@@ -1165,14 +1165,8 @@ div#dev-gt-1140{display:block}
         width: 92%;
     }
     #content .content-in .rightcol .email-item ul li input,
-    #content .content-in .rightcol .purchase-item table + div p + p input[type="radio"] {
-    	width: 15px !important;
-    	height: 15px !important;
-        /*transform-origin: left center;
-        -ms-transform-origin: left center;
-        -moz-transform-origin: left center;
-        -webkit-transform-origin: left center;
-        -o-transform-origin: left center;*/
+    #content .content-in .rightcol .purchase-item table + div p + p input[type="radio"],
+    #content .content-in .rightcol .invoices .item input[type="checkbox"] {
         transform: scale(2);
         -ms-transform: scale(2);
         -moz-transform: scale(2);
@@ -1203,7 +1197,7 @@ div#dev-gt-1140{display:block}
         width: auto !important;
     }
     #content .content-in .rightcol .purchase-item table + div div + div {
-    	width: 350px !important;
+        width: 350px !important;
     }
     #content .content-in .rightcol .purchase-item table + div div + div,
     #content .content-in .rightcol .purchase-item table + div p + p {
@@ -1213,19 +1207,19 @@ div#dev-gt-1140{display:block}
         margin-bottom: 0 !important;
     }
     #content .content-in .rightcol .purchase-item table + div p + p a.link {
-    	display: inline;
+        display: inline;
     }
     #content .content-in .rightcol .purchase-item table + div p + p input[type="radio"] + span {
         padding-left: 20px;
         line-height: 40px;
     }
     #content .home-desc h1 {
-    	font-size: 16px;
+        font-size: 16px;
         letter-spacing: 7px;
     }
     #content .home-text .item .desc h2 {
-    	width: 200px;
-    	font-size: 16px;
+        width: 200px;
+        font-size: 16px;
     }
     #content .home-text .item .desc p {
        font-size: 13px;
@@ -1263,9 +1257,24 @@ div#dev-gt-1140{display:block}
         width: 300px !important;
     }
 
+    /* invoices */
+    #content .content-in .rightcol .head-3 a,
+    #content .content-in .rightcol .invoices .item div {
+        width: 19% !important;
+        padding: 0 0 0 5.5% !important;
+    }
+    #content .content-in .rightcol .head-3 a.item-1,
+    #content .content-in .rightcol .invoices .item .item-1 {
+        padding: 0 0 0 7.5% !important;
+    }
+    #content .content-in .rightcol .head-3 a.item-2,
+    #content .content-in .rightcol .invoices .item .item-2 {
+        width: 17% !important;
+    }
+
     /* image list */
     .image-content .filter-box ul li input {
-    	transform-origin: left center;
+        transform-origin: left center;
         -ms-transform-origin: left center;
         -moz-transform-origin: left center;
         -webkit-transform-origin: left center;
@@ -1456,29 +1465,29 @@ div#dev-gt-1140{display:block}
 
     /* lightbox */
     .lightbox {
-    	padding: 20px 0;
-    	width: auto;
+        padding: 20px 0;
+        width: auto;
     }
     .lightbox .header {
         padding-left: 20px !important;
         padding-right: 20px !important;
     }
     .lightbox .preview .c .leftcol.fullwidth > * {
-    	padding-left: 20px !important;
-    	padding-right: 20px !important;
+        padding-left: 20px !important;
+        padding-right: 20px !important;
     }
     .lightbox .pricing .leftcol {
         padding-left: 20px !important;
     }
     .lightbox .pricing .rightcol {
-    	padding-right: 20px !important;
-	}
+        padding-right: 20px !important;
+    }
 }
 @media all and (max-width: 799px) {
-	div#dev *{display:none}div#dev-799{display:block}
+    div#dev *{display:none}div#dev-799{display:block}
 
     #content .home-text .item .desc p {
-    	width: 100%;
+        width: 100%;
         margin-top: 20px;
         font-size: 14px;
     }
@@ -1502,7 +1511,7 @@ div#dev-gt-1140{display:block}
     }
 }
 @media all and (max-width: 789px) {
-	div#dev *{display:none}div#dev-789{display:block}
+    div#dev *{display:none}div#dev-789{display:block}
 
 }
 @media all and (max-width: 780px) {
@@ -1533,9 +1542,9 @@ div#dev-gt-1140{display:block}
     }
 }
 @media all and (max-width: 769px) {
-	div#dev *{display:none}div#dev-769{display:block}
+    div#dev *{display:none}div#dev-769{display:block}
 
-	#content .home-text .item .desc h2 {
+    #content .home-text .item .desc h2 {
         float: none;
         margin-right: 0;
         font-size: 14px;
@@ -2061,7 +2070,7 @@ div#dev-gt-1140{display:block}
         padding-top: 15px;
     }
     #content .content-in .rightcol .purchase-item table + div div + div {
-    	margin: 0 auto;
+        margin: 0 auto;
     }
     #content .content-in .rightcol .purchase-item table + div p + p
     {
@@ -2069,8 +2078,8 @@ div#dev-gt-1140{display:block}
         margin: 0 auto;
     }
     #content .content-in .rightcol .purchase-item table + div p + p + p {
-    	width: auto !important;
-    	float: right;
+        width: auto !important;
+        float: right;
     }
     #content .content-in .rightcol .purchase-item a.button-blue {
         position: static;
@@ -2086,9 +2095,42 @@ div#dev-gt-1140{display:block}
         padding-right: 0;
     }
 
+    /* invoices */
+    #content .content-in .rightcol .head-3,
+    #content .content-in .rightcol .invoices {
+        padding-left: 20px !important;
+    }
+        #content .content-in .rightcol .head-3 a,
+    #content .content-in .rightcol .invoices .item div {
+        width: 19% !important;
+        padding-left: 5.5% !important;
+    }
+    #content .content-in .rightcol .head-3 a.item-1,
+    #content .content-in .rightcol .invoices .item .item-1 {
+    	width: 21% !important;
+    }
+    #content .content-in .rightcol .head-3 a.item-2,
+    #content .content-in .rightcol .invoices .item .item-2 {
+        width: 16% !important;
+        padding-left: 3.5% !important;
+    }
+    #content .content-in .rightcol .head-3 a.item-4,
+    #content .content-in .rightcol .invoices .item .item-4 {
+        width: 19% !important;
+        padding-left:  4.5% !important;
+    }
+    #content .content-in .rightcol .head-3 a.item-5,
+    #content .content-in .rightcol .invoices .item .item-5 {
+        width: 18% !important;
+        padding-left: 3.5% !important;
+    }
+    #content .content-in .rightcol .invoices .item-detail {
+        margin-right: 20px !important;
+    }
+
     /* image list */
     .image-content .filter ul {
-    	width: auto;
+        width: auto;
         padding: 0 20px;
     }
     .image-content .filter ul li {
@@ -2227,7 +2269,7 @@ div#dev-gt-1140{display:block}
         display: block;
     }
     .image-content .filter ul li {
-    	width: 44.44%;
+        width: 44.44%;
     }
 }
 @media all and (max-width: 620px) {
@@ -2267,7 +2309,7 @@ div#dev-gt-1140{display:block}
     }
 }
 @media all and (max-width: 579px) {
-	div#dev *{display:none}div#dev-579{display:block}
+    div#dev *{display:none}div#dev-579{display:block}
 
     .image-content .arrow > div {
         display: none;
@@ -2318,11 +2360,11 @@ div#dev-gt-1140{display:block}
         padding: 20px 0;
     }
     .fluid #content .content-in .rightcol .head select {
-    	display: block;
+        display: block;
         margin: 5px auto 0;
     }
     .fluid #content .content-in .rightcol .head select#filter_lightbox_category {
-    	margin-bottom: 15px;
+        margin-bottom: 15px;
     }
     .fluid #content .content-in .rightcol .head span {
         display: block;
@@ -2342,8 +2384,8 @@ div#dev-gt-1140{display:block}
         float: none;
     }
     .image-content.search a.button.filter {
-    	margin: 0;
-    	float: left;
+        margin: 0;
+        float: left;
     }
 
     /* lightbox */
@@ -2354,7 +2396,7 @@ div#dev-gt-1140{display:block}
         margin-top: 10px;
     }
     .lightbox .header a.logo img {
-    	width: 150px;
+        width: 150px;
         margin: 3px 0 0 -3px;
     }
     .lightbox .header .arrow {
@@ -2397,14 +2439,26 @@ div#dev-gt-1140{display:block}
     }
 
     /* invoices */
-    #content .content-in .rightcol .head-3 a,
-    #content .content-in .rightcol .invoices .item div {
-        width: 32% !important;
+    #content .content-in .rightcol .head-3 a.item-1,
+    #content .content-in .rightcol .invoices .item .item-1 {
+    	width: 25% !important;
+        padding-left: 9.5% !important;
+    }
+    #content .content-in .rightcol .head-3 a.item-2,
+    #content .content-in .rightcol .invoices .item .item-2 {
+        width: 23% !important;
+        padding-left: 5.5% !important;
     }
     #content .content-in .rightcol .head-3 a.item-4,
     #content .content-in .rightcol .invoices .item .item-4 {
         display: none;
     }
+    #content .content-in .rightcol .head-3 a.item-5,
+    #content .content-in .rightcol .invoices .item .item-5 {
+        width: 24% !important;
+        padding-left: 4.5% !important;
+    }
+
     #content .content-in .rightcol .head:first-child {
         height: auto;
     }
@@ -2440,7 +2494,7 @@ div#dev-gt-1140{display:block}
     div#dev *{display:none}div#dev-500{display:block}
 
     .tostartpricing a {
-    	display: block;
+        display: block;
         white-space: nowrap;
     }
     .lightbox .header .desc {
@@ -2540,10 +2594,6 @@ div#dev-gt-1140{display:block}
     .resp-kwlist-hide {
         display: none;
     }
-    #content .content-in .rightcol .invoices .item-detail {
-        width: 80%;
-        margin-left: 10%;
-    }
     #content .content-in .rightcol .invoices .item-detail .left {
         float: none;
         width: auto;
@@ -2585,9 +2635,6 @@ div#dev-gt-1140{display:block}
     }
 
     /* image list */
-    .image-content .filter ul li {
-        /*width: 21%;*/
-    }
     .image-content .filter ul li:last-child {
         margin-bottom: 15px;
     }
@@ -2606,21 +2653,21 @@ div#dev-gt-1140{display:block}
         padding-right: 10px;
     }
     #content.search .content-in .header .responsivetitle {
-    	margin: 0;
+        margin: 0;
         padding-left: 10px !important;
         padding-right: 10px !important;
     }
     .fluid #content .content-in .header .item {
-    	margin-right: 0 !important;
-    	margin-left: 10px !important;
-    	padding-right: 0 !important;
-    	padding-left: 15px !important;
+        margin-right: 0 !important;
+        margin-left: 10px !important;
+        padding-right: 0 !important;
+        padding-left: 15px !important;
     }
     .fluid #content .content-in .header .item + .item {
         margin-left: 0 !important;
     }
     .fluid #content .content-in .header form {
-    	margin-right: 0 !important;
+        margin-right: 0 !important;
         padding-right: 0 !important;
         padding-left: 0 !important;
     }
@@ -2813,7 +2860,7 @@ div#dev-gt-1140{display:block}
         padding-right: 20px !important;
     }
     #content .content-in .rightcol .purchase-item table + div {
-    	width: 100% !important;
+        width: 100% !important;
     }
     #content .content-in .rightcol .purchase-item table + div div + div {
         width: 100% !important;
@@ -2823,12 +2870,12 @@ div#dev-gt-1140{display:block}
         text-align: right;
     }
     #content .content-in .rightcol .purchase-item table + div p + p + p {
-    	width: 100%;
+        width: 100%;
     }
     #content .content-in .rightcol .purchase-item table + div div + div + p a.button-grey,
     #content .content-in .rightcol .purchase-item table + div p + p a.button-blue,
     #content .content-in .rightcol .purchase-item table + div p + p a.button-grey {
-    	display: block !important;
+        display: block !important;
         width: 150px !important;
         float: none !important;
         margin-left: auto !important;
@@ -2858,10 +2905,10 @@ div#dev-gt-1140{display:block}
 
     /* lightbox */
     .lightbox .header a.logo {
-    	position: static;
+        position: static;
     }
     .lightbox .header a.logo img {
-    	margin: 3px 0 0 -3px;
+        margin: 3px 0 0 -3px;
     }
     .lightbox .header .desc {
         line-height: 20px;
@@ -2893,9 +2940,35 @@ div#dev-gt-1140{display:block}
         padding-right: 0 !important;
     }
 
+    /* invoices */
+    #content .content-in .rightcol .invoices .item div {
+    	/*font-size: 12px !important;*/
+    }
+
+    #content .content-in .rightcol .head-3 a.item-1,
+    #content .content-in .rightcol .invoices .item .item-1 {
+        width: 26.5% !important;
+        padding-left: 0 !important;
+    }
+
+    #content .content-in .rightcol .head-3 a.item-2,
+    #content .content-in .rightcol .invoices .item .item-2 {
+        /*width: 21% !important;*/
+        /*padding-left: 9.5% !important;*/
+    }
+    #content .content-in .rightcol .head-3 a.item-5,
+    #content .content-in .rightcol .invoices .item .item-5 {
+        width: 29% !important;
+        padding-left: 4.5% !important;
+    }
+    #content .content-in .rightcol .invoices .item .item-1 {
+    	width: 15.5% !important;
+        padding-left: 11.5% !important;
+    }
+
     /* image list */
     .image-content .filter ul li {
-    	width: 100%;
+        width: 100%;
     }
 }
 @media all and (max-width: 425px) {
@@ -2949,11 +3022,34 @@ div#dev-gt-1140{display:block}
     #content .content-in .rightcol .email-item ul li label {
         width: 86%;
     }
-    #content .content-in .rightcol .invoices .item .item-1 input {
-        margin-right: 18px;
+
+    /* invoices */
+    #content .content-in .rightcol .head-3 a.item-1 {
+        line-height: 30px;
+        margin-top: 5px !important;
     }
-    #content .content-in .rightcol .head-3 a {
-        font-size: 12px;
+    #content .content-in .rightcol .head-3 a.item-2,
+    #content .content-in .rightcol .head-3 a.item-5 {
+        white-space: nowrap;
+    }
+    #content .content-in .rightcol .head-3 a.item-1,
+    #content .content-in .rightcol .invoices .item .item-1 {
+        width: 20.5% !important;
+        padding-left: 0 !important;
+    }
+    #content .content-in .rightcol .head-3 a.item-2,
+    #content .content-in .rightcol .invoices .item .item-2 {
+        width: 29% !important;
+        padding-left: 7.5% !important;
+    }
+    #content .content-in .rightcol .head-3 a.item-5,
+    #content .content-in .rightcol .invoices .item .item-5 {
+        width: 33% !important;
+        padding-left: 3.5% !important;
+    }
+    #content .content-in .rightcol .invoices .item .item-1 {
+        width: 9% !important;
+        padding-left: 11.5% !important;
     }
     #content .content-in .rightcol .purchase-item a.button-blue,
     #content .content-in .rightcol .purchase-item a.button-grey {
@@ -3014,10 +3110,6 @@ div#dev-gt-1140{display:block}
     .lightbox .preview .leftcol .image {
         height: 261px;
         line-height: 261px;
-    }
-    .image-content.search p.info {
-        /*padding-left: 8px;*/
-        /*padding-right: 8px;*/
     }
     .tostartpricing {
         font-size: 12px;
@@ -3116,10 +3208,8 @@ div#dev-gt-1140{display:block}
         float: right;
         padding-left: 12px;
     }
-    #content .content-in .rightcol .head-3 a.item-1,
-    #content .content-in .rightcol .head-3 a.item-2,
-    #content .content-in .rightcol .head-3 a.item-5 {
-        line-height: 20px;
+    #content .content-in .rightcol .head-3 a {
+        /*white-space: nowrap;*/
     }
     #content .content-in .rightcol .purchase-item a.button-blue,
     #content .content-in .rightcol .purchase-item a.button-grey {

@@ -424,10 +424,6 @@
 #content .content-in .rightcol .invoices .item-detail {
 	position: relative;
     width: auto !important;
-    min-height: 0;
-    margin-right: 20px !important;
-    margin-left: 4%;
-    margin-left: 20px !important;
     background-image: none;
     background-color: #f8f8f8;
 }
