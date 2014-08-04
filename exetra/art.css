@@ -103,10 +103,18 @@ div#dev-gt-1140{display:block}
         box-shadow: none;
     }
     #content .home-text .item {
-        border: 1px solid #696969;
+        border: 1px solid #b0b0b0;
     }
     #content .home-text .item .desc h2 {
-        font-size: 18px;
+        width: 240px;
+    }
+    #content .home-text .item .desc p {
+        width: auto;
+        height: 33px;
+        float: right;
+        line-height: 33px;
+        margin-top: 0;
+        padding: 0 20px;
     }
     #content .home-content.shadow-3 {
         box-shadow: none;
@@ -1220,10 +1228,9 @@ div#dev-gt-1140{display:block}
     	font-size: 16px;
     }
     #content .home-text .item .desc p {
-        width: 68%;
-        font-size: 12px;
-        margin: 0;
+       font-size: 13px;
     }
+
     #content .home-content .in {
         max-height: 1269px;
     }
@@ -1332,6 +1339,10 @@ div#dev-gt-1140{display:block}
 @media all and (max-width: 900px) {
     div#dev *{display:none}div#dev-900{display:block}
 
+    #content .home-text .item .desc h2 {
+        width: auto;
+    }
+
     #content .content-in .cart .leftcol,
     #content .cart .total-price-bottom .left {
         width: 62.9% !important;
@@ -1366,6 +1377,10 @@ div#dev-gt-1140{display:block}
 }
 @media all and (max-width: 860px) {
     div#dev *{display:none}div#dev-860{display:block}
+
+    #content .home-text .item .desc p {
+       font-size: 12px;
+    }
 
     #content .content-in .cart .leftcol,
     #content .cart .total-price-bottom .left {
@@ -1462,6 +1477,11 @@ div#dev-gt-1140{display:block}
 @media all and (max-width: 799px) {
 	div#dev *{display:none}div#dev-799{display:block}
 
+    #content .home-text .item .desc p {
+    	width: 100%;
+        margin-top: 20px;
+        font-size: 14px;
+    }
     .image-content .filter ul {
         padding: 0;
     }
@@ -1480,6 +1500,10 @@ div#dev-gt-1140{display:block}
     #content .cart .total-price-bottom .left {
         width: 57.6% !important;
     }
+}
+@media all and (max-width: 789px) {
+	div#dev *{display:none}div#dev-789{display:block}
+
 }
 @media all and (max-width: 780px) {
     div#dev *{display:none}div#dev-780{display:block}
@@ -1507,6 +1531,45 @@ div#dev-gt-1140{display:block}
     #content .cart .total-price-bottom .left {
         width: 56.8% !important;
     }
+}
+@media all and (max-width: 769px) {
+	div#dev *{display:none}div#dev-769{display:block}
+
+	#content .home-text .item .desc h2 {
+        float: none;
+        margin-right: 0;
+        font-size: 14px;
+        height: auto;
+        padding: 0 20px;
+        display: block;
+        cursor: pointer;
+        text-align: left;
+        line-height: 39px;
+        background-image: url('img/plus-white.png');
+        background-repeat: no-repeat;
+        background-position: 97% center;
+        color: #fff;
+        border: 1px solid #e0e0e0;
+    }
+    #content .home-text .item .desc h2.opened,
+    .fluid #content #resp-subpagebenefits .home-text .item .desc h2.opened {
+        background-image: url('img/minus-white.png');
+    }
+    #content .home-text .item .desc p {
+        height: auto;
+        padding: 0;
+        font-weight: normal;
+        float: none;
+        width: auto;
+        margin-top: 10px;
+        line-height: normal;
+        text-align: left;
+        background: none;
+        border: none;
+        letter-spacing: 1px;
+        text-align: justify;
+    }
+
 }
 @media all and (max-width: 768px) {
     div#dev *{display:none}div#dev-768{display:block}
@@ -1585,49 +1648,13 @@ div#dev-gt-1140{display:block}
         border: none;
         box-shadow: none;
     }
-    #content .home-text .item .desc h2 {
-        float: none;
-        width: auto;
-        margin-right: 0;
-        font-size: 14px;
-        height: auto;
-        padding: 0 20px;
-        display: block;
-        cursor: pointer;
-        text-align: left;
-        line-height: 39px;
-        background-image: url('img/plus-white.png');
-        background-repeat: no-repeat;
-        background-position: 97% center;
-        color: #fff;
-        border: 1px solid #e0e0e0;
-    }
-    #content .home-text .item .desc h2.opened,
-    .fluid #content #resp-subpagebenefits .home-text .item .desc h2.opened {
-        background-image: url('img/minus-white.png');
-    }
-    #content .home-text .item .desc p {
-        height: auto;
-        padding: 0;
-        font-weight: normal;
-        float: none;
-        width: auto;
-        margin-top: 10px;
-        line-height: normal;
-        text-align: left;
-        background: none;
-        border: none;
-        letter-spacing: 1px;
-        text-align: justify;
-    }
     #content .home-text .item > p {
-        margin-top: 8px;
+        margin-top: 13px;
     }
     #content .home-text .item .desc p,
     #content .home-text .item > p {
         display: none;
         color: #a0a0a0;
-        font-size: 14px;
     }
     #content .content-in .header .resp-search {
         display: none;

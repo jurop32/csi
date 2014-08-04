@@ -417,9 +417,6 @@ textarea {
     position: relative;
     top: 10px !important;
 }
-#content .home-content div > a > i > span {
-    display: none;
-}
 #content .home-content ul.country li a {
     line-height: 20px;
     font-size: 13px;
@@ -437,13 +434,27 @@ textarea {
     padding-left: 20px !important;
     padding-right: 20px !important;
 }
-#content .home-text .item .desc p {
-    font-size: 14px;
-    width: 100%;
-    margin-top: 20px;
+#content .home-text .item .desc h2 {
+	width: 200px;
+    width: auto;
+    margin-right: 0;
+    padding: 0 20px;
+    font-size: 18px;
 }
+
+#content .home-text .item .desc p,
 #content .home-text .item > p {
-    font-size: 13px;
+    font-size: 14px;
+}
+
+#content .home-text .item .desc p {
+	box-sizing: border-box;
+    width: auto;
+    height: 33px;
+    line-height: 33px;
+    float: right;
+    padding: 0 20px;
+    border-color: #e0e0e0;
 }
 
 /* content-in */

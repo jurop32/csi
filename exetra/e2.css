@@ -170,7 +170,10 @@
     background: none repeat scroll 0% 0% rgb(193, 193, 193);
 }
 
-/**/
+/* home */
+#content .home-content ul.country {
+    font-size: 14px;
+}
 #content .home-content ul.country > div.pick-more-keywords {
     display: block;
     background-color: #bbbbbb;
