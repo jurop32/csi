@@ -55,14 +55,16 @@ function exetra_showHideContent(selector, caller)
     var element = $(selector);
     if (element.is(':visible'))
     {
-        element.slideUp();
+        element.slideUp('normal', function() {
+            $(this).css('display', '');
+        });
         if ( typeof caller != 'undefined')
         {
             $(caller).removeClass('opened');
         }
     } else
     {
-        //element.css('display', 'none');
+
         element.slideDown();
         if ( typeof caller != 'undefined')
         {
