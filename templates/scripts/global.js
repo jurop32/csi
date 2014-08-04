@@ -66,17 +66,25 @@ $(document).ready(function()
             image = preview.parent().find('img').attr('src').replace('_2', '_3');
             image = image.replace('d=2', 'd=3');
         }
-        if (preview.parent().has('.vertical').length)
+        // if (preview.parent().has('.vertical').length)
+        var xx = 0;
+        var yy;
+        if ((yy = preview.parent().find('.vertical')).length)
         {
-            var leftMin = 92.5/*100*/, topMin = 100;
-        } else
+            xx = parseInt(yy.html());
+        }
+        if (xx == 1)
         {
-            var leftMin = 100, topMin = 5;
+            var leftMin = 92.5, //100,
+                topMin = 70; //100;
+        } else {
+            var leftMin = 100,
+                topMin = 25; //5;
         }
         var leftpos = preview.position().left;
         if (leftpos < 100)
         {
-            leftpos = 71;//preview.offset().left
+            leftpos = 71; //preview.offset().left;
             pictograms = pictograms.replace('yespreview', 'yespreview-offset');
         }
 
