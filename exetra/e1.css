@@ -1,5 +1,5 @@
 html {
-    text-size-adjust: none !important;
+    /*text-size-adjust: none !important;*/
     -webkit-text-size-adjust: none !important;
     -moz-text-size-adjust: none !important;
     -o-text-size-adjust: none !important;
@@ -30,12 +30,19 @@ input {
 }
 input[type="checkbox"],
 input[type="radio"] {
-    height: auto !important;
-    appearance: checkbox !important;
+	width: 15px !important;
+    height: 15px !important;
+    line-height: 15px !important;
+    /*appearance: checkbox !important;*/
     -webkit-appearance: checkbox !important;
     -moz-appearance: checkbox !important;
     -ms-appearance: checkbox !important;
     -o-appearance: checkbox !important;
+    /*transform-origin: left center;*/
+    -ms-transform-origin: left center;
+    -moz-transform-origin: left center;
+    -webkit-transform-origin: left center;
+    -o-transform-origin: left center;
 }
 .resp-search input {
     width: 67%;
@@ -80,40 +87,17 @@ textarea {
     -webkit-box-shadow: none;
     -moz-box-shadow: none;
     box-shadow: none;
+    margin: 0 auto;
 }
 #page #content .content-in {
     border: 1px solid #c0c0c0;
     -webkit-box-shadow: 0 0 8px 2px #e8e8e8;
     -moz-box-shadow: 0 0 8px 2px #e8e8e8;
     box-shadow: 0 0 8px 2px #e8e8e8;
-}
-#content .content-in {
-    margin: 0 auto;
-}
-#page #content .content-in {
     margin: 0;
 }
-#content .home-content .in.c > div,
-#content .home-content div.pick-more-keywords {
-    margin-top: 10px !important;
-}
-#content .home-content .in.c > div > a,
-#content .home-content div.pick-more-keywords > a {
-    cursor: pointer;
-    position: relative;
-    top: 10px !important;
-}
-#content .home-text > * {
-    padding-left: 20px !important;
-    padding-right: 20px !important;
-}
-#content .home-text .item .desc p {
-    font-size: 14px;
-    width: 100%;
-    margin-top: 20px;
-}
-#content .home-text .item > p {
-    font-size: 13px;
+#page #content .content-in .content {
+	font-size: 14px;
 }
 .closebuttonholder {
     width: 760px;
@@ -204,7 +188,7 @@ textarea {
 }
 .responsivetitle {
     border-bottom: solid #bbbbbb 1px;
-    padding: 0 0 15px;
+    padding: 0 20px 15px;
 }
 .resp-kwcolumn a.h2 {
     font-weight: bold;
@@ -303,10 +287,6 @@ textarea {
     margin: 0 auto 10px auto;
     width: 40px;
 }
-#resp-subpagebenefits {
-    display: none;
-    clear: both;
-}
 #keywords_content {
     min-width: 200px !important;
     padding: 0 !important;
@@ -390,9 +370,17 @@ textarea {
 #similar-images ul li label {
     display: inline-block;
 }
+
 /* content */
-#content.search .content-in .header.c h1 {
-    white-space: nowrap;
+#content .home-content .in.c > div,
+#content .home-content div.pick-more-keywords {
+    margin-top: 10px !important;
+}
+#content .home-content .in.c > div > a,
+#content .home-content div.pick-more-keywords > a {
+    cursor: pointer;
+    position: relative;
+    top: 10px !important;
 }
 #content .home-content div > a > i > span {
     display: none;
@@ -401,9 +389,35 @@ textarea {
     line-height: 20px;
     font-size: 13px;
 }
+#content .home-info p a {
+    color: #696969;
+    text-decoration: none;
+}
+#content .home-desc h1 {
+    color: #686868;
+    line-height: 34px;
+    -webkit-text-rendering: auto;
+}
+#content .home-text > * {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+}
+#content .home-text .item .desc p {
+    font-size: 14px;
+    width: 100%;
+    margin-top: 20px;
+}
+#content .home-text .item > p {
+    font-size: 13px;
+}
+
+/* content-in */
 #content.search .content-in .header {
     padding: 20px 0;
     height: auto;
+}
+#content.search .content-in .header.c h1 {
+    white-space: nowrap;
 }
 #content .content-in .header span {
     padding-right: 0;
@@ -434,6 +448,15 @@ textarea {
     margin: 15px 20px 0 10px;
     float: right;
 }
+#content .content-in .home-info,
+#content .content-in .home-text {
+    display: none;
+    clear: both;
+}
+#content .content-in .home-info p {
+    line-height: 40px;
+}
+
 /* header */
 #header .top-menu > li > a.smart-search {
     border: 1px solid #B0B0B0;
@@ -450,13 +473,6 @@ textarea {
     background: linear-gradient(#FFF, #F0F0F0) repeat scroll 0% 0% transparent;
     padding: 2px 5px;
     margin-top: -9px;
-}
-#content .content-in .content #resp-subpagebenefits > div.home-info > p {
-    line-height: 40px;
-    color: #a0a0a0;
-}
-#content .home-info p a {
-    text-decoration: none;
 }
 #keywords_wrapper #keywords_header_right > a.gray2 {
     display: inline-block;

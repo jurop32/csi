@@ -37,9 +37,8 @@ div#dev-gt-1140{display:block}
     /* zobakove deti */
     #content .home-info > *,
     #content .content-in .header > *,
-    #page.fluid #content .content-in .header > *,
-    #content .content-in .content .rightcol > *,
     #content .content-in .content.general_content > *,
+    #content .content-in .content .rightcol > *,
     #content .cart > #cart_status_top,
     #content .cart > #cart_status_bottom,
     #content .cart > .cart-item,
@@ -50,14 +49,13 @@ div#dev-gt-1140{display:block}
         padding-left: 20px !important;
         padding-right: 20px !important;
     }
-    #content .cart > *,
-    #content .cart .leftcol .section > form,
-    #content .content-in .cart .rightcol > .section,
-    #content .content-in .content.general_content > .rightcol,
     #content .content-in .content .rightcol > form,
+    #content .content-in .content.general_content > .rightcol,
     #content .content-in .content.general_content > table,
     #content .content-in .content.general_content > #resp-subpagebenefits,
-    #page.fluid #content .content-in .header > .resp-search,
+    #content .cart .leftcol .section > form,
+    #content .cart > *,
+    #content .content-in .cart .rightcol > .section,
     .lightbox .pricing #resp-license-details span,
     #footer .in .box.second,
     #footer #footer-background {
@@ -151,15 +149,25 @@ div#dev-gt-1140{display:block}
     #content .content-in .header .item label span {
         display: none;
     }
+    #content .content-in .leftcol {
+    	width: 20% !important;
+    }
     #content .content-in .rightcol {
         width: 77% !important;
         min-width: 200px;
     }
+    .fluid #content .content-in .rightcol {
+        float: right;
+        width: 80%;
+        width: 77%;
+        padding-left: 0;
+    }
+    #content .content-in .leftcol .head,
     #content .content-in .rightcol .head,
+    .fluid #content .content-in .rightcol .head,
     #content .content-in .leftcol .head a,
-    #content .content-in .rightcol .head-2,
-    .fluid #content .content-in .rightcol .head {
-        line-height: 60px;
+    #content .content-in .rightcol .head a {
+    	line-height: 60px;
         height: 60px;
     }
     #content .content-in .rightcol .head-2 div:first-child {
@@ -170,6 +178,31 @@ div#dev-gt-1140{display:block}
     }
     #content .content-in .rightcol .head-2 div:last-child > select {
         width: auto;
+    }
+
+    /* invoices */
+    #content .content-in .rightcol .invoices .item {
+        padding: 0 !important;
+    }
+    /*#content .content-in .rightcol .item .item-1 input {
+        float: left;
+        margin-top: 7.5px 10px 7.5px 0;
+        transform: scale(2);
+    }*/
+    #content .content-in .rightcol .head-3 {/**/
+        padding: 0;
+    }
+    #content .content-in .rightcol .head-3 a {/**/
+        text-align: center;
+    }
+    #content .content-in .rightcol .head-3 a,
+    #content .content-in .rightcol .invoices .item div {/**/
+        width: 19% !important;
+        padding: 0 1px  0  !important;
+        margin: 0 auto !important;
+    }
+    #content .content-in .rightcol .invoices .item div {/**/
+        text-align: left;
     }
     #content .content-in .rightcol .head-3 a,
     #content .content-in .rightcol .invoices .item div {
@@ -188,7 +221,7 @@ div#dev-gt-1140{display:block}
     }
     .fluid #content .content-in .rightcol .head select {
         margin: 0 auto;
-        width: 160px !important;
+        width: 140px !important;
     }
     #content .content-in .rightcol .email-content {
         padding-bottom: 0;
@@ -310,9 +343,8 @@ div#dev-gt-1140{display:block}
     }
     #page #content .content-in .content {
         padding: 20px 0 0;
-        font-size: 14px !important;
     }
-    #page.fluid #content.search .content {
+    #page #content.search .content-in .content {
     	padding-top: 0;
     }
     #content .content-in .content .rightcol div.oneitem p:last-child {
@@ -921,7 +953,6 @@ div#dev-gt-1140{display:block}
         max-height: 100%;
         width: auto;
     }
-
     .image-list li > p {
        background-image: none;
     }
@@ -1517,16 +1548,13 @@ div#dev-gt-1140{display:block}
     #resp-header {
         display: block;
     }
-    #resp-subpagebenefits {
+    #content .content-in .home-info,
+    #content .content-in .home-text {
         display: block;
     }
     #content .home-info {
-        display: block;
         padding: 20px 0;
         font-size: 14px;
-    }
-    #content .home-text {
-        display: block;
     }
     #content .home-text > * {
         padding-left: 0 !important;
@@ -1556,7 +1584,7 @@ div#dev-gt-1140{display:block}
         border: 1px solid #e0e0e0;
     }
     #content .home-text .item .desc h2.opened,
-    #page.fluid #content #resp-subpagebenefits .home-text .item .desc h2.opened {
+    .fluid #content #resp-subpagebenefits .home-text .item .desc h2.opened {
         background-image: url('img/minus-white.png');
     }
     #content .home-text .item .desc p {
@@ -1585,39 +1613,39 @@ div#dev-gt-1140{display:block}
     #content .content-in .header .resp-search {
         display: none;
     }
-    #page #content .content-in .header form {
-        display: block;
-    }
     #content .content-in .leftcol {
         display: block;
     }
-    #page.fluid #content .content-in .header > .item,
-    #page.fluid #content .content-in .header > form {
+    .fluid #content .content-in .header > .item,
+    .fluid #content .content-in .header > form {
         position: relative;
         left: -8%;/*!*/
-        margin: 0;
         width: 24%;/*!*/
-    }
-    #content #resp-subpagebenefits .home-info > p {
-        border-color: #e0e0e0;
-    }
-    #content .home-info p,
-    #page.fluid #content .home-info p {
-        border-color: #696969;
     }
     #content .home-info p {
         font-size: 14px;
         letter-spacing: 1px;
     }
-    #content #resp-subpagebenefits .home-info p a {
+    #content .content-in .home-info p {
+        border-color: #e0e0e0;
         color: #a0a0a0;
+    }
+    .fluid #content .content-in .home-info p {
+        border-color: #696969;
+        color: #696969;
+    }
+    #content .content-in .home-info p a {
+        color: #a0a0a0;
+    }
+    .fluid #content .content-in .home-info p a {
+        color: #696969;
     }
     #content #resp-subpagebenefits .home-text .item .desc h2 {
         background-image: url('img/plus.png');
         background-color: #f5f5f5;
         color: #b0b0b0;
     }
-    #page.fluid #content #resp-subpagebenefits .home-text .item .desc h2 {
+    .fluid #content #resp-subpagebenefits .home-text .item .desc h2 {
         background-image: url('img/plus-white.png');
         background-repeat: no-repeat;
         background-position: 97% center;
@@ -1721,15 +1749,15 @@ div#dev-gt-1140{display:block}
 @media all and (max-width: 767px) {
     div#dev *{display:none}div#dev-767{display:block}
 
+    #content .content-in .content,
     #page #content .content-in .content {
         padding-top: 0;
     }
-    #content .content-in .content,
-    #page.fluid #content.search .content.c {
-        padding-top: 0;
+    #content .content-in .general_content {
+        padding: 20px 0;
     }
     #page #content .content-in .general_content {
-        padding: 20px 0 20px;
+        padding: 20px 0 0;
     }
     #content .cart .total-price {
         padding: 0;
@@ -1743,9 +1771,7 @@ div#dev-gt-1140{display:block}
     #content .content-in .rightcol .head:first-child {
         margin-top: 0;
         margin-right: 0;
-    }
-    #content .content-in .content.general_content .rightcol > div {
-        padding-top: 20px;
+        text-align: center;
     }
     #content .home-content ul.country div.pick-more-keywords {
         margin-left: -218.5%;
@@ -2006,7 +2032,7 @@ div#dev-gt-1140{display:block}
     #content .content-in .rightcol .purchase-item table + div p + p
     {
         width: 50% !important;
-        margin 0 auto;
+        margin: 0 auto;
     }
     #content .content-in .rightcol .purchase-item table + div p + p + p {
     	width: auto !important;
@@ -2240,7 +2266,7 @@ div#dev-gt-1140{display:block}
     }
     .fluid #content .content-in .rightcol .head span {
         display: block;
-        width: 160px;
+        width: 140px;
         margin: 0 auto;
         text-align: left;
     }
@@ -2503,23 +2529,23 @@ div#dev-gt-1140{display:block}
 @media all and (max-width: 479px) {
     div#dev *{display:none}div#dev-479{display:block}
 
-    #page #content .content-in .header .responsivetitle {
+    #content.search .content-in .header .responsivetitle {
         padding-left: 8px !important;
     }
-    #page.fluid #content .content-in .header .item {
+    .fluid #content .content-in .header .item {
         padding-right: 8px !important;
     }
-    #page.fluid #content .content-in .header .item + .item {
+    .fluid #content .content-in .header .item + .item {
         padding-right: 0 !important;
     }
-    #page.fluid #content .content-in .header .item,
-    #page.fluid #content .content-in .header form {
+    .fluid #content .content-in .header .item,
+    .fluid #content .content-in .header form {
         left: 0;
         margin-left: 5px;
         padding-left: 5px !important;
         width: auto;
     }
-    #page.fluid #content .content-in .header form {
+    .fluid #content .content-in .header form {
         margin-left: 0;
         padding-right: 0 !important;
         padding-left: 8px !important;
@@ -2946,7 +2972,7 @@ div#dev-gt-1140{display:block}
 @media all and (max-width: 320px) {
     div#dev *{display:none}div#dev-320{display:block}
 
-    #page.fluid #content .content-in .header form {
+    .fluid #content .content-in .header form {
         margin-left: 0;
     }
     #content .cart .cart-item .price p {
