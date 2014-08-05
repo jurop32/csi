@@ -393,6 +393,7 @@ div#dev-gt-1140{display:block}
     }
     #content .content-in .content {
         padding: 20px;
+        position: relative;
     }
     #page #content .content-in .content {
         padding: 20px 0 0;
@@ -1999,10 +2000,11 @@ div#dev-gt-1140{display:block}
         width: 100% !important;
     }
     #content .content-in .leftcol {
-        width: auto !important;
-        position: absolute;
-        margin-left: 20px;
         display: none;
+        position: absolute;
+        width: auto !important;
+        top: 20px;
+        margin-left: 20px;
     }
     #content .content-in .cart .leftcol .head {
         display: block;
