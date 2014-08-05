@@ -346,11 +346,20 @@ div#dev-gt-1140{display:block}
     #content .content-in .rightcol .purchase-item a.button-grey {
         margin-left: 20px;
     }
-    /*#content .content-in .rightcol .purchase-item table {
+
+    #content .content-in .rightcol .purchase-item table {
+    	width: auto;
+    	float: none;
         clear: left;
-        width: 44%;
-    }*/
+        padding: 20px 0;
+    }
+    #content .content-in .rightcol .purchase-item table tr td {
+        padding-right: 30px;
+    }
     #content .content-in .rightcol .purchase-item table + div {
+    	position: absolute;
+        top: 20px;
+        right: 20px;
         width: 46% !important;
     }
     #content .content-in .rightcol .purchase-item table + div > div + div + p,
@@ -854,7 +863,7 @@ div#dev-gt-1140{display:block}
         right: 0;
     }
 
-    /**/
+    /* home */
     #content .home-slider,
     #content .home-slider-in,
     #content .home-slider-in ul li {
@@ -942,8 +951,6 @@ div#dev-gt-1140{display:block}
     #content .home-content ul.country > div.pick-more-keywords {
         margin-right: -140%;
     }
-
-
     #content .home-desc h1 {
         font-size: 21px;
         letter-spacing: 7px;
@@ -1207,24 +1214,11 @@ div#dev-gt-1140{display:block}
         -ms-transform: scale(2);
     }
     #content .content-in .rightcol .purchase-item > div.desc {
-        float: none;
-        margin: 0 auto;
+
     }
     #content .content-in .rightcol .purchase-item > div.desc > div.image {
         background: none;
         border: none;
-    }
-    #content .content-in .rightcol .purchase-item table,
-    #content .content-in .rightcol .purchase-item .desc .image {
-        width: auto;
-        float: none;
-        margin: 20px auto;
-    }
-    #content .content-in .rightcol .purchase-item table tr td {
-        padding-right: 30px;
-    }
-    #content .content-in .rightcol .purchase-item table tr th {
-        padding-left: 30px;
     }
     #content .content-in .rightcol .purchase-item table + div {
         width: auto !important;
@@ -1740,6 +1734,50 @@ div#dev-gt-1140{display:block}
         width: 67%;
     }
 
+    /* purchases */
+    #content .content-in .rightcol .purchase-item .desc {
+    	width: auto;
+        float: none;
+        margin: 0 auto;
+        text-align: center;
+    }
+    #content .content-in .rightcol .purchase-item table {
+    	margin: 20px auto;
+	}
+    #content .content-in .rightcol .purchase-item table,
+    #content .content-in .rightcol .purchase-item .desc .image {
+        width: auto;
+        float: none;
+    }
+    #content .content-in .rightcol .purchase-item table tr th {
+    	width: auto;
+    }
+    #content .content-in .rightcol .purchase-item table + div {
+        position: static;
+	    float: none !important;
+        width: 365px !important;
+        margin: 0 auto;
+        padding-top: 15px;
+    }
+    #content .content-in .rightcol .purchase-item table + div div + div {
+        width: auto !important;
+    }
+    #content .content-in .rightcol .purchase-item table + div p + p + p {
+        width: auto !important;
+    }
+    #content .content-in .rightcol .purchase-item table + div div + div + p a.button-grey,
+    #content .content-in .rightcol .purchase-item table + div p + p a.button-blue,
+    #content .content-in .rightcol .purchase-item table + div p + p a.button-grey {
+        display: block !important;
+        width: 150px !important;
+        float: none !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+    #content .content-in .rightcol .purchase-item a.button-grey {
+        margin-top: 20px !important;
+    }
+
     /* lightbox */
     .lightbox {
         width: auto;
@@ -2079,30 +2117,28 @@ div#dev-gt-1140{display:block}
         font-weight: normal;
         font-size: 13px;
     }
-    #content .content-in .rightcol .purchase-item .desc {
-        width: 34%;
-    }
+
+    /* purchases */
     #content .content-in .rightcol .purchase-item table {
         clear: none;
     }
-    #content .content-in .rightcol .purchase-item table + div {
+    /*#content .content-in .rightcol .purchase-item table + div {
         float: none !important;
         padding-top: 15px;
-    }
+    }*/
     #content .content-in .rightcol .purchase-item table + div div + div {
         margin: 0 auto;
     }
-    #content .content-in .rightcol .purchase-item table + div p + p
+    /*#content .content-in .rightcol .purchase-item table + div p + p
     {
         width: 50% !important;
         margin: 0 auto;
-    }
+    }*/
     #content .content-in .rightcol .purchase-item table + div p + p + p {
-        width: auto !important;
-        float: right;
+        /*width: auto !important;*/
+        /*float: right;*/
     }
     #content .content-in .rightcol .purchase-item a.button-blue {
-        position: static;
         float: left;
         margin-right: 15px;
     }
@@ -2110,6 +2146,7 @@ div#dev-gt-1140{display:block}
         position: static;
         float: left;
     }
+
     #content .content-in .cart .total-price-bottom {
         padding-left: 0;
         padding-right: 0;
@@ -2884,23 +2921,7 @@ div#dev-gt-1140{display:block}
         width: 100% !important;
     }
     #content .content-in .rightcol .purchase-item table + div p + p a.link {
-        display: block;
-        text-align: right;
-    }
-    #content .content-in .rightcol .purchase-item table + div p + p + p {
-        width: 100%;
-    }
-    #content .content-in .rightcol .purchase-item table + div div + div + p a.button-grey,
-    #content .content-in .rightcol .purchase-item table + div p + p a.button-blue,
-    #content .content-in .rightcol .purchase-item table + div p + p a.button-grey {
-        display: block !important;
-        width: 150px !important;
-        float: none !important;
-        margin-left: auto !important;
-        margin-right: auto !important;
-    }
-    #content .content-in .rightcol .purchase-item a.button-grey {
-        margin-top: 20px !important;
+        white-space: nowrap;
     }
 
     /* cart */
@@ -2981,6 +3002,13 @@ div#dev-gt-1140{display:block}
 @media all and (max-width: 420px) {
     div#dev *{display:none}div#dev-420{display:block}
 
+    /* purchases */
+    #content .content-in .rightcol .purchase-item table + div p + p
+    {
+        width: auto !important;
+        margin: 0;
+    }
+
     #content .cart .cart-item .price p {
         width: 45%;
     }
@@ -3022,6 +3050,12 @@ div#dev-gt-1140{display:block}
     #content .cart .total-price-bottom .left .c {
         width: auto;
     }
+
+    #content .content-in .rightcol .purchase-item table + div p + p a.link {
+        display: block;
+        text-align: right;
+    }
+
     .tostartpricing {
         font-size:13px;
     }

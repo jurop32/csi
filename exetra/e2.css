@@ -233,17 +233,19 @@
     font-size: 13px;
 }
 #content .content-in .rightcol .purchase-item .desc {
-    text-align: center;
+    text-align: left;
 }
 #content .content-in .rightcol .purchase-item table + div {
     padding-left: 0 !important;
 }
 #content .content-in .rightcol .purchase-item table + div p + p span {
 	margin-left: 3px;
+	vertical-align: middle;
 	white-space: nowrap;
 }
 #content .content-in .rightcol .purchase-item table + div p + p a.link {
 	display: block;
+    vertical-align: middle;
     text-align: right;
 }
 #content .content-in .rightcol .purchase-item table + div p input:last-child {
