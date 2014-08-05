@@ -205,38 +205,31 @@ div#dev-gt-1140{display:block}
     }
     #content .content-in .rightcol .head-3 a,
     #content .content-in .rightcol .invoices .item div {
-        width: 17.5% !important;
-        padding: 0 2% 0 4% !important;
         text-align: left;
     }
     #content .content-in .rightcol .head-3 a.item-1,
     #content .content-in .rightcol .invoices .item .item-1 {
     	width: 19% !important;
         padding: 0 0% 0 8% !important;
-    	/*background: lightblue !important;*/
     }
     #content .content-in .rightcol .head-3 a.item-2,
     #content .content-in .rightcol .invoices .item .item-2 {
     	width: 13.5% !important;
         padding: 0 3.5% 0 6% !important;
-    	/*background: lightcoral !important;*/
     }
     #content .content-in .rightcol .head-3 a.item-3,
     #content .content-in .rightcol .invoices .item .item-3 {
        display: none;
-       /*background: azure !important;*/
     }
     #content .content-in .rightcol .head-3 a.item-4,
     #content .content-in .rightcol .invoices .item .item-4 {
     	width: 16.5% !important;
         padding: 0 2% 0 5% !important;
-    	/*background: goldenrod !important;*/
     }
     #content .content-in .rightcol .head-3 a.item-5,
     #content .content-in .rightcol .invoices .item .item-5 {
     	width: 18.5% !important;
         padding: 0 1.5% 0 4.5% !important;
-    	/*background: lightsalmon !important;*/
     }
     #content .content-in .rightcol .invoices .item input {
         position: absolute;
@@ -1297,21 +1290,6 @@ div#dev-gt-1140{display:block}
         width: 300px !important;
     }
 
-    /* invoices */
-    #content .content-in .rightcol .head-3 a,
-    #content .content-in .rightcol .invoices .item div {
-    }
-    #content .content-in .rightcol .head-3 a.item-1,
-    #content .content-in .rightcol .invoices .item .item-1 {
-    }
-    #content .content-in .rightcol .head-3 a.item-2,
-    #content .content-in .rightcol .invoices .item .item-2 {
-    }
-    #content .content-in .rightcol .head-3 a.item-3,
-    #content .content-in .rightcol .invoices .item .item-3 {
-        display: none;
-    }
-
     /* image list */
     .image-content .filter-box ul li input {
         /*transform-origin: left center;*/
@@ -1753,10 +1731,6 @@ div#dev-gt-1140{display:block}
     #content #resp-subpagebenefits .home-text .item .desc h2.opened {
         background-image: url('img/minus.png');
     }
-    #content .content-in .rightcol .invoices .item-detail .left a.button {
-        /*width: 120px;*/
-        /*font-size: 12px;*/
-    }
     #content .content-in .rightcol .item .forgotpassword {
         display: block;
         margin-left: auto;
@@ -1830,9 +1804,6 @@ div#dev-gt-1140{display:block}
     }
     .tostartpricing {
         padding-right: 20px;
-    }
-    #content .content-in .rightcol .invoices .item-detail .right table {
-        /*width: auto;*/
     }
 
     /* image-list */
@@ -2987,16 +2958,6 @@ div#dev-gt-1140{display:block}
         padding-right: 0 !important;
     }
 
-    /* invoices */
-    #content .content-in .rightcol .head-3 a.item-1,
-    #content .content-in .rightcol .invoices .item .item-1 {
-    }
-    #content .content-in .rightcol .head-3 a.item-5,
-    #content .content-in .rightcol .invoices .item .item-5 {
-    }
-    #content .content-in .rightcol .invoices .item .item-1 {
-    }
-
     /* image list */
     .image-content .filter ul li {
         width: 100%;
@@ -3052,13 +3013,6 @@ div#dev-gt-1140{display:block}
     }
     #content .content-in .rightcol .email-item ul li label {
         width: 86%;
-    }
-
-    /* invoices */
-    #content .content-in .rightcol .head-3 a.item-1,
-    #content .content-in .rightcol .head-3 a.item-2,
-    #content .content-in .rightcol .head-3 a.item-5 {
-        white-space: nowrap;
     }
 
     #content .content-in .rightcol .purchase-item a.button-blue,
