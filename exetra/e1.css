@@ -1,10 +1,10 @@
 html {
+	height: auto;
     /*text-size-adjust: none !important;*/
-    -webkit-text-size-adjust: none !important;
     -moz-text-size-adjust: none !important;
+    -webkit-text-size-adjust: none !important;
     -o-text-size-adjust: none !important;
     -ms-text-size-adjust: none !important;
-    height: auto;
 }
 body * {
     max-height: 999999px;
@@ -28,47 +28,40 @@ textarea {
 input {
     padding: 0 5px !important;
     /*transform-origin: left center;*/
-    -ms-transform-origin: left center;
     -moz-transform-origin: left center;
     -webkit-transform-origin: left center;
     -o-transform-origin: left center;
+    -ms-transform-origin: left center;
+}
+input[type="checkbox"] {
+    /*appearance: checkbox !important;*/
+    -webkit-appearance: checkbox !important;
+    -moz-appearance: checkbox !important;
+    -ms-appearance: checkbox !important;
+    -o-appearance: checkbox !important;
+}
+input[type="radio"] {
+	/*appearance: radio !important;*/
+    -moz-appearance: radio !important;
+    -webkit-appearance: radio !important;
+    -o-appearance: radio !important;
+    -ms-appearance: radio !important;
 }
 input[type="checkbox"],
 input[type="radio"] {
 	width: 15px !important;
     height: 15px !important;
     line-height: 15px !important;
-    /*appearance: checkbox !important;*/
-    -webkit-appearance: checkbox !important;
-    -moz-appearance: checkbox !important;
-    -ms-appearance: checkbox !important;
-    -o-appearance: checkbox !important;
     /*transform-origin: left center;*/
-    -ms-transform-origin: left center;
     -moz-transform-origin: left center;
     -webkit-transform-origin: left center;
     -o-transform-origin: left center;
-}
-.rightcol label input {
-    float: left;
-}
-.general_content .item input {
-    position: static;
-}
-#publish_start_date_forinline_display input {
-    margin-bottom: 15px !important;
-}
-#similar-images ul li input {
-    width: 15px !important;
-    height: 15px !important;
-}
-select {
-    padding-top: 5px !important;
-    padding-left: 1px;
+    -ms-transform-origin: left center;
 }
 input,
 select {
     height: 30px !important;
+    line-height: 30px !important;
     font-size: 14px !important;
 }
 textarea {
@@ -92,14 +85,41 @@ textarea {
     margin: 0 auto;
 }
 #page #content .content-in {
+	margin: 0;
     border: 1px solid #c0c0c0;
-    -webkit-box-shadow: 0 0 8px 2px #e8e8e8;
-    -moz-box-shadow: 0 0 8px 2px #e8e8e8;
     box-shadow: 0 0 8px 2px #e8e8e8;
-    margin: 0;
+    -moz-box-shadow: 0 0 8px 2px #e8e8e8;
+    -webkit-box-shadow: 0 0 8px 2px #e8e8e8;
 }
 #page #content .content-in .content {
 	font-size: 14px;
+}
+.rightcol label input {
+    float: left;
+}
+.general_content .item input {
+    position: static;
+}
+#publish_start_date_forinline_display input {
+    margin-bottom: 15px !important;
+}
+#similar-images ul li input {
+    width: 15px !important;
+    height: 15px !important;
+}
+.header .resp-search input {
+    margin-left: 3px;
+    float: left;
+}
+#resp-header .resp-search input {
+    width: 77.5%;
+}
+.header .resp-search input {
+    width: 89.5%;
+}
+#content .home-desc .search input {
+    width: 240px;
+    border: none;
 }
 .closebuttonholder {
     width: 760px;
@@ -191,10 +211,6 @@ textarea {
     width: 285px;
     height: auto;
 }
-#content .home-desc .search input {
-    width: 240px;
-    border: none;
-}
 #content .home-desc .search button,
 .resp-search button {
 	width: 21px;
@@ -219,16 +235,6 @@ textarea {
     float: right;
     margin: 15px 20px 0 10px;
     background: white;
-}
-.header .resp-search input {
-    margin-left: 3px;
-    float: left;
-}
-#resp-header .resp-search input {
-    width: 77.5%;
-}
-.header .resp-search input {
-    width: 89.5%;
 }
 .responsivetitle {
     padding: 0 0 15px !important;
@@ -346,7 +352,6 @@ textarea {
 }
 #resp-license-details > table {
     padding: 20px 0 0;
-    /*border-bottom: solid #dcddde 1px;*/
     width: 100%;
     font-size: 14px;
 }
