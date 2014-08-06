@@ -118,19 +118,7 @@ div#dev-gt-1140{display:block}
         margin-top: 0;
         padding: 0 20px;
     }
-    #content .home-content.shadow-3 {
-        box-shadow: none;
-        border: none;
-    }
-    #content .home-content ul.imagelist {
-        width: 60%;
-        overflow: hidden;
-    }
-    #content .home-content ul.imagelist li span {
-        padding: 14px 0 150px;
-        margin-bottom: -75.3%;
-        margin-left: 1px;
-    }
+
     #content .content-in .header .item {
         float: right;
         margin: 15px 0 0 15px;
@@ -907,6 +895,42 @@ div#dev-gt-1140{display:block}
         -khtml-opacity: 0.99;
         opacity: 0.99;
     }
+    #content .home-desc h1 {
+        font-size: 21px;
+        letter-spacing: 7px;
+    }
+    #content .home-content.shadow-3 {
+        box-shadow: none;
+        border: none;
+    }
+    #content .home-content ul.imagelist {
+        width: 60%;
+        overflow: hidden;
+    }
+    #content .home-content ul.imagelist li {
+        width: 28%;
+        margin-right: 5%;
+        padding-right: 0;
+        padding-bottom: 0;
+        height: auto;
+    }
+    #content .home-content ul.imagelist li a {
+    	display: block;
+    }
+    #content .home-content ul.imagelist li div {
+        width: auto;
+        line-height: normal;
+        height: auto;
+        padding: 10%;
+    }
+    #content .home-content ul.imagelist li div img {
+        width: 100%;
+        height: auto;
+    }
+    #content .home-content ul.imagelist li span {
+        padding: 14px 0 150px;
+        margin-bottom: -75.3%;
+    }
     #content .home-content ul:last-child {
         width: 16%;
         margin-right: 3%;
@@ -932,29 +956,8 @@ div#dev-gt-1140{display:block}
     #content .home-content ul.country > li:first-child a {
         border-top: none;
     }
-    #content .home-content ul.imagelist li {
-        width: 28%;
-        margin-right: 5%;
-        padding-right: 0;
-        padding-bottom: 0;
-        height: auto;
-    }
-    #content .home-content ul.imagelist li div {
-        width: 80%;
-        line-height: normal;
-        height: auto;
-        padding: 10%;
-    }
-    #content .home-content ul.imagelist li div img {
-        width: 100%;
-        height: auto;
-    }
     #content .home-content ul.country > div.pick-more-keywords {
         margin-right: -140%;
-    }
-    #content .home-desc h1 {
-        font-size: 21px;
-        letter-spacing: 7px;
     }
 
     /* image list */
