@@ -1,5 +1,18 @@
+fun = {
+    exe: 0
+};
+
 $(document).ready(function()
 {
+    if (fun && fun.exe)
+    {
+        $('.image-list li a.preview > div')
+            .append(
+                '<div class="dark prop above all h-span v-center hair"></div>' +
+                '<div class="dark prop above all v-span h-center hair"></div>'
+            )
+            .css('position', 'relative');
+    }
     var country = $('.imagelist + ul.country + ul.country');
     country.css('display', 'block');
 
@@ -64,7 +77,6 @@ function exetra_showHideContent(selector, caller)
         }
     } else
     {
-
         element.slideDown();
         if ( typeof caller != 'undefined')
         {
