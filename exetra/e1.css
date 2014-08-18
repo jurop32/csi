@@ -1017,6 +1017,9 @@ form#form_login div.item a.forgotpassword,
     position: relative;
     top: 114px;
 }
+#content .cart .cart-item .desc div.clear {
+	height: 15px !important;
+}
 #content .cart .cart-item .desc > label {
     display: inline;
 }
