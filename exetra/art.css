@@ -62,12 +62,7 @@ div#dev *{display:none;position:relative;font-size:55px}div#dev-gt-1140{display:
     #content .cart .leftcol .item label,
     #content .cart .leftcol .item input,
     #content .cart .leftcol .item select,
-    #content .cart .leftcol .item textarea,
-    .lightbox .pricing .rightcol .item label,
-    .lightbox .pricing .rightcol .item input,
-    .lightbox .pricing .rightcol .item select,
-    .lightbox .pricing .rightcol .item textarea,
-    .lightbox .pricing .rightcol .item div.description {
+    #content .cart .leftcol .item textarea {
         display: block;
         width: 100%;
         margin-left: auto !important;
@@ -77,6 +72,12 @@ div#dev *{display:none;position:relative;font-size:55px}div#dev-gt-1140{display:
         float: none;
     }
     .lightbox .pricing .rightcol .item label,
+    .lightbox .pricing .rightcol .item input,
+    .lightbox .pricing .rightcol .item select,
+    .lightbox .pricing .rightcol .item div.description {
+        width: 100%;
+        float: none;
+    }
     .lightbox .pricing .rightcol .item input {
         display: inline;
     }
@@ -602,12 +603,6 @@ div#dev *{display:none;position:relative;font-size:55px}div#dev-gt-1140{display:
         border-bottom: 1px #e0e0e0 solid;
         padding-bottom: 20px;
     }
-    /* category - lightbox */
-    .lightbox-category {
-        /*left: 0;*/
-        right: auto !important;
-        /*width: 255px;*/
-    }
     .lightbox .cs_addtocart {
         top: 107px !important;
         left: 70px;
@@ -621,8 +616,7 @@ div#dev *{display:none;position:relative;font-size:55px}div#dev-gt-1140{display:
     }
     .search .image-list li {
         display: inline-block;
-        /*height: 286px;*/
-	    height: auto; /*OK*//**/
+        height: 238px;
         float: none;
         margin-left: 20px;
         margin-right: 20px;
@@ -648,8 +642,8 @@ div#dev *{display:none;position:relative;font-size:55px}div#dev-gt-1140{display:
         padding: 0 8px;
         margin: 0 10px;
     }
-    div b a.paging:first-child, /*OK*//*sel*/
-	div b a.paging:last-child {/*sel*/
+    div b a.paging:first-child, /*OK*//*!selector*/
+	div b a.paging:last-child {
     	display: none;
     }
     .image-content .arrow span.paging.current {
@@ -685,9 +679,6 @@ div#dev *{display:none;position:relative;font-size:55px}div#dev-gt-1140{display:
     .image-content.search .filter-box form > input + div + div + div > div {
         text-align: right;
     }
-    .image-list li p {
-        text-align: center;
-    }
     .image-content.search .filter-box form > input + div {
         width: 100% !important;
     }
@@ -701,7 +692,7 @@ div#dev *{display:none;position:relative;font-size:55px}div#dev-gt-1140{display:
     }
     .image-content .filter ul li {
         width: 24%;
-    }/**/
+    }
     .image-content .filter ul li {
         float: left;
     }
@@ -891,35 +882,31 @@ div#dev *{display:none;position:relative;font-size:55px}div#dev-gt-1140{display:
     }
     /* image list */
     .image-list li {
+    	width: 172px;
         height: auto;
         border: none;
     }
     .image-list li > a {
         display: block;
-        border: 1px solid #E0E0E0
+        width: auto;
+        border: 1px solid #E0E0E0;
     }
     .image-list li .image {
         border-bottom: none;
-	    line-height: 165px; /*OK*//**/
     }
-    .image-list li .image img {
-	    /*vertical-align: middle;/*dup@def*/
-	    /*max-width: 100%;*//*-*/
-        height: auto;
-	    /*max-height: 100%;/*-*/
-    	/*width: auto;*//*dup@sys*/
-    }
-    .image-list li > p {
+    .image-list li p {
+    	padding-bottom: 0 !important;
         background-image: none;
+        text-align: center;
     }
     .image-list li .pict {
+    	display: none;
         position: absolute;
-        margin-top: -237px;
-        display: none;
-        width: 170px;
-        height: 170px;
-        background-color: rgba(0, 0, 0, .7);
+        width: 172px;
+        height: 171px;
         padding: 0;
+        margin-top: -229px;
+        background-color: rgba(0, 0, 0, .7);
         cursor: pointer;
     }
     .image-lightbox2 .pict a,
@@ -1042,6 +1029,13 @@ div#dev *{display:none;position:relative;font-size:55px}div#dev-gt-1140{display:
     div#div_existing_categories {
         font-size: 14px;
     }
+    #ui-datepicker-div {
+        position: fixed !important;
+        top: 20px !important;
+        left: 50% !important;
+        width: 300px;
+        box-shadow: 0 0 5px #000000;
+	}
 }
 @media all and (max-width: 1120px) {
     div#dev *{display:none}div#dev-1120{display:block}
@@ -1430,23 +1424,26 @@ div#dev *{display:none;position:relative;font-size:55px}div#dev-gt-1140{display:
     }
     /* lightbox */
     .lightbox {
-        padding: 20px 0;
         width: auto;
+        padding-left: 0;
+        padding-right: 0;
     }
-    .lightbox .header {
-        padding-left: 20px !important;
-        padding-right: 20px !important;
-    }
+    .lightbox .header,
     .lightbox .preview .c .leftcol.fullwidth > * {
         padding-left: 20px !important;
         padding-right: 20px !important;
     }
+    .lightbox .pricing .rightcol {
+        width: 57%;
+        padding-right: 20px !important;
+    }
+    #ui-datepicker-div {
+        width: 37.5%;
+    }
     .lightbox .pricing .leftcol {
         padding-left: 20px !important;
     }
-    .lightbox .pricing .rightcol {
-        padding-right: 20px !important;
-    }
+
 }
 @media all and (max-width: 799px) {
     div#dev *{display:none}div#dev-799{display:block}
@@ -1733,7 +1730,12 @@ div#dev *{display:none;position:relative;font-size:55px}div#dev-gt-1140{display:
         max-width: 100%;
     }
     .ui-datepicker {
-        width: 15em;
+        /*width: 15em;*/
+        /*width: 65%;*/
+    }
+    #ui-datepicker-div {
+        width: 50%;
+        margin-left: -25% !important;
     }
     #content .content-in .header span.sort select {
         width: 44px;
@@ -2000,7 +2002,6 @@ div#dev *{display:none;position:relative;font-size:55px}div#dev-gt-1140{display:
         padding-right: 20px !important;
     }
     .image-content .filter ul {
-        /*width: 90%;*/
         padding: 0 20px;/*dup@1140*/
     }
     .image-content.search p.info {
@@ -2527,10 +2528,6 @@ div#dev *{display:none;position:relative;font-size:55px}div#dev-gt-1140{display:
         white-space: nowrap;
         text-align: center;
     }
-    /*.lightbox .header .desc {
-        margin-top: 5px;
-        font-size: 14px;
-    }*/
 }
 @media all and (max-width: 480px) {
     div#dev *{display:none}div#dev-480{display:block}
@@ -2655,14 +2652,11 @@ div#dev *{display:none;position:relative;font-size:55px}div#dev-gt-1140{display:
         margin-top: 15px;/**/
     }
     #content .cart .cart-item .desc .image {
-        margin-top: -65px; /**/
+        margin-top: -65px;/**/
     }
-    #ui-datepicker-div { /**/
-        position: fixed !important;
-        top: 20px !important;
-        box-shadow: 0 0 5px #000000;
-        left: 50% !important;
-        margin-left: -7.5em !important;
+    #ui-datepicker-div {
+        width: 54%;
+        margin-left: -27% !important;
     }
     /* image list */
     .image-content .filter ul li:last-child {
@@ -2983,6 +2977,10 @@ div#dev *{display:none;position:relative;font-size:55px}div#dev-gt-1140{display:
     .lightbox .pricing .rightcol .item {
         padding-left: 0 !important;
         padding-right: 0 !important;
+    }
+    #ui-datepicker-div {
+        width: 84%;
+        margin-left: -42% !important;
     }
     /* image list */
     .image-content .filter ul li {
