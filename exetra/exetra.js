@@ -1,10 +1,11 @@
-fun = {
-    exe: 0
+exetra = {
+    visual: 0,
+    testing: 1
 };
 
 $(document).ready(function()
 {
-    if (fun && fun.exe)
+    if (exetra && exetra.visual)
     {
         $('.image-list li a.preview > div')
             .append(

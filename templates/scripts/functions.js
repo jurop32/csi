@@ -123,7 +123,6 @@ function jsrequest_selectforpurchase(serverPage, objID)
 
 function jsrequest_addtolightbox(serverPage, objID)
 {
-    var testing = true;
     var obj = document.getElementById(objID);
     xmlhttp.open("GET", serverPage);
     xmlhttp.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
@@ -132,7 +131,7 @@ function jsrequest_addtolightbox(serverPage, objID)
         if (xmlhttp.readyState == 4 && xmlhttp.status == 200)
         {
             obj.innerHTML = xmlhttp.responseText;
-        } else if (testing) {
+        } else if (exetra && exetra.testing == 1) {
             obj.innerHTML = 'Added to lightbox';
         }
     };
