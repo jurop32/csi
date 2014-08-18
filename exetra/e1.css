@@ -60,6 +60,12 @@ select {
 textarea {
     padding: 5px;
 }
+#content .cart .leftcol .item textarea {
+    width: 100% !important;
+    height: 140px !important;
+    resize: none !important;
+    outline: none !important;
+}
 /* layout */
 #paging {
     display: none;
@@ -1118,7 +1124,7 @@ form#form_login div.item a.forgotpassword,
 }
 #content .cart .payment #place_your_order {
     width: 200px;
-    padding: 10px 0;
+    padding: 10px 0 !important;
     height: auto !important;
     line-height: 38px;
     font-size: 17px !important;
